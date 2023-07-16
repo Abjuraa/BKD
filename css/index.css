@@ -2363,6 +2363,9 @@ nav .fly-item,
      .products.one .flexwrap > .row:last-child > .item{
       padding-left: 2em;
      }
+     .products.one .image-show{
+      height: 680px;
+    }
      /* Page Category */
      .single-category .holder {
       flex-direction: row;
