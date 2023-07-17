@@ -1,85 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/test.css">
-    <link href="http://fonts.cdnfonts.com/css/open-sans" rel="stylesheet">   
-
+  <title>Carrito de Compras</title>
+  <style>
+    .cart-item {
+      margin-bottom: 10px;
+    }
+    .cart-item button {
+      margin-left: 10px;
+    }
+  </style>
 </head>
 <body>
-    <div class="content">
-		<h1>Search in table</h1>
-		<form>
-			<input type="text" id="q" placeholder="Type to filter..." onkeyup="search()">
-		</form>
-		<table>
-			<thead>
-				<tr>
-					<th>ID</th>
-					<th>Name</th>
-					<th>First name</th>
-				</tr>
-			</thead>
-			<tbody id="the_table_body">
-				<tr>
-					<td>1</td>
-					<td>John</td>
-					<td>Smith</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>Adam</td>
-					<td>Sandler</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>Maria</td>
-					<td>Martins</td>
-				</tr>
-				<tr>
-					<td>4</td>
-					<td>Hanna</td>
-					<td>Isabel</td>
-				</tr>
-				<tr>
-					<td>5</td>
-					<td>Jack</td>
-					<td>Jones</td>
-				</tr>
-				<tr>
-					<td>6</td>
-					<td>Alfred</td>
-					<td>Hitchcock</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+  <h1>Carrito de Compras</h1>
+  
+  <div id="products">
+    <h2>Productos</h2>
+    <ul>
+      <li data-id="1" data-name="Producto 1" data-price="10.99">
+        Producto 1 - $10.99
+        <button class="add-to-cart">Agregar al carrito</button>
+      </li>
+      <li data-id="2" data-name="Producto 2" data-price="5.99">
+        Producto 2 - $5.99
+        <button class="add-to-cart">Agregar al carrito</button>
+      </li>
+      <li data-id="3" data-name="Producto 3" data-price="15.99">
+        Producto 3 - $15.99
+        <button class="add-to-cart">Agregar al carrito</button>
+      </li>
+    </ul>
+  </div>
+  
+  <div id="cart">
+    <h2>Carrito</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: <span id="cart-total">$0.00</span></p>
+    <button id="clear-cart">Vaciar carrito</button>
+  </div>
+  
+  <script src="../js/test.js"></script>
 </body>
-<script src="../js/test.js"></script>
-<script type="text/javascript">
-    function search(){
-        var num_cols, display, input, filter, table_body, tr, td, i, txtValue;
-        num_cols = 3;
-        input = document.getElementById("q");
-        filter = input.value.toUpperCase();
-        table_body = document.getElementById("the_table_body");
-        tr = table_body.getElementsByTagName("tr");
-
-        for(i=0; i< tr.length; i++){				
-            display = "none";
-            for(j=0; j < num_cols; j++){
-                td = tr[i].getElementsByTagName("td")[j];
-                if(td){
-                    txtValue = td.textContent || td.innerText;
-                    if(txtValue.toUpperCase().indexOf(filter) > -1){
-                        display = "";
-                    }
-                }
-            }
-            tr[i].style.display = display;
-        }
-    }		
-</script>
 </html>

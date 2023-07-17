@@ -1342,6 +1342,9 @@ nav .fly-item,
     margin: 1em 2em 2em 0;
     transition: var(--trans-color);
    }
+   /* .trending .button-cart{
+    height: var(--percent100);
+   } */
 
   /* 08. PAGE SINGLE -------------------------
    *  e. Products Review

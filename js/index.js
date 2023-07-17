@@ -131,3 +131,4 @@ window.onload = function () {
 document.querySelector('.modalclose').addEventListener('click', function() {
     document.querySelector('.site').classList.remove('showmodal')
 })
+
