@@ -98,3 +98,6 @@ to {background-position: 500px 0;}
     box-shadow: 1px 0px 9px 2px #807A7A;
     transition: 0.5s;
 }
+.alerta{
+    font-size: 100px;
+}

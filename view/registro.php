@@ -8,29 +8,20 @@
     <link rel="stylesheet" href="../css/cuenta.css">
 </head>
 <body>
+    <form method="post">
+        <section class="form-register">
+            <h4>Formulario Registro</h4>
+            <input class="controls" type="text" name="nombres" placeholder="Ingrese su nombre" >
+            <input class="controls" type="text" name="apellidos" placeholder="Ingrese su apellido" >
+            <input class="controls" type="email" name="correo" placeholder="Ingresa su correo electrònico" >
+            <input class="controls" type="password" name="contrasena" placeholder="Ingrese su contraseña">
+            <p>Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></p>
+            <input class="botons" type="submit" value="Registrar" name="registro">
+            <p><a href="sesion.html">¿Ya tienes una cuenta?</a></p>
+        </section>
+    </form>
     <?php
-    include("../php/conexion.php");
     include("../php/registro.php");
     ?>
-    <section class="form-register">
-        <h4>Formulario Registro</h4>
-        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre" >
-        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido" >
-        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingresa su correo electrònico" >
-        <input class="controls" type="password" name="contrasena" id="contrasena" placeholder="Ingrese su contraseña">
-        <!-- <select class="controls" name="tip_doc" id="tip_doc">
-            <option value="0" selected="selected">Selecciona tu tipo de documento</option>
-            <option value="1">CEDULA CIUDADANA</option>
-            <option value="2">CEDULA EXTRANJERA</option>
-            <option value="3">PASAPORTE</option>
-        </select>
-        <input class="controls" type="tel" name="num_doc" id="num_doc" placeholder="Ingrese su numero de documento">
-        <input class="controls" type="tel" namer="numero" id="numero" placeholder="Ingrese su nùmero telefonico" > -->
-        <!-- <input class="controls" type="date" name="fecha" id="fecha" placeholder="Ingresa tu fecha de nacimiento"> -->
-        <!-- <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Confirme su contraseña" > -->
-        <p>Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></p>
-        <input class="botons" type="submit" value="registrar">
-        <p><a href="sesion.html">¿Ya tienes una cuenta?</a></p>
-    </section>
 </body>
 </html>

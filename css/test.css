@@ -1,52 +1,33 @@
 *{
-  margin: 0;
   padding: 0;
+  margin: 0;
+  text-align: center;
 }
-
-body{
-  background-color: #f2f2f2;
+form{
+  padding: 50px 20px;
+  background-color: #ededed;
+  margin: calc(25% + 100px);
+  margin-top: 70px;
+  padding-top: 28px;
+  margin-bottom: 30px;
 }
-
 h1{
   text-align: center;
+  padding: 12px;
+  color: #444;
 }
-
-.content{
-  width: 60%;
-  height: 100vh;
-  margin: 0 auto;
-  display: block;
-  font-family: "Open Sans";
-  background-color: white;
-  padding: 25px;
+input{
+  width: calc(100% - 20px);
+  padding: 9px;
+  margin: auto;
+  margin-top: 12px;
+  font-size: 16px;
 }
-
-form{
-  width: 100%;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-form #q{
-  width: 100%;
-  text-align: center;
-  padding: 5px 0px;
-}
-
-table,
-table tr{
-  width: 100%;
-}
-
-table,
-table tr,
-table tr th,
-table tr td{
-  border: 1px solid lightgray;
-  border-collapse: collapse;
-}
-
-table tr th,
-table tr td{
-  padding: 5px 15px;
+input[type='submit']{
+  background-color: #48e;
+  color: #fff;
+  width: calc(80% - 20px);
+  margin: 0 10%;
+  margin-top: 22px;
+  border: none;
 }
