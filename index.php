@@ -41,7 +41,7 @@
                         </div>
                         <div class="right">
                             <ul class="flexitem main-links">
-                                    <li><a href="#">Iniciar sesión</a></li>
+                                    <li><a href="view/registro.php">Iniciar sesión</a></li>
                                     <li><a href="#">Mi cuenta</a></li>
                                     <li><a href="#">Domicilios</a></li>
                                     <li><a href="#">COP<span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
