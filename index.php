@@ -1606,8 +1606,8 @@
                     <div class="wrapper">
                         <div class="box">
                             <div class="content">
-                                <h3>Join Our newsletter</h3>
-                                <p>Get E-mail updates about our latest shop and <strong>Special offers</strong></p>
+                                <h3>Ingresa a nuestras noticias.</h3>
+                                <p>Ingresa tu correo electronico para recibir<strong> Ofertas especiales</strong></p>
                             </div>
                             <form action="" class="search">
                                 <span class="icon-large"><i class="ri-mail-line"></i></span>
@@ -1775,7 +1775,7 @@
     <script src="js/index.js"></script>
     <script>
         //contador de promociones
-const countDate = new Date('july 22, 2023 00:00:00').getTime();
+const countDate = new Date('september 18, 2023 00:00:00').getTime();
 
 function newYear(){
     const now = new Date().getTime();
