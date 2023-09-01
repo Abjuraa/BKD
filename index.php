@@ -940,7 +940,7 @@
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
-                                                <a href="/ofertas/Enjuague Bucal PerioGard Sin Alcohol Frasco X 250mL.php">
+                                                <a href="ofertas/Enjuague Bucal PerioGard Sin Alcohol Frasco X 250mL.php">
                                                     <img src="img/products/ENJUAGUE_BUCAL_PERIOGARD.jpg" alt="">
                                                 </a>
                                             </div>
@@ -954,7 +954,7 @@
                                             <div class="discount circle flexcenter"><span>32%</span></div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="main-links"><a href="/ofertas/Enjuague Bucal PerioGard Sin Alcohol Frasco X 250mL.php">Enjuague Bucal PerioGard Sin Alcohol Frasco X 250mL</a></h3>
+                                            <h3 class="main-links"><a href="ofertas/Enjuague Bucal PerioGard Sin Alcohol Frasco X 250mL.php">Enjuague Bucal PerioGard Sin Alcohol Frasco X 250mL</a></h3>
                                             <div class="rating">
                                                 <div class="stars"></div>
                                                 <span class="mini-text">(2,548)</span>
@@ -973,7 +973,7 @@
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
-                                                <a href="/ofertas/Botiquin Rojo Paquete X 1 Nexcara.php">
+                                                <a href="ofertas/Botiquin Rojo Paquete X 1 Nexcara.php">
                                                     <img src="img/products/botiquin.jpg" alt="">
                                                 </a>
                                             </div>
@@ -987,7 +987,7 @@
                                             <div class="discount circle flexcenter"><span>25%</span></div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="main-links"><a href="/ofertas/Botiquin Rojo Paquete X 1 Nexcara.php">Botiquin Rojo Paquete X 1 Nexcara</a></h3>
+                                            <h3 class="main-links"><a href="ofertas/Botiquin Rojo Paquete X 1 Nexcara.php">Botiquin Rojo Paquete X 1 Nexcara</a></h3>
                                             <div class="rating">
                                                 <div class="stars"></div>
                                                 <span class="mini-text">(1,955)</span>
