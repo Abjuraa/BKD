@@ -38,16 +38,16 @@
             <div class="slider">
                 <ul>
                     <li>
-                        <img src="../img/img1.jpg" alt="">
+                        <img src="/img/slider/img1.jpg" alt="">
                     </li>
                     <li>
-                        <img src="../img/img2.jpg" alt="">
+                        <img src="../img/slider/img2.jpg" alt="">
                     </li>
                     <li>
-                        <img src="../img/img3.jpg" alt="">
+                        <img src="../img/slider/img3.jpg" alt="">
                     </li>
                     <li>
-                        <img src="../img/img4.jpg" alt="">
+                        <img src="../img/slider/img4.jpg" alt="">
                     </li>
                 </ul>
             </div>
