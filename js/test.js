@@ -1,13 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const slider = document.querySelector('.slider');
-  const slides = document.querySelectorAll('.slide');
-  const slideWidth = slides[0].clientWidth;
-  let currentIndex = 0;
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
 
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-  }
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
 
-  setInterval(nextSlide, 3000); // Cambia el slide cada 3 segundos
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
 });
