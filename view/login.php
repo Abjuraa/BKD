@@ -160,7 +160,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
-    <script src="/js/login.js"></script>
+    <script src="js/login.js"></script>
 
 
 </body>
