@@ -1007,7 +1007,7 @@
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
-                                                <a href="/ofertas/Calcio + Vitamina D3 1200Mg + 400Ui Capsulas Blandas Frasco X 60.php">
+                                                <a href="ofertas/Calcio + Vitamina D3 1200Mg + 400Ui Capsulas Blandas Frasco X 60.php">
                                                     <img src="img/products/calcio.jpg" alt="">
                                                 </a>
                                             </div>
@@ -1021,7 +1021,7 @@
                                             <div class="discount circle flexcenter"><span>32%</span></div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="main-links"><a href="/ofertas/Calcio + Vitamina D3 1200Mg + 400Ui Capsulas Blandas Frasco X 60.php">Calcio + Vitamina D3 1200Mg + 400Ui Capsulas Blandas Frasco X 60</a></h3>
+                                            <h3 class="main-links"><a href="ofertas/Calcio + Vitamina D3 1200Mg + 400Ui Capsulas Blandas Frasco X 60.php">Calcio + Vitamina D3 1200Mg + 400Ui Capsulas Blandas Frasco X 60</a></h3>
                                             <div class="rating">
                                                 <div class="stars"></div>
                                                 <span class="mini-text">(2,548)</span>
@@ -1040,7 +1040,7 @@
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
-                                                <a href="/ofertas/Corega Tabs Tabletas Efervescentes Caja X 30.php">
+                                                <a href="ofertas/Corega Tabs Tabletas Efervescentes Caja X 30.php">
                                                     <img src="img/products/corega.jpg" alt="">
                                                 </a>
                                             </div>
@@ -1054,7 +1054,7 @@
                                             <div class="discount circle flexcenter"><span>32%</span></div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="main-links"><a href="/ofertas/Corega Tabs Tabletas Efervescentes Caja X 30.php">Corega Tabs Tabletas Efervescentes Caja X 30</a></h3>
+                                            <h3 class="main-links"><a href="ofertas/Corega Tabs Tabletas Efervescentes Caja X 30.php">Corega Tabs Tabletas Efervescentes Caja X 30</a></h3>
                                             <div class="rating">
                                                 <div class="stars"></div>
                                                 <span class="mini-text">(2,548)</span>
@@ -1074,7 +1074,7 @@
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
-                                                <a href="/ofertas/Crema Dental Sensitive Pro-Alivio Tubo X 75 mL.php">
+                                                <a href="ofertas/Crema Dental Sensitive Pro-Alivio Tubo X 75 mL.php">
                                                     <img src="img/products/crema dental.jpg" alt="">
                                                 </a>
                                             </div>
@@ -1088,7 +1088,7 @@
                                             <div class="discount circle flexcenter"><span>32%</span></div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="main-links"><a href="/ofertas/Crema Dental Sensitive Pro-Alivio Tubo X 75 mL.php">Crema Dental Sensitive Pro-Alivio Tubo X 75 mL</a></h3>
+                                            <h3 class="main-links"><a href="ofertas/Crema Dental Sensitive Pro-Alivio Tubo X 75 mL.php">Crema Dental Sensitive Pro-Alivio Tubo X 75 mL</a></h3>
                                             <div class="rating">
                                                 <div class="stars"></div>
                                                 <span class="mini-text">(2,548)</span>
@@ -1107,7 +1107,7 @@
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
-                                                <a href="/ofertas/Desodorante Mujer Invisible Balance Fco X 50G Clinical Protection.php">
+                                                <a href="ofertas/Desodorante Mujer Invisible Balance Fco X 50G Clinical Protection.php">
                                                     <img src="img/products/desodorante mujer.jpg" alt="">
                                                 </a>
                                             </div>
@@ -1121,7 +1121,7 @@
                                             <div class="discount circle flexcenter"><span>32%</span></div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="main-links"><a href="/ofertas/Desodorante Mujer Invisible Balance Fco X 50G Clinical Protection.php">Desodorante Mujer Invisible Balance Fco X 50G Clinical Protection</a></h3>
+                                            <h3 class="main-links"><a href="ofertas/Desodorante Mujer Invisible Balance Fco X 50G Clinical Protection.php">Desodorante Mujer Invisible Balance Fco X 50G Clinical Protection</a></h3>
                                             <div class="rating">
                                                 <div class="stars"></div>
                                                 <span class="mini-text">(2,548)</span>
@@ -1140,7 +1140,7 @@
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
-                                                <a href="/ofertas/Colágeno Líquido Naturcol Soluble + Vitaminas Uva Frasco X 500Ml.php">
+                                                <a href="ofertas/Colágeno Líquido Naturcol Soluble + Vitaminas Uva Frasco X 500Ml.php">
                                                     <img src="img/products/naturcor.jpg" alt="">
                                                 </a>
                                             </div>
@@ -1154,7 +1154,7 @@
                                             <div class="discount circle flexcenter"><span>32%</span></div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="main-links"><a href="/ofertas/Colágeno Líquido Naturcol Soluble + Vitaminas Uva Frasco X 500Ml.php">Colágeno Líquido Naturcol Soluble + Vitaminas Uva Frasco X 500Ml</a></h3>
+                                            <h3 class="main-links"><a href="ofertas/Colágeno Líquido Naturcol Soluble + Vitaminas Uva Frasco X 500Ml.php">Colágeno Líquido Naturcol Soluble + Vitaminas Uva Frasco X 500Ml</a></h3>
                                             <div class="rating">
                                                 <div class="stars"></div>
                                                 <span class="mini-text">(2,548)</span>
@@ -1173,7 +1173,7 @@
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
-                                                <a href="/ofertas/Pañuelos Cuidado Gripal Paquete X 40.php">
+                                                <a href="ofertas/Pañuelos Cuidado Gripal Paquete X 40.php">
                                                     <img src="img/products/panuelos.jpg" alt="">
                                                 </a>
                                             </div>
@@ -1187,7 +1187,7 @@
                                             <div class="discount circle flexcenter"><span>32%</span></div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="main-links"><a href="/ofertas/Pañuelos Cuidado Gripal Paquete X 40.php">Pañuelos Cuidado Gripal Paquete X 40</a></h3>
+                                            <h3 class="main-links"><a href="ofertas/Pañuelos Cuidado Gripal Paquete X 40.php">Pañuelos Cuidado Gripal Paquete X 40</a></h3>
                                             <div class="rating">
                                                 <div class="stars"></div>
                                                 <span class="mini-text">(2,548)</span>
