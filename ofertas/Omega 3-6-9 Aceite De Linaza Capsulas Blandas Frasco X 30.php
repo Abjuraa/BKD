@@ -18,7 +18,7 @@
         <aside class="site-off desktop-hide">
             <div class="off-canvas">
                 <div class="canvas-head flexitem">
-                    <div class="logo"><a href="../index.php"><span class="circle"></span>Hamburgo</a></div>
+                    <div class="logo"><a href="#"><span class="circle"></span>Hamburgo</a></div>
                     <a href="#" class="t-close flexcenter"><span class="ri-close-line"></span></a>
                 </div>
                 <div class="departments"></div>
@@ -39,7 +39,7 @@
                         </div>
                         <div class="right">
                             <ul class="flexitem main-links">
-                                <li><a href="#">Iniciar sesión</a></li>
+                                <li><a href="">Iniciar sesión</a></li>
                                 <li><a href="#">Mi cuenta</a></li>
                                 <li><a href="#">Domicilios</a></li>
                                 <li><a href="#">COP<span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
