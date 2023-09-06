@@ -18,7 +18,7 @@
         <aside class="site-off desktop-hide">
             <div class="off-canvas">
                 <div class="canvas-head flexitem">
-                    <div class="logo"><a href="/"><span class="circle"></span>Hamburgo</a></div>
+                    <div class="logo"><a href="index.php../"><span class="circle"></span>Hamburgo</a></div>
                     <a href="#" class="t-close flexcenter"><span class="ri-close-line"></span></a>
                 </div>
                 <div class="departments"></div>
