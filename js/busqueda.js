@@ -1,0 +1,1 @@
+const filtro = document.querySelectorAll('.search')
