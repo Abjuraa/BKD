@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamburgo D.C</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link
     rel="stylesheet"
@@ -74,7 +74,7 @@
                             <a href="#" class="social"><i class="ri-apple-fill"></i></a>
                         </div>
                         <span>Usa tu Gmail para crear una cuenta</span>
-                        <input type="text" id="nombres" id="apellidos" placeholder="Nombre completo" />
+                        <input type="text" id="nombres", id="apellidos" placeholder="Nombre completo" />
                         <select name="doc" id="tip-doc">
                             <option value="0" selected="selected">Selecciona el tipo de documento</option>
                             <option value="1">Cedula Ciudadana</option>
@@ -84,7 +84,7 @@
                         <input type="text" id="num-doc"placeholder="Numero de documento" />
                         <input type="email" id="correo"placeholder="Email" />
                         <input type="password" id="contrasena"placeholder="Contraseña" />
-                        <button>Crear Cuenta</button>
+                        <button value="Registar" name="registro" >Crear Cuenta</button>
                     </form>
                 </div>
                 <div class="form-container sign-in-container">
