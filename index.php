@@ -261,8 +261,8 @@
                                                 <p><strong>$2.000</strong></p>
                                             </div>
                                             <div class="actions">
-                                                <a href="/view/checkout.html" class="primary-button">Pagar</a>
-                                                <a href="/view/cart.html" class="secondary-button">Ver Carrito</a>
+                                                <a href="view/checkout.php" class="primary-button">Pagar</a>
+                                                <a href="view/cart.php" class="secondary-button">Ver Carrito</a>
                                             </div>
                                         </div>
                                     </div>
@@ -900,7 +900,7 @@
                                         </div>
                                         <div class="media">
                                             <div class="image">
-                                                <a href="ofertas/page-offer Omega 3-6-9 Aceite De Linaza Capsulas Blandas Frasco X 30.php">
+                                                <a href="ofertas/Omega 3-6-9 Aceite De Linaza Capsulas Blandas Frasco X 30.php">
                                                     <img src="img/products/omega 3.jpg" alt="">
                                                 </a>
                                             </div>
@@ -918,7 +918,7 @@
                                                 <div class="stars"></div>
                                                 <span class="mini-text">(2,548)</span>
                                             </div>
-                                            <h3 class="main-links"><a href="ofertas/page-offer Omega 3-6-9 Aceite De Linaza Capsulas Blandas Frasco X 30.php">Omega 3-6-9 Aceite De Linaza Capsulas Blandas Frasco X 30</a></h3>
+                                            <h3 class="main-links"><a href="ofertas/Omega 3-6-9 Aceite De Linaza Capsulas Blandas Frasco X 30.php">Omega 3-6-9 Aceite De Linaza Capsulas Blandas Frasco X 30</a></h3>
                                             <div class="price">
                                                 <span class="current">$129.99</span>
                                                 <span class="normal mini-text">189.98</span>
@@ -1756,8 +1756,8 @@
                     <form action="" class="search">
                         <a href="#" class="t-close search-close flexcenter"><i class="ri-close-line"></i></a>
                         <span class="icon-large"><i class="ri-search-line"></i></span>
-                        <input type="search" placeholder="Your email address" required>
-                        <button type="submit">Search</button>
+                        <input type="search" placeholder="Busca tus productos" required>
+                        <button type="submit">Buscar</button>
                     </form>
                 </div>
             </div>

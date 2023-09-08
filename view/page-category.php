@@ -18,8 +18,8 @@
         <aside class="site-off desktop-hide">
             <div class="off-canvas">
                 <div class="canvas-head flexitem">
-                    <div class="logo"><a href="/"><span class="circle"></span>Hamburgo</a></div>
-                    <a href="#" class="t-close flexcenter"><span class="ri-close-line"></span></a>
+                    <div class="logo"><a href="../index.php"><span class="circle"></span>Hamburgo</a></div>
+                    <a href="../index.php" class="t-close flexcenter"><span class="ri-close-line"></span></a>
                 </div>
                 <div class="departments"></div>
                 <nav></nav>
@@ -40,23 +40,23 @@
                         </div>
                         <div class="right">
                             <ul class="flexitem main-links">
-                                    <li><a href="#">Sing Up</a></li>
-                                    <li><a href="#">My Account</a></li>
-                                    <li><a href="#">Order Tracking</a></li>
-                                    <li><a href="#">USD<span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                                    <li><a href="login.php">Iniciar sesión</a></li>
+                                    <li><a href="#">Mi cuenta</a></li>
+                                    <li><a href="#">Domicilios</a></li>
+                                    <li><a href="#">COP<span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
                                         <ul>
-                                            <li class="current"><a href="#">USD</a></li>
-                                            <li><a href="#">EURO</a></li>
-                                            <li><a href="#">COP</a></li>
-                                            <li><a href="#">IDR</a></li>
+                                            <li class="current"><a href="#">COP</a></li>
+                                            <li><a href="#">USD</a></li>
+                                            <!-- <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li> -->
                                         </ul>
                                     </li>
-                                    <li><a href="#">English <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                                    <li><a href="#">Español <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
                                         <ul>
-                                            <li class="current"><a href="#">English</a></li>
-                                            <li><a href="#">German</a></li>
-                                            <li><a href="#">Spanish</a></li>
-                                            <li><a href="#">Bahasa</a></li>
+                                            <li class="current"><a href="#">Español</a></li>
+                                            <li><a href="#">Ingles</a></li>
+                                            <!-- <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li> -->
                                         </ul>
                                     </li>
                             </ul>
@@ -71,13 +71,13 @@
                     <div class="wrapper flexitem">
                         <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
                         <div class="left flexitem">
-                            <div class="logo"><a href="/"><span class="circle"></span>Hamburgo</a></div>
+                            <div class="logo"><a href="index.php"><span class="circle"></span>Hamburgo D.C</a></div>
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Shope</a></li>
-                                    <li class="has-child">
-                                        <a href="#">Women
+                                    <li><a href="../index.php">Inicio</a></li>
+                                    <li><a href="view/page-category.php">Tienda</a></li>
+                                    <!-- <li class="has-child">
+                                        <a href="#">Categorías
                                             <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>
                                         </a>
                                         <div class="mega">
@@ -85,18 +85,18 @@
                                                 <div class="wrapper">
                                                     <div class="flexcol">
                                                         <div class="row">
-                                                            <h4>Womens Clothings</h4>
+                                                            <h4></h4>
                                                             <ul>
-                                                                <li><a href="#">Dresses</a></li>
-                                                                <li><a href="#">Top & Tees</a></li>
-                                                                <li><a href="#">Jackets & Coats</a></li>
-                                                                <li><a href="#">Pants & Capris</a></li>
-                                                                <li><a href="#">Sweaters</a></li>
-                                                                <li><a href="#">Costumes</a></li>
-                                                                <li><a href="#">Hoddies & Sweatshirts</a></li>
-                                                                <li><a href="#">Pajamas & Robes</a></li>
-                                                                <li><a href="#">Shorts</a></li>
-                                                                <li><a href="#">Swimers</a></li>
+                                                                <li><a href="#"></a></li>
+                                                                <li><a href="#"></a></li>
+                                                                <li><a href="#"></a></li>
+                                                                <li><a href="#"></a></li>
+                                                                <li><a href="#"></a></li>
+                                                                <li><a href="#"></a></li>
+                                                                <li><a href="#"></a></li>
+                                                                <li><a href="#"></a></li>
+                                                                <li><a href="#"></a></li>
+                                                                <li><a href="#"></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -146,7 +146,7 @@
                                                                 <li><a href="#">Channel</a></li>
                                                                 <li><a href="#">Hurley</a></li>
                                                             </ul>
-                                                            <a href="#" class="view-all">View All Brands <i class="ri-arrow-right-s-line"></i></a>
+                                                            <a href="#" class="view-all">Ver todas las categorías <i class="ri-arrow-right-s-line"></i></a>
                                                         </div>
                                                     </div>
                                                     <div class="flexcol products">
@@ -159,8 +159,8 @@
                                                                 </div>
                                                             </div>
                                                             <div class="text-content">
-                                                                <h4>Most Wanted!</h4>
-                                                                <a href="#" class="primary-button">Order Now</a>
+                                                                <h4>Más Buscado!</h4>
+                                                                <a href="#" class="primary-button">Ordenar Ahora</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -173,7 +173,7 @@
                                         <a href="#">Sports
                                             <div class="fly-item"><span>New!</span></div>
                                         </a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </nav>
                         </div>
@@ -190,14 +190,14 @@
                                     </div>
                                     <div class="icon-text">
                                         <div class="mini-text">Total</div>
-                                        <div class="cart-total">$1.622</div>
+                                        <div class="cart-total">$5.000</div>
                                     </div>
 
                                 </a>
                                 <div class="mini-cart">
                                     <div class="content">
                                         <div class="cart-head">
-                                            5 items in cart
+                                            5 Productos
                                         </div>
                                         <div class="cart-body">
                                             <ul class="products mini">
@@ -258,11 +258,11 @@
                                         <div class="cart-footer">
                                             <div class="subtotal">
                                                 <p>Subtotal</p>
-                                                <p><strong>$1,622.95</strong></p>
+                                                <p><strong>$2.000</strong></p>
                                             </div>
                                             <div class="actions">
-                                                <a href="/cart.html" class="primary-button">Checkout</a>
-                                                <a href="/checkout.html" class="secondary-button">View Cart</a>
+                                                <a href="checkout.php" class="primary-button">Pagar</a>
+                                                <a href="cart.php" class="secondary-button">Ver Carrito</a>
                                             </div>
                                         </div>
                                     </div>
@@ -281,156 +281,468 @@
                         <div class="left">
                             <div class="dpt-cat">
                                 <div class="dpt-head">
-                                    <div class="main-text">all Departments</div>
-                                    <div class="mini-text mobile-hide">Total 1059 products</div>
+                                    <div class="main-text">Categorías</div>
+                                    <div class="mini-text mobile-hide">Total 8 categorías</div>
                                     <a href="#" class="dpt-trigger mobile-hide">
                                         <i class="ri-menu-3-line ri-xl"></i>
-                                        <i class="ri-close-line ri-xl"></i>
                                     </a>
                                 </div>
                                 <div class="dpt-menu">
                                     <ul class="second-links">
-                                        <li class="has-child beauty">
-                                            <a href="#">
-                                                <div class="icon-large"><i class="ri-bear-smile-line"></i></div>
-                                                Beauty
-                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
-                                            </a>
-                                            <ul>
-                                                <li><a href="#">Make up</a></li>
-                                                <li><a href="#">skin care</a></li>
-                                                <li><a href="#">hair care</a></li>
-                                                <li><a href="#">fragance</a></li>
-                                                <li><a href="#">foot & hand care</a></li>
-                                                <li><a href="#">tools & Accesories</a></li>
-                                                <li><a href="#">shave & hair remover</a></li>
-                                                <li><a href="#">personal care</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-child electric">
-                                            <a href="#">
-                                                <div class="icon-large"><i class="ri-bluetooth-connect-line"></i></div>
-                                                Electronic
-                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
-                                            </a>
-                                            <ul>
-                                                <li><a href="#">camera</a></li>
-                                                <li><a href="#">cell phones</a></li>
-                                                <li><a href="#">computers</a></li>
-                                                <li><a href="#">gps & navegation</a></li>
-                                                <li><a href="#">headphones</a></li>
-                                                <li><a href="#">home audio</a></li>
-                                                <li><a href="#">televisions</a></li>
-                                                <li><a href="#">video projectors</a></li>
-                                                <li><a href="#">wearable technology</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-child fashion">
-                                            <a href="#">
-                                                <div class="icon-large"><i class="ri-t-shirt-air-line"></i></div>
-                                                Women's Fashion
-                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
-                                            </a>
-                                            <ul>
-                                                <li><a href="#">Clothings</a></li>
-                                                <li><a href="#">shoes</a></li>
-                                                <li><a href="#">jelwery</a></li>
-                                                <li><a href="#">watches</a></li>
-                                                <li><a href="#">handbangs</a></li>
-                                                <li><a href="#">Accesories</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="icon-large"><i class="ri-shirt-line"></i></div>
-                                                Men's Fashion
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="icon-large"><i class="ri-user-5-line"></i></div>
-                                                Gilr's Fashion
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="icon-large"><i class="ri-user-6-line"></i></div>
-                                                Boy's Fashion
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="icon-large"><i class="ri-heart-pulse-line"></i></div>
-                                                Healt & Household
-                                            </a>
-                                        </li>
                                         <li class="has-child homekit">
                                             <a href="#">
-                                                <div class="icon-large"><i class="ri-home-8-line"></i></div>
-                                                Home & Kitchen
+                                                <div class="icon-large"><i class="ri-capsule-line"></i></div>
+                                                Medicamentos
                                                 <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
                                             </a>
                                             <div class="mega">
                                                 <div class="flexcol">
                                                     <div class="row">
-                                                        <h4><a href="#">Kitchen & Dining</a></h4>
+                                                        <h4><a href="#">Alergias</a></h4>
                                                         <ul>
-                                                            <li><a href="#">kitchen</a></li>
-                                                            <li><a href="#">dining room</a></li>
-                                                            <li><a href="#">panty</a></li>
-                                                            <li><a href="#">great rooms</a></li>
-                                                            <li><a href="#">breakfast nook</a></li>
+                                                            <li><a href="#">Corticoides Alergias</a></li>
+                                                            <li><a href="#">Rinitis</a></li>
+                                                            <li><a href="#">Reacciones Alergicas y Picazón</a></li>
+                                                            <!-- <li><a href="#"></a></li> -->
                                                         </ul>
                                                     </div>
                                                     <div class="row">
-                                                        <h4><a href="#"></a>Living</h4>
+                                                        <h4><a href="#"></a>Alivio del Dolor</h4>
                                                         <ul>
-                                                            <li><a href="#">living rooms</a></li>
-                                                            <li><a href="#">family room</a></li>
-                                                            <li><a href="#">sunroom</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="flexcol">
-                                                    <div class="row">
-                                                        <h4><a href="#">bed & bath</a></h4>
-                                                        <ul>
-                                                            <li><a href="#">bathrooms</a></li>
-                                                            <li><a href="#">powder rooms</a></li>
-                                                            <li><a href="#">bedrooms</a></li>
-                                                            <li><a href="#">storage & closet</a></li>
-                                                            <li><a href="#">baby & kids</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="row">
-                                                        <h4><a href="#">utility</a></h4>
-                                                        <ul>
-                                                            <li><a href="#">laundry</a></li>
-                                                            <li><a href="#">garage</a></li>
-                                                            <li><a href="#">mudroom</a></li>
+                                                            <li><a href="#">Antihemorroidales</a></li>
+                                                            <li><a href="#">Antiinflamatorios</a></li>
+                                                            <li><a href="#">Artiris y Artrosis</a></li>
+                                                            <li><a href="#">Dolor Fuerte y Migraña</a></li>
+                                                            <li><a href="#">Dolor y Fiebre</a></li>
+                                                            <li><a href="#">Esclerosis Múltiple</a></li>
+                                                            <li><a href="#">Relajante Muscular</a></li>
+                                                            <!-- <li><a href="#"></a></li> -->
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="flexcol">
                                                     <div class="row">
-                                                        <h4><a href="#">outdoor</a></h4>
+                                                        <h4><a href="#">Botiquín y Primeros Auxilios</a></h4>
                                                         <ul>
-                                                            <li><a href="#">landscape</a></li>
-                                                            <li><a href="#">patio</a></li>
-                                                            <li><a href="#">deck</a></li>
-                                                            <li><a href="#">pool</a></li>
-                                                            <li><a href="#">backyard</a></li>
-                                                            <li><a href="#">porch</a></li>
-                                                            <li><a href="#">exterior</a></li>
-                                                            <li><a href="#">outdoor kitchen</a></li>
-                                                            <li><a href="#">front yard</a></li>
-                                                            <li><a href="#">driveway</a></li>
-                                                            <li><a href="#">poolhouse</a></li>
+                                                            <li><a href="#">Algodones</a></li>
+                                                            <li><a href="#">Antísepticos y Desinfectantes</a></li>
+                                                            <li><a href="#">Curitas, Gasas, Apósitos y Vendas</a></li>
+                                                            <li><a href="#">Micropore-Esparadrapo</a></li>
+                                                            <li><a href="#">Ortopédicos</a></li>
+                                                            <li><a href="#">Tapabocas y Guantes</a></li>
+                                                            <li><a href="#">Termómetro</a></li>
+                                                            <!-- <li><a href="#"></a></li> -->
+                                                        </ul>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h4><a href="#">Corazón y Sistema Circulatorio</a></h4>
+                                                        <ul>
+                                                            <li><a href="#">Antianemicos</a></li>
+                                                            <li><a href="#">Antiarritmicos y Antianginosos</a></li>
+                                                            <li><a href="#">Anticoagulantes</a></li>
+                                                            <li><a href="#">Antiplaquetarios</a></li>
+                                                            <li><a href="#">Antivaricosos y Vasodilatadores</a></li>
+                                                            <li><a href="#">Cuidado de la Tensión</a></li>
+                                                            <li><a href="#">Diuréticos</a></li>
+                                                            <li><a href="#">Inmunoestimulantes</a></li>
+                                                            <!-- <li><a href="#"></a></li> -->
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4><a href="#">Gripa y Tos</a></h4>
+                                                        <ul>
+                                                            <li><a href="#">Dolor de Garganta</a></li>
+                                                            <li><a href="#">Expectorantes</a></li>
+                                                            <li><a href="#">Mucoliticos</a></li>
+                                                            <li><a href="#">Antigripales</a></li>
+                                                            <li><a href="#">Descongestionantes</a></li>
+                                                            <li><a href="#">Pañuelos</a></li>
+                                                            <li><a href="#">Alivio Tos y Antisépticos Bucales</a></li>
+                                                            <li><a href="#">Vitaminas Prevención Resfrío</a></li>
+                                                            <!-- <li><a href="#"></a></li> -->
                                                         </ul>
                                                     </div>
                                             </div>
+                                            <li class="has-child homekit">
+                                                <a href="#">
+                                                    <div class="icon-large"><i class="ri-user-heart-line"></i></div>
+                                                    Dermocosméticos
+                                                    <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                                </a>
+                                                <div class="mega">
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4><a href="#">Protección Solar</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Facial</a></li>
+                                                                <li><a href="#">Corporal</a></li>
+                                                                <li><a href="#">Infantil</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#"></a>Cuidado Facial</h4>
+                                                            <ul>
+                                                                <li><a href="#">Limpieza</a></li>
+                                                                <li><a href="#">Hidratación</a></li>
+                                                                <li><a href="#">Antiedad</a></li>
+                                                                <li><a href="#">Contorno Ojos</a></li>
+                                                                <li><a href="#">Especializados y Anti Imperfecciones</a></li>
+                                                                <li><a href="#">Cuiadado de Labios</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4><a href="#">Cuidado Coporal</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Hidratantes</a></li>
+                                                                <li><a href="#">Limpieza</a></li>
+                                                                <li><a href="#">Tratamientos</a></li>
+                                                                <li><a href="#">Desodorantes</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Cuidado del Cabello</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Shampoo y Acondicionador</a></li>
+                                                                <li><a href="#">Tratamiento capilar</a></li>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="has-child homekit">
+                                                <a href="#">
+                                                    <div class="icon-large"><i class="ri-user-star-line"></i></div>
+                                                    Cuidado Personal
+                                                    <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                                </a>
+                                                <div class="mega">
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4><a href="#">Cuidado de la Piel</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Cuidado Facial</a></li>
+                                                                <li><a href="#">Crema Corporal</a></li>
+                                                                <li><a href="#">Protección Solar</a></li>
+                                                                <li><a href="#">Cuidado Corporal y SPA</a></li>
+                                                                <li><a href="#">Cuidado Labios</a></li>
+                                                                <li><a href="#">Mascarillas</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#"></a>Cuidado del Cabello</h4>
+                                                            <ul>
+                                                                <li><a href="#">Shampoo y Acondicionador</a></li>
+                                                                <li><a href="#">Cremas de Peinar, Geles y Ceras</a></li>
+                                                                <li><a href="#">Tratamientos</a></li>
+                                                                <li><a href="#">Tinturas</a></li>
+                                                                <li><a href="#">Planchas</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4><a href="#">Higiene Oral</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Crema Dental</a></li>
+                                                                <li><a href="#">Enjuague Bucal</a></li>
+                                                                <li><a href="#">Cepillos Dentales y Repuestos</a></li>
+                                                                <li><a href="#">Sedas Dentales</a></li>
+                                                                <li><a href="#">Fijador Prótesis Dental y Accesorios</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Higiene Personal</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Desodorantes</a></li>
+                                                                <li><a href="#">Protección Pies</a></li>
+                                                                <li><a href="#">Jabones</a></li>
+                                                                <li><a href="#">Pañuelos</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4><a href="#">Afeitada y Depilación</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Máquienas Desechables</a></li>
+                                                                <li><a href="#">Crema de Afeitar</a></li>
+                                                                <li><a href="#">Máquinas y Repuestos</a></li>
+                                                                <li><a href="#">Depilación</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Cuidado Femenino</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Protección Femenina</a></li>
+                                                                <li><a href="#">Higiene Íntima</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Incontinencia</a></h4>
+                                                        </div>
+                                                </div>
+                                            </li>
+                                            <li class="has-child homekit">
+                                                <a href="#">
+                                                    <div class="icon-large"><i class="ri-hearts-fill"></i></div>
+                                                    Bebé y Maternidad
+                                                    <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                                </a>
+                                                <div class="mega">
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4><a href="#">Alimentación y Lactancia</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Fórmulas Infantiles</a></li>
+                                                                <li><a href="#">Fórmulas para Necesidades Especiales</a></li>
+                                                                <li><a href="#">Cereales, Coladas y Compotas</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Pañales y Toallitas Húmedas</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Pañales</a></li>
+                                                                <li><a href="#">Toallitas Húmedas</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4><a href="#">Hora del Baño</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Cuidado del Cabello</a></li>
+                                                                <li><a href="#">Jabones</a></li>
+                                                                <li><a href="#">Cremas y Aceites Corporales</a></li>
+                                                                <li><a href="#">Artículos de Aseo (Talcos y Copitos)</a></li>
+                                                                <li><a href="#">Colonias y Fragancias</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Mamá</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Lactancia y Suplementos Alimenticios</a></li>
+                                                                <li><a href="#">Cuidado Pezones</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="has-child homekit">
+                                                <a href="#">
+                                                    <div class="icon-large"><i class="ri-leaf-line"></i></div>
+                                                    Bienestar y Nutrición
+                                                    <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                                </a>
+                                                <div class="mega">
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4><a href="#">Nutrición</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Adulto</a></li>
+                                                                <li><a href="#">Niño</a></li>
+                                                                <li><a href="#">Diabetes</a></li>
+                                                                <li><a href="#">Especializada</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#"></a>Vitaminas y Minerales</h4>
+                                                            <ul>
+                                                                <li><a href="#">Vitaminas</a></li>
+                                                                <li><a href="#">Minerales</a></li>
+                                                                <li><a href="#">Calcio y Huesos</a></li>
+                                                                <li><a href="#">Belleza y Cuidado de la Piel</a></li>
+                                                                <li><a href="#">Belleza Mujer</a></li>
+                                                                <li><a href="#">Calcio y Osteoporosis</a></li>
+                                                                <li><a href="#">Menopausia</a></li>
+                                                                <li><a href="#">Vitaminas Prevención Refrío</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4><a href="#">Suplemento Nutricional</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Colágenos</a></li>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Suplementos Dietarios</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Calcio Mujer</a></li>
+                                                                <li><a href="#">Menopausia</a></li>
+                                                                <li><a href="#">Antidiarreicos</a></li>
+                                                                <li><a href="#">Artritis y Artrosis</a></li>
+                                                                <li><a href="#">Belleza Mujer</a></li>
+                                                                <li><a href="#">Colon Irritable</a></li>
+                                                                <li><a href="#">Edulcorantes</a></li>
+                                                                <li><a href="#">Laxantes</a></li>
+                                                                <li><a href="#">Otros Suplementos</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4><a href="#">Deporte</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Control de Peso</a></li>
+                                                                <li><a href="#">Rehidratantes</a></li>
+                                                                <li><a href="#">Suplemento Nutricional</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Alimentos Saludables</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Snacks Saludables</a></li>
+                                                                <li><a href="#">Bebidas Funcionales</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                
+                                                </div>
+                                            </li>
+                                            <li class="has-child homekit">
+                                                <a href="#">
+                                                    <div class="icon-large"><i class="ri-parent-line"></i></div>
+                                                    Salud Sexual
+                                                    <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                                </a>
+                                                <div class="mega">
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4><a href="#">Alivio del Dolor</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Anestésicos Hombre</a></li>
+                                                                <li><a href="#">Antiespasmódicos Hombre</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Anticoceptivos</a></h4>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Cuidado de Próstata</a></h4>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Disfunción Eréctil</a></h4>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Lubricantes e Higiene Mujer</a></h4>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Preservativos y Accesorios</a></h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4><a href="#">Test de Diagnósticos</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Test Embarazo y Ovulación</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Tratamiento Testosterona</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Androgenoterapia</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="has-child homekit">
+                                                <a href="#">
+                                                    <div class="icon-large"><i class="ri-eye-close-line"></i></div>
+                                                    Belleza
+                                                    <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                                </a>
+                                                <div class="mega">
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4><a href="#">Cuidado Corporal</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Depilación</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#"></a>Cuidado del Cabello</h4>
+                                                            <ul>
+                                                                <li><a href="#">Shampoo y Acondicionador</a></li>
+                                                                <li><a href="#">Cremas de Peinar, Geles y Ceras</a></li>
+                                                                <li><a href="#">Trataminetos</a></li>
+                                                                <li><a href="#">Tinturas</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4><a href="#">Maquillaje</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Ojos</a></li>
+                                                                <li><a href="#">Rostro</a></li>
+                                                                <li><a href="#">Uñas</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h4><a href="#">Acessorios</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Cabello</a></li>
+                                                                <li><a href="#">Accesorios Manicure Pedicure</a></li>
+                                                                <li><a href="#">Maquillaje</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4><a href="#">Perfumes</a></h4>
+                                                            <ul>
+                                                                <li><a href="#">Packs (Estuchería)</a></li>
+                                                            </ul>
+                                                        </div>
+                                                </div>
+                                            </li>
+                                        <li class="has-child homekit">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-cup-line"></i></div>
+                                                Alimentos y Bebidas
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <div class="mega">
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4><a href="#">Alimentos Saludables</a></h4>
+                                                        <ul>
+                                                            <li><a href="#">Abarrotes</a></li>
+                                                            <li><a href="#">Endulzantes</a></li>
+                                                            <li><a href="#">Aguas y Té</a></li>
+                                                            <li><a href="#">Snacks</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h4><a href="#"></a>Bebidas</h4>
+                                                        <ul>
+                                                            <li><a href="#">Aguas</a></li>
+                                                            <li><a href="#">Gaseosas</a></li>
+                                                            <li><a href="#">Jugos</a></li>
+                                                            <li><a href="#">Té</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4><a href="#">Snacks</a></h4>
+                                                        <ul>
+                                                            <li><a href="#">Snacks Salados</a></li>
+                                                            <li><a href="#">Snacks Dulces</a></li>
+                                                            <li><a href="#">Chocolates</a></li>
+                                                            <li><a href="#">Chicles y Mentas</a></li>
+                                                            <li><a href="#">Gomitas</a></li>
+                                                            <li><a href="#">Helados</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
-                                        <li>
+                                        <!-- <li>
                                             <a href="#">
                                                 <div class="icon-large"><i class="ri-android-line"></i></div>
                                                 Pet Supplies
@@ -447,7 +759,7 @@
                                                 <div class="icon-large"><i class="ri-shield-star-line"></i></div>
                                                 Best Seller
                                             </a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -456,8 +768,8 @@
                             <div class="search-box">
                                 <form action="" class="search">
                                     <span class="icon-large"><i class="ri-search-line"></i></span>
-                                    <input type="search" placeholder="search for products">
-                                    <button type="submit">search</button>
+                                    <input type="search" placeholder="Busca tus productos">
+                                    <button type="submit">Buscar</button>
                                 </form>
                             </div>
                         </div>
@@ -1005,7 +1317,7 @@
             </div>
 
 
-            <div class="banners">
+            <!-- <div class="banners">
                 <div class="container">
                     <div class="wrapper">
                         <div class="column">
@@ -1036,10 +1348,10 @@
                                         <a href="#" class="over-link"></a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- banners -->
 
-                            <div class="product-categories flexwrap">
+                            <!-- <div class="product-categories flexwrap">
                                 <div class="row">
                                     <div class="item">
                                         <div class="image">
@@ -1106,7 +1418,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </main>
         <!-- main -->
@@ -1117,13 +1429,13 @@
                     <div class="wrapper">
                         <div class="box">
                             <div class="content">
-                                <h3>Join Our newsletter</h3>
-                                <p>Get E-mail updates about our latest shop and <strong>Special offers</strong></p>
+                                <h3>Ingresa a nuestras noticias.</h3>
+                                <p>Ingresa tu correo electronico para recibir<strong> Ofertas especiales.</strong></p>
                             </div>
                             <form action="" class="search">
                                 <span class="icon-large"><i class="ri-mail-line"></i></span>
-                                <input type="mail" placeholder="Your email address" required>
-                                <button type="submit">Sign Up</button>
+                                <input type="mail" placeholder="Tu correo electronico" required>
+                                <button type="submit">Registrar</button>
                             </form>
                         </div>
                     </div>
@@ -1137,38 +1449,36 @@
                         <div class="flexwrap">
                             <div class="row">
                                 <div class="item mini-links">
-                                    <h4>Help & Contact</h4>
+                                    <h4>Ayuda & Contacto</h4>
                                     <ul class="flexcol">
-                                        <li><a href="#">Your Account</a></li>
-                                        <li><a href="#">Your Orders</a></li>
-                                        <li><a href="#">Shipping Rates</a></li>
-                                        <li><a href="#">Returns</a></li>
-                                        <li><a href="#">Assistants</a></li>
-                                        <li><a href="#">Help</a></li>
-                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Tu cuenta</a></li>
+                                        <li><a href="#">Tus Ordenes</a></li>
+                                        <li><a href="#">Calificacion de Envios</a></li>
+                                        <li><a href="#">Regresos</a></li>
+                                        <li><a href="#">Asistencia</a></li>
+                                        <li><a href="#">Ayuda</a></li>
+                                        <li><a href="#">Contactanos</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="item mini-links">
-                                    <h4>Products Category</h4>
+                                    <h4>Categoria de Productos</h4>
                                     <ul class="flexcol">
-                                        <li><a href="#">Beauty</a></li>
-                                        <li><a href="#">Electronic</a></li>
-                                        <li><a href="#">Women's Fashion</a></li>
-                                        <li><a href="#">Men's Fashion</a></li>
-                                        <li><a href="#">Girl's Fashion</a></li>
-                                        <li><a href="#">Boy's Fashion</a></li>
-                                        <li><a href="#">Health & Household</a></li>
-                                        <li><a href="#">Home & Kitchen</a></li>
-                                        <li><a href="#">Pet Suplies</a></li>
-                                        <li><a href="#">Sports</a></li>
+                                        <li><a href="#">Medicamentos</a></li>
+                                        <li><a href="#">Dermocosméticos</a></li>
+                                        <li><a href="#">Cuidado Personal</a></li>
+                                        <li><a href="#">Bebe y Maternidad</a></li>
+                                        <li><a href="#">Bienestar y Nutrición</a></li>
+                                        <li><a href="#">Salud Sexual</a></li>
+                                        <li><a href="#">Belleza</a></li>
+                                        <li><a href="#">Alimentos y Bebidas</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="item mini-links">
-                                    <h4>Payment Info</h4>
+                                    <h4>Info Pagos</h4>
                                     <ul class="flexcol">
                                         <li><a href="#">Bussines Card</a></li>
                                         <li><a href="#">Shop Whit Points</a></li>
@@ -1179,14 +1489,11 @@
                             </div>
                             <div class="row">
                                 <div class="item mini-links">
-                                    <h4>About us</h4>
+                                    <h4>Sobre Nosotros</h4>
                                     <ul class="flexcol">
-                                        <li><a href="#">Company Info</a></li>
-                                        <li><a href="#">News</a></li>
-                                        <li><a href="#">Inventors</a></li>
-                                        <li><a href="#">Careers</a></li>
-                                        <li><a href="#">Policies</a></li>
-                                        <li><a href="#">Customers Reviews</a></li>
+                                        <li><a href="#">Info Compañia</a></li>
+                                        <li><a href="#">Noticias</a></li>
+                                        <li><a href="/view/somos.php">Inventores</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1228,31 +1535,31 @@
                             <li>
                                 <a href="#">
                                     <i class="ri-bar-chart-line"></i>
-                                    <span>Trending</span>
+                                    <span>Mas Buscado</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
                                     <i class="ri-user-6-line"></i>
-                                    <span>Account</span>
+                                    <span>Cuenta</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
                                     <i class="ri-heart-line"></i>
-                                    <span>Wishlist</span>
+                                    <span>Lista de Deseados</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#0"  class="t-search">
                                     <i class="ri-search-line"></i>
-                                    <span>Search</span>
+                                    <span>Buscar</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#0" class="cart-trigger">
+                                <a href="#0">
                                     <i class="ri-shopping-cart-line"></i>
-                                    <span>cart</span>
+                                    <span>Carrito</span>
                                     <div class="fly-item">
                                         <span class="item-number">0</span>
                                     </div>
@@ -1272,31 +1579,13 @@
                     <form action="" class="search">
                         <a href="#" class="t-close search-close flexcenter"><i class="ri-close-line"></i></a>
                         <span class="icon-large"><i class="ri-search-line"></i></span>
-                        <input type="search" placeholder="Your email address" required>
-                        <button type="submit">Search</button>
+                        <input type="search" placeholder="Busca tus productos" required>
+                        <button type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
         </div>
         <!-- search bottom -->
-        <div id="modal" class="modal">
-            <div class="content flexcol">
-                <div class="image object-cover">
-                    <img src="../img/products/apparel4.jpg" alt="">
-                </div>
-                <h2>Get the latest deals and coupons</h2>
-                <p class="mobile-hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est repellendus nobis obcaecati possimus, beatae modi.</p>
-                <form action="" class="search">
-                    <span class="icon-large"><i class="ri-mail-line"></i></span>
-                    <input type="mail" placeholder="Your email address">
-                    <button>Subscribe</button>
-                </form>
-                <a href="#" class="mini-text">Do not show me this again</a>
-                <a href="#" class="t-close modalclose flexcenter">
-                    <i class="ri-close-line"></i>
-                </a>
-            </div>
-        </div>
 
         <div class="overlay"></div>
     </div>
