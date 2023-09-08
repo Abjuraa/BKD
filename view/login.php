@@ -67,7 +67,7 @@
         <section class="form-register">
             <div class="container-log" id="container-log">
                 <div class="form-container sign-up-container">
-                    <form action="#">
+                    <form method="post">
                         <h1>Crear Cuenta</h1>
                         <div class="social-container">
                             <a href="#" class="social"><i class="ri-google-fill"></i></a>
@@ -75,17 +75,17 @@
                             <a href="#" class="social"><i class="ri-apple-fill"></i></a>
                         </div>
                         <span>Usa tu Gmail para crear una cuenta</span>
-                        <input type="text" id="nombres", id="apellidos" placeholder="Nombre completo" />
-                        <select name="doc" id="tip-doc">
+                        <input type="text" name="nombres" placeholder="Nombre completo" />
+                        <select name="id_tip_doc">
                             <option value="0" selected="selected">Selecciona el tipo de documento</option>
                             <option value="1">Cedula Ciudadana</option>
                             <option value="2">Cedula Extranjera</option>
                             <option value="3">Pasaporte</option>
                         </select>
-                        <input type="text" id="num-doc"placeholder="Numero de documento" />
-                        <input type="email" id="correo"placeholder="Email" />
-                        <input type="password" id="contrasena"placeholder="Contraseña" />
-                        <button value="Registar" name="registro" >Crear Cuenta</button>
+                        <input type="text" name="num_doc" placeholder="Numero de documento" />
+                        <input type="email" name="correo" placeholder="Email" />
+                        <input type="password" name="contrasena"placeholder="Contraseña" />
+                        <button name="registro" >Crear Cuenta</button>
                     </form>
                 </div>
                 <div class="form-container sign-in-container">
@@ -102,6 +102,10 @@
                         <a href="#">Olvidaste tu contraseña?</a>
                         <button>Iniciar Sesion</button>
                     </form>
+                    
+                <?php
+                    include("../php/registro.php");
+                ?>
                 </div>
                 <div class="overlay-container">
                     <div class="overlay-log">
@@ -167,9 +171,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/login.js"></script>
-    <?php
-    include("../php/registro.php");
-    ?>
-
 </body>
 </html>
