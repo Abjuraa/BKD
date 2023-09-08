@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamburgo D.C</title>
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <!-- <link rel="stylesheet" href="../css/login.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link
     rel="stylesheet"
@@ -76,16 +76,16 @@
                         </div>
                         <span>Usa tu Gmail para crear una cuenta</span>
                         <input type="text" name="nombres" placeholder="Nombre completo" />
-                        <select name="id_tip_doc">
+                        <input type="email" name="correo" placeholder="Email" />
+                        <input type="password" name="contrasena"placeholder="Contraseña" />
+                        <select name="tip_doc">
                             <option value="0" selected="selected">Selecciona el tipo de documento</option>
                             <option value="1">Cedula Ciudadana</option>
                             <option value="2">Cedula Extranjera</option>
                             <option value="3">Pasaporte</option>
                         </select>
                         <input type="text" name="num_doc" placeholder="Numero de documento" />
-                        <input type="email" name="correo" placeholder="Email" />
-                        <input type="password" name="contrasena"placeholder="Contraseña" />
-                        <button name="registro" >Crear Cuenta</button>
+                        <button name="registro">Crear Cuenta231</button>
                     </form>
                 </div>
                 <div class="form-container sign-in-container">
@@ -102,10 +102,6 @@
                         <a href="#">Olvidaste tu contraseña?</a>
                         <button>Iniciar Sesion</button>
                     </form>
-                    
-                <?php
-                    include("../php/registro.php");
-                ?>
                 </div>
                 <div class="overlay-container">
                     <div class="overlay-log">
@@ -168,6 +164,10 @@
         </div>
         <!-- search bottom -->
     </div>
+                        
+    <?php
+        include("../php/registro.php");
+    ?>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/login.js"></script>

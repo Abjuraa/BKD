@@ -20,8 +20,8 @@
             <p><a href="sesion.html">¿Ya tienes una cuenta?</a></p>
         </section>
     </form>
-    <?php
-    include("../php/registro.php");
+     <?php
+    //include("../php/registro.php");
     ?>
 </body>
 </html>
