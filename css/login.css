@@ -1,4 +1,4 @@
-
+/* 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 :root{
@@ -30,9 +30,9 @@
 
 }
 
-* {
+/* * {
 	box-sizing: border-box;
-}
+} */
 
 .form-register {
 	background: #f6f5f7;
@@ -256,4 +256,4 @@ input {
 	width: 40px;
 }
 
-
+ */

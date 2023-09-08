@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamburgo D.C</title>
-    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link
@@ -75,10 +74,16 @@
                             <a href="#" class="social"><i class="ri-apple-fill"></i></a>
                         </div>
                         <span>Usa tu Gmail para crear una cuenta</span>
-                        <input type="text" placeholder="Nombre y Apellido" />
-                        <input type="text" placeholder="Nombre" />
-                        <input type="email" placeholder="Email" />
-                        <input type="password" placeholder="Contraseña" />
+                        <input type="text" id="nombres" id="apellidos" placeholder="Nombre completo" />
+                        <select name="doc" id="tip-doc">
+                            <option value="0" selected="selected">Selecciona el tipo de documento</option>
+                            <option value="1">Cedula Ciudadana</option>
+                            <option value="2">Cedula Extranjera</option>
+                            <option value="3">Pasaporte</option>
+                        </select>
+                        <input type="text" id="num-doc"placeholder="Numero de documento" />
+                        <input type="email" id="correo"placeholder="Email" />
+                        <input type="password" id="contrasena"placeholder="Contraseña" />
                         <button>Crear Cuenta</button>
                     </form>
                 </div>
@@ -161,7 +166,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/login.js"></script>
-
+    <?php
+    include("../php/registro.php");
+    ?>
 
 </body>
 </html>
