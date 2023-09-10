@@ -12,13 +12,19 @@ if (isset($_POST['registro'])) {
         $consulta = "INSERT INTO `login_prueba2`(`nombre_completo`, `tip_doc`, `num_doc`, `email`, `contrasena`) VALUES ('$name','$tip_doc','$num_doc','$email','$pass')";
         $resultado = mysqli_query($conex,$consulta);
         if ($resultado) {
-            echo "felicidades";
+            ?>
+            <h3 class="cuenta_creada">¡Felicidades has creado tu cuenta!</h3>
+            <?php
         } else {
-            echo "a ocurrido un error";
+            ?>
+           <h3 class="cuenta_error">Lo sentimos, ha ocurrido un error</h3>
+           <?php
         }
 
     } else {
-        echo "complete los campos";
+        ?>
+        <h3 class="error">Por favor llene todos los campos</h3>
+        <?php
     }
 }
 

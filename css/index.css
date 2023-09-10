@@ -2116,7 +2116,7 @@ nav .fly-item,
 	margin: -20px 0 50px;
 }
 
-h1 {
+.registro h1{
 	font-weight: bold;
 	margin: 0;
 }
@@ -2125,7 +2125,7 @@ h2 {
 	text-align: center;
 }
 
-p {
+.registro p{
 	font-size: 14px;
 	font-weight: 100;
 	line-height: 20px;
@@ -2133,18 +2133,18 @@ p {
 	margin: 20px 0 30px;
 }
 
-span {
+.registro span{
 	font-size: 12px;
 }
 
-a {
+a:where(.registro, .login) {
 	color: #333;
 	font-size: 14px;
 	text-decoration: none;
 	margin: 15px 0;
 }
 
-button {
+button:where(.registro, .ghost) {
 	border-radius: 20px;
 	border: 1px solid var(--white-color);
 	background-color: var(--primary-color);
@@ -2170,7 +2170,7 @@ button.ghost {
 	border-color: #FFFFFF;
 }
 
-form {
+form:where(.registro, .login){
 	background-color: #FFFFFF;
 	display: flex;
 	align-items: center;
@@ -2181,7 +2181,7 @@ form {
 	text-align: center;
 }
 
-input{
+input:where(.campo){
 	background-color: #eee;
 	border: none;
 	padding: 12px 15px;

@@ -63,7 +63,7 @@ button.ghost {
 	border-color: #FFFFFF;
 }
 
-form {
+.form-registro {
 	background-color: #FFFFFF;
 	display: flex;
 	align-items: center;
@@ -228,6 +228,22 @@ select{
 	height: 40px;
 	width: 40px;
 }
+.cuenta_creada{
+  text-align: center;
+  width: 100%;
+  padding: 12px;
+  background-color: #4e8;
+  color: #fff;
+}
+
+.cuenta_error{
+  text-align: center;
+  width: 100%;
+  padding: 12px;
+  background-color: #a22;
+  color: #fff;
+}
+
 /* ---------------------
  * 16. RESPONSIVE
  * --------------------*/
