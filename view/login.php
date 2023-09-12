@@ -22,8 +22,8 @@
         <aside class="site-off desktop-hide">
             <div class="off-canvas">
                 <div class="canvas-head flexitem">
-                    <div class="logo"><a href="/"><span class="circle"></span>Hamburgo</a></div>
-                    <a href="#" class="t-close flexcenter"><span class="ri-close-line"></span></a>
+                    <div class="logo"><a href="../index.php"><span class="circle"></span>Hamburgo</a></div>
+                    <a href="../index.php" class="t-close flexcenter"><span class="ri-close-line"></span></a>
                 </div>
                 <div class="departments"></div>
                 <nav></nav>
@@ -46,7 +46,7 @@
                     <div class="wrapper flexitem">
                         <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
                         <div class="left flexitem">
-                            <div class="logo"><a href="index.php"><span class="circle"></span>Hamburgo D.C</a></div>
+                            <div class="logo"><a href="../index.php"><span class="circle"></span>Hamburgo D.C</a></div>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                             <option value="3">Pasaporte</option>
                         </select>
                         <input class="campo" type="text" name="num_doc" placeholder="Numero de documento" />
-                        <button class="registro" name="registro">Crear Cuenta1</button>
+                        <button class="registro" name="registro">Crear Cuenta</button>
                     </form>
                 </div>
                 <div class="form-container sign-in-container">
@@ -100,7 +100,7 @@
                         <input class="campo" type="email" placeholder="Email" />
                         <input class="campo" type="password" placeholder="Contraseña" />
                         <a class="registro" href="#">Olvidaste tu contraseña?</a>
-                        <button class="registro">Iniciar Sesion1</button>
+                        <button class="registro">Iniciar Sesion</button>
                     </form>
                 </div>
                 <div class="overlay-container">

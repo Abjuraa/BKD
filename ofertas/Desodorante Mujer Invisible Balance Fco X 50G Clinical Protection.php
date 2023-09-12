@@ -39,7 +39,7 @@
                         </div>
                         <div class="right">
                             <ul class="flexitem main-links">
-                                <li><a href="#">Iniciar sesión</a></li>
+                                <li><a href="../view/login.php">Iniciar sesión</a></li>
                                 <li><a href="#">Mi cuenta</a></li>
                                 <li><a href="#">Domicilios</a></li>
                                 <li><a href="#">COP<span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
@@ -70,11 +70,11 @@
                     <div class="wrapper flexitem">
                         <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
                         <div class="left flexitem">
-                            <div class="logo"><a href="/"><span class="circle"></span>Hamburgo</a></div>
+                            <div class="logo"><a href="../index.php"><span class="circle"></span>Hamburgo</a></div>
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
-                                    <li><a href="/index.html">Inicio</a></li>
-                                    <li><a href="#">Tienda</a></li>
+                                    <li><a href="../index.php">Inicio</a></li>
+                                    <li><a href="../view/page-category.php">Tienda</a></li>
                                     <!-- <li class="has-child">
                                         <a href="#">Women
                                             <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>
@@ -879,10 +879,10 @@
                                                 <div class="offer">
                                                     <p>La oferta acaba en:</p>
                                                     <ul class="flexcenter">
-                                                        <li>1</li>
-                                                        <li>15</li>
-                                                        <li>27</li>
-                                                        <li>60</li>
+                                                    <li><div id="dias"></div></li>
+                                                        <li><div id="horas"></div></li>
+                                                        <li><div id="minutos"></div></li>
+                                                        <li><div id="segundos"></div></li>
                                                     </ul>
                                                 </div>
                                                 
@@ -1656,5 +1656,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.js"></script> -->
     <script src="../js/index.js"></script>
+    <script>
+                //contador de promociones
+const countDate = new Date('september 18, 2023 00:00:00').getTime();
+
+function newYear(){
+    const now = new Date().getTime();
+    gap = countDate - now;
+
+    const segundos = 1000;
+    const minutos = segundos * 60;
+    const horas = minutos * 60;
+    const dias = horas * 24;
+
+    const d = Math.floor(gap / (dias));
+    const h = Math.floor((gap % (dias)) / (horas));
+    const m = Math.floor((gap % (horas)) / (minutos));
+    const s = Math.floor((gap % (minutos)) / (segundos)); 
+
+    document.getElementById('dias').innerText = d;
+    document.getElementById('horas').innerText = h;
+    document.getElementById('minutos').innerText = m;
+    document.getElementById('segundos').innerText = s;
+}
+
+setInterval(function(){
+    newYear();
+},1000)
+    </script>
 </body>
 </html>

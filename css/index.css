@@ -2121,9 +2121,9 @@ nav .fly-item,
 	margin: 0;
 }
 
-h2 {
+/* h2 {
 	text-align: center;
-}
+} */
 
 .registro p{
 	font-size: 14px;
@@ -2134,6 +2134,9 @@ h2 {
 }
 
 .registro span{
+	font-size: 12px;
+}
+.login span{
 	font-size: 12px;
 }
 

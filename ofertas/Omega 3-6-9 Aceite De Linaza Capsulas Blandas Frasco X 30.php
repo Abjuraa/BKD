@@ -39,7 +39,7 @@
                         </div>
                         <div class="right">
                             <ul class="flexitem main-links">
-                                <li><a href="">Iniciar sesión</a></li>
+                                <li><a href="../view/login.php">Iniciar sesión</a></li>
                                 <li><a href="#">Mi cuenta</a></li>
                                 <li><a href="#">Domicilios</a></li>
                                 <li><a href="#">COP<span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
@@ -70,11 +70,11 @@
                     <div class="wrapper flexitem">
                         <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
                         <div class="left flexitem">
-                            <div class="logo"><a href="/"><span class="circle"></span>Hamburgo</a></div>
+                            <div class="logo"><a href="../index.php"><span class="circle"></span>Hamburgo</a></div>
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
-                                    <li><a href="/index.html">Inicio</a></li>
-                                    <li><a href="#">Tienda</a></li>
+                                    <li><a href="../index.php">Inicio</a></li>
+                                    <li><a href="../view/page-category.php">Tienda</a></li>
                                     <!-- <li class="has-child">
                                         <a href="#">Women
                                             <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>
@@ -879,10 +879,10 @@
                                                 <div class="offer">
                                                     <p>La oferta acaba en:</p>
                                                     <ul class="flexcenter">
-                                                        <li>NA</li>
-                                                        <li>NA</li>
-                                                        <li>NA</li>
-                                                        <li>NA<i>
+                                                        <li><div id="dias">NA</div></li>
+                                                        <li><div id="horas">NA</div></li>
+                                                        <li><div id="minutos">NA</div></li>
+                                                        <li><div id="segundos">NA</div><i>
                                                     </ul>
                                                 </div>
                                                 
@@ -1380,11 +1380,11 @@
             </div> -->
             <!-- featured products -->
 
-            <div class="banners">
+            <!-- <div class="banners">
                 <div class="container">
                     <div class="wrapper">
                         <div class="column">
-                            <!-- <div class="banner flexwrap">
+                            <div class="banner flexwrap">
                                 <div class="row">
                                     <div class="item">
                                         <div class="image">
@@ -1414,7 +1414,7 @@
                             </div> -->
                             <!-- banners -->
 
-                            <div class="product-categories flexwrap">
+                            <!-- <div class="product-categories flexwrap">
                                 <div class="row">
                                     <div class="item">
                                         <div class="image">
@@ -1481,7 +1481,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </main>
         <!-- main -->
@@ -1492,13 +1492,13 @@
                     <div class="wrapper">
                         <div class="box">
                             <div class="content">
-                                <h3>Join Our newsletter</h3>
-                                <p>Get E-mail updates about our latest shop and <strong>Special offers</strong></p>
+                                <h3>Ingresa a nuestras noticias.</h3>
+                                <p>Ingresa tu correo electronico para recibir<strong> Ofertas especiales.</strong></p>
                             </div>
                             <form action="" class="search">
                                 <span class="icon-large"><i class="ri-mail-line"></i></span>
-                                <input type="mail" placeholder="Your email address" required>
-                                <button type="submit">Sign Up</button>
+                                <input type="mail" placeholder="Tu correo electronico" required>
+                                <button type="submit">Registrar</button>
                             </form>
                         </div>
                     </div>
@@ -1507,43 +1507,42 @@
             <!-- nesletter-->
 
             <div class="widgets">
+            <div class="widgets">
                 <div class="container">
                     <div class="wrapper">
                         <div class="flexwrap">
                             <div class="row">
                                 <div class="item mini-links">
-                                    <h4>Help & Contact</h4>
+                                    <h4>Ayuda & Contacto</h4>
                                     <ul class="flexcol">
-                                        <li><a href="#">Your Account</a></li>
-                                        <li><a href="#">Your Orders</a></li>
-                                        <li><a href="#">Shipping Rates</a></li>
-                                        <li><a href="#">Returns</a></li>
-                                        <li><a href="#">Assistants</a></li>
-                                        <li><a href="#">Help</a></li>
-                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Tu cuenta</a></li>
+                                        <li><a href="#">Tus Ordenes</a></li>
+                                        <li><a href="#">Calificacion de Envios</a></li>
+                                        <li><a href="#">Regresos</a></li>
+                                        <li><a href="#">Asistencia</a></li>
+                                        <li><a href="#">Ayuda</a></li>
+                                        <li><a href="#">Contactanos</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="item mini-links">
-                                    <h4>Products Category</h4>
+                                    <h4>Categoria de Productos</h4>
                                     <ul class="flexcol">
-                                        <li><a href="#">Beauty</a></li>
-                                        <li><a href="#">Electronic</a></li>
-                                        <li><a href="#">Women's Fashion</a></li>
-                                        <li><a href="#">Men's Fashion</a></li>
-                                        <li><a href="#">Girl's Fashion</a></li>
-                                        <li><a href="#">Boy's Fashion</a></li>
-                                        <li><a href="#">Health & Household</a></li>
-                                        <li><a href="#">Home & Kitchen</a></li>
-                                        <li><a href="#">Pet Suplies</a></li>
-                                        <li><a href="#">Sports</a></li>
+                                        <li><a href="#">Medicamentos</a></li>
+                                        <li><a href="#">Dermocosméticos</a></li>
+                                        <li><a href="#">Cuidado Personal</a></li>
+                                        <li><a href="#">Bebe y Maternidad</a></li>
+                                        <li><a href="#">Bienestar y Nutrición</a></li>
+                                        <li><a href="#">Salud Sexual</a></li>
+                                        <li><a href="#">Belleza</a></li>
+                                        <li><a href="#">Alimentos y Bebidas</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="item mini-links">
-                                    <h4>Payment Info</h4>
+                                    <h4>Info Pagos</h4>
                                     <ul class="flexcol">
                                         <li><a href="#">Bussines Card</a></li>
                                         <li><a href="#">Shop Whit Points</a></li>
@@ -1554,14 +1553,11 @@
                             </div>
                             <div class="row">
                                 <div class="item mini-links">
-                                    <h4>About us</h4>
+                                    <h4>Sobre Nosotros</h4>
                                     <ul class="flexcol">
-                                        <li><a href="#">Company Info</a></li>
-                                        <li><a href="#">News</a></li>
-                                        <li><a href="#">Inventors</a></li>
-                                        <li><a href="#">Careers</a></li>
-                                        <li><a href="#">Policies</a></li>
-                                        <li><a href="#">Customers Reviews</a></li>
+                                        <li><a href="#">Info Compañia</a></li>
+                                        <li><a href="#">Noticias</a></li>
+                                        <li><a href="/view/somos.php">Inventores</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1603,31 +1599,31 @@
                             <li>
                                 <a href="#">
                                     <i class="ri-bar-chart-line"></i>
-                                    <span>Trending</span>
+                                    <span>Mas Buscado</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
                                     <i class="ri-user-6-line"></i>
-                                    <span>Account</span>
+                                    <span>Cuenta</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
                                     <i class="ri-heart-line"></i>
-                                    <span>Wishlist</span>
+                                    <span>Lista de Deseados</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#0"  class="t-search">
                                     <i class="ri-search-line"></i>
-                                    <span>Search</span>
+                                    <span>Buscar</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#0">
                                     <i class="ri-shopping-cart-line"></i>
-                                    <span>cart</span>
+                                    <span>Carrito</span>
                                     <div class="fly-item">
                                         <span class="item-number">0</span>
                                     </div>
@@ -1647,8 +1643,8 @@
                     <form action="" class="search">
                         <a href="#" class="t-close search-close flexcenter"><i class="ri-close-line"></i></a>
                         <span class="icon-large"><i class="ri-search-line"></i></span>
-                        <input type="search" placeholder="Your email address" required>
-                        <button type="submit">Search</button>
+                        <input type="search" placeholder="Busca tus productos" required>
+                        <button type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
@@ -1661,5 +1657,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.js"></script> -->
     <script src="../js/index.js"></script>
+    <script>
+                //contador de promociones
+const countDate = new Date('september 18, 2023 00:00:00').getTime();
+
+function newYear(){
+    const now = new Date().getTime();
+    gap = countDate - now;
+
+    const segundos = 1000;
+    const minutos = segundos * 60;
+    const horas = minutos * 60;
+    const dias = horas * 24;
+
+    const d = Math.floor(gap / (dias));
+    const h = Math.floor((gap % (dias)) / (horas));
+    const m = Math.floor((gap % (horas)) / (minutos));
+    const s = Math.floor((gap % (minutos)) / (segundos)); 
+
+    document.getElementById('dias').innerText = d;
+    document.getElementById('horas').innerText = h;
+    document.getElementById('minutos').innerText = m;
+    document.getElementById('segundos').innerText = s;
+}
+
+setInterval(function(){
+    newYear();
+},1000)
+    </script>
 </body>
 </html>
