@@ -70,7 +70,7 @@
                     <div class="wrapper flexitem">
                         <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
                         <div class="left flexitem">
-                            <div class="logo"><a href="../index.php"><span class="circle"></span>Hamburgo</a></div>
+                            <div class="logo"><a href="../index.php"><span class="circle"></span>Hamburgo D.C</a></div>
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
                                     <li><a href="../index.php">Inicio</a></li>
