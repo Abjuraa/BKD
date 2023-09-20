@@ -69,34 +69,33 @@
                 <div class="form-container sign-up-container">
                     <form class="registro" method="post">
                         <h1>Crear Cuenta</h1>
-                        <div class="social-container">
+                        <!-- <div class="social-container">
                             <a href="#" class="social"><i class="ri-google-fill"></i></a>
                             <a href="#" class="social"><i class="ri-chrome-fill"></i></a>
                             <a href="#" class="social"><i class="ri-apple-fill"></i></a>
-                        </div>
-                        <span>Usa tu Gmail para crear una cuenta</span>
+                        </div> -->
+                        <!-- <span>Usa tu Gmail para crear una cuenta</span> -->
                         <input class="campo" type="text" name="nombres" placeholder="Nombre completo" />
                         <input class="campo" type="email" name="correo" placeholder="Email" />
                         <input class="campo" type="password" name="contrasena"placeholder="Contraseña" />
-                        <select class="select" name="tip_doc">
-                            <option value="0" selected="selected">Selecciona el tipo de documento</option>
-                            <option value="1">Cedula Ciudadana</option>
-                            <option value="2">Cedula Extranjera</option>
-                            <option value="3">Pasaporte</option>
+                        <select class="selectRol" name="tip_doc">
+                            <option value="0" selected="selected">Selecciona el rol</option>
+                            <option value="1">Administrador</option>
+                            <option value="2">Farmaceutico</option>
                         </select>
-                        <input class="campo" type="text" name="num_doc" placeholder="Numero de documento" />
+                        <!-- <input class="campo" type="text" name="num_doc" placeholder="Numero de documento" /> -->
                         <button class="registro" name="registro">Crear Cuenta</button>
                     </form>
                 </div>
                 <div class="form-container sign-in-container">
                     <form class="login" action="#">
                         <h1>Ingresar</h1>
-                        <div class="social-container">
+                        <!-- <div class="social-container">
                             <a href="#" class="social"><i class="ri-google-fill"></i></a>
                             <a href="#" class="social"><i class="ri-chrome-fill"></i></i></a>
                             <a href="#" class="social"><i class="ri-apple-fill"></i></a>
-                        </div>
-                        <span>Usa tus cuentas</span>
+                        </div> -->
+                        <!-- <span>Usa tus cuentas</span> -->
                         <input class="campo" type="email" placeholder="Email" />
                         <input class="campo" type="password" placeholder="Contraseña" />
                         <a class="registro" href="#">Olvidaste tu contraseña?</a>

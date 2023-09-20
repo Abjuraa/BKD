@@ -2191,8 +2191,16 @@ input:where(.campo){
 	margin: 8px 0;
 	width: 100%;
 }
+.select{
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+  color: #2b2a2a;
+}
 
-select{
+.selectRol{
 	background-color: #eee;
 	border: none;
 	padding: 12px 15px;
