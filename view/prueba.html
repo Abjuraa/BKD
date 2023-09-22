@@ -1,20 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="../css/test.css">
+    <title>Formulario de Registro</title>
 </head>
 <body>
-	<input type="text" id="filtro" placeholder="Buscar">
-<ul id="lista">
-  <li>Elemento 1</li>
-  <li>Elemento 2</li>
-  <li>Elemento 3</li>
-  <li>Elemento 4</li>
-</ul>
-
+    <form id="registro-form">
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="email" id="email" placeholder="Correo electrónico">
+        <button type="button" id="registro-btn">Registrar</button>
+    </form>
+    <div id="mensaje-error" style="color: red;"></div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const registroBtn = document.getElementById("registro-btn");
+            const mensajeError = document.getElementById("mensaje-error");
+            
+            registroBtn.addEventListener("click", function () {
+                // Aquí puedes realizar la lógica de validación y registro
+                const nombre = document.getElementById("nombre").value;
+                const email = document.getElementById("email").value;
+                
+                if (nombre === "" || email === "") {
+                    // Muestra un mensaje de error si faltan datos
+                    mensajeError.textContent = "Por favor, completa todos los campos.";
+                } else {
+                    // Simula un registro exitoso (puedes reemplazar esto con tu propia lógica)
+                    // Si ocurre un error, muestra un mensaje de error
+                    if (Math.random() < 0.5) {
+                        mensajeError.textContent = "Ocurrió un error durante el registro.";
+                    } else {
+                        // Registro exitoso, puedes redirigir o mostrar un mensaje de éxito
+                        mensajeError.textContent = "Registro exitoso.";
+                    }
+                }
+            });
+        });
+    </script>
 </body>
-<script src="../js/test.js"></script>
 </html>

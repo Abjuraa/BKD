@@ -19,7 +19,7 @@
         <aside class="site-off desktop-hide">
             <div class="off-canvas">
                 <div class="canvas-head flexitem">
-                    <div class="logo"><a href="index.php"><span class="circle"></span>Hamburgo</a></div>
+                    <div class="logo"><a href="indexAdmon.php"><span class="circle"></span>Hamburgo</a></div>
                     <a href="#" class="t-close flexcenter"><span class="ri-close-line"></span></a>
                 </div>
                 <div class="departments"></div>
@@ -69,12 +69,12 @@
             <div class="header-nav">
                 <div class="container">
                     <div class="wrapper flexitem">
-                        <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
+                        <a href="indexAdmon.php" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
                         <div class="left flexitem">
-                            <div class="logo"><a href="index.php"><span class="circle"></span>Hamburgo D.C</a></div>
+                            <div class="logo"><a href="indexAdmon.php"><span class="circle"></span>Hamburgo D.C</a></div>
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
-                                    <li><a href="index.php">Inicio</a></li>
+                                    <li><a href="indexAdmon.php">Inicio</a></li>
                                     <li><a href="view/page-category.php">Tienda</a></li>
                                     <!-- <li class="has-child">
                                         <a href="#">Categorías

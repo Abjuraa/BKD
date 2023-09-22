@@ -13,17 +13,17 @@ if (isset($_POST['registro'])) {
         $resultado = mysqli_query($conex,$consulta);
         if ($resultado) {
             ?>
-            <h3 class="cuenta_creada">¡Felicidades has creado tu cuenta!</h3>
+            <h3 class="cuenta_creada">¡Felicidades, has creado tu cuenta!.</h3>
             <?php
         } else {
             ?>
-           <h3 class="cuenta_error">Lo sentimos, ha ocurrido un error</h3>
+           <h3 class="cuenta_error">Ocurrió un error durante el registro.</h3>
            <?php
         }
 
     } else {
         ?>
-        <h3 class="error">Por favor llene todos los campos</h3>
+        <h3 class="cuenta_error">Por favor, completa todos los campos.</h3>
         <?php
     }
 }

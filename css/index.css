@@ -2346,6 +2346,59 @@ input:where(.campo){
 	height: 40px;
 	width: 40px;
 }
+.cuenta_creada{
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  background-color: #10ac84;
+  top: 4em;
+  -webkit-animation: alert 1s ease forwards;
+  -moz-animation: alert 1s ease forwards;
+   -ms-animation: alert 1s ease forwards;
+    -o-animation: alert 1s ease forwards;
+       animation: alert 1s ease forwards;
+}
+.cuenta_error{
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  background-color: red;
+  top: 4em;
+  -webkit-animation: alert 1s ease forwards;
+       -moz-animation: alert 1s ease forwards;
+        -ms-animation: alert 1s ease forwards;
+         -o-animation: alert 1s ease forwards;
+            animation: alert 1s ease forwards;
+}
+/* Animation */
+
+@-webkit-keyframes alert {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { top: 4; }
+}
+@-moz-keyframes alert {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { top: 4; }
+}
+@-ms-keyframes alert {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { top: 4; }
+}
+@-o-keyframes alert {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { top: 4; }
+}
+@keyframes alert {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { top: 4; }
+}
 /* ---------------------
  * 16. RESPONSIVE
  * --------------------*/
