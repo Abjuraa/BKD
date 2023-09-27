@@ -911,9 +911,10 @@
                                                 </div> -->
                                                 <div class="actions">
                                                     <div class="qty-control flexitem">
-                                                        <button class="minus circle">-</button>
-                                                        <input type="text" value="1">
-                                                        <button class="plus circle">+</button>
+                                                        <button id="decrementar" class="minus circle">-</button>
+                                                        <input id="valor" type="text" value="0">
+                                                        <span id="valor">0</span>
+                                                        <button id="incrementar"class="plus circle">+</button>
                                                     </div>
                                                     <div class="button-cart"><button class="primary-button">Añadir al Carrito</button></div>
                                                     <div class="wish-share">

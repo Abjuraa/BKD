@@ -80,20 +80,17 @@
                         <input class="campo" type="password" name="contrasena"placeholder="Contraseña" />
                         <select class="select" name="tip_doc" id="tip_doc">
                             <option value="0">Seleccione su tipo de documento</option>
-                            <option value="1">Cedula Ciudadana</option>
-                            <option value="2">Cedula Extranjera</option>
-                            <option value="3">Pasaporte</option>
 
                             <?php
-                            include("conexion.php");
+                            include("../php/conexion.php");
 
-                            $tipDocument = "SELECT * FROM `tip_documento`";
+                            $tipDocument = "SELECT * FROM `documentos`";
 
-                        //     $resultado = mysqli_query($conexion,$tipDocument);
-                        //     while($valores = mysqli_fetch_array($resultado)){
-                        //         echo '<option value ="' .$valores[nombre]. '">' .$valores[nombre]. '</option>';
-                        //     }
-                        // ?>
+                            $resultado = mysqli_query($conex,$tipDocument);
+                            while($valores = mysqli_fetch_array($resultado)){
+                               echo '<option value ="' .$valores['id_doc']. '">' .$valores['descripcion']. '</option>';
+                            }
+                        ?>
                         </select>
                         <input class="campo" type="text" name="num_doc" placeholder="Numero de documento" />
                         <button class="registro" name="registro">Crear Cuenta</button>
