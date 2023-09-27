@@ -71,11 +71,11 @@
                     <div class="wrapper flexitem">
                         <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
                         <div class="left flexitem">
-                            <div class="logo"><a href="/"><span class="circle"></span>Hamburgo</a></div>
+                            <div class="logo"><a href="../index.php"><span class="circle"></span>Hamburgo D.C</a></div>
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
-                                    <li><a href="/index.html">Inicio</a></li>
-                                    <li><a href="#">Tienda</a></li>
+                                    <li><a href="../index.php">Inicio</a></li>
+                                    <li><a href="../view/page-category.php">Tienda</a></li>
                                     <!-- <li class="has-child">
                                         <a href="#">Women
                                             <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>

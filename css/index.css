@@ -257,7 +257,8 @@ nav .mega .products .text-content h4{
   13. PAGE CHECKOUT
   14. MODAL
   15. LOGIN
-  16. RESPONSIVE
+  17. PROFILE
+  18. RESPONSIVE
   *
   * -------------- */
 /* ---------------
@@ -2428,6 +2429,11 @@ input:where(.campo){
     min-height: 470px;
   }
 }
+
+/*--------------------------
+ 17. PROFILE
+ * -------------------------*/
+ 
 
 @media screen and (max-width: 639px){
   #cart-table thead{

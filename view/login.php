@@ -79,17 +79,24 @@
                         <input class="campo" type="email" name="correo" placeholder="Email" />
                         <input class="campo" type="password" name="contrasena"placeholder="Contraseña" />
                         <select class="select" name="tip_doc" id="tip_doc">
-                            <option value="0" selected="selected">Selecciona el tipo de documento</option>
-                            <option value="1">Cedula Ciudadana</option>
-                            <option value="2">Cedula Extranjera</option>
-                            <option value="3">Pasaporte</option>
+                            <option value="0">Seleccione</option>
+                            <?php
+                            include("conexion.php");
+
+                            $tipDocument = "SELECT * FROM `tip_documento`";
+
+                            // $resultado = mysqli_query($conexion,$tipDocument);
+                        //     while($valores = mysqli_fetch_array($resultado)){
+                        //         echo '<option value ="' .$valores[nombre]. '">' .$valores[nombre]. '</option>';
+                        //     }
+                        // ?>
                         </select>
                         <input class="campo" type="text" name="num_doc" placeholder="Numero de documento" />
                         <button class="registro" name="registro">Crear Cuenta</button>
                     </form>
                 </div>
                 <div class="form-container sign-in-container">
-                    <form action="../index.php" class="login">
+                    <form action="" class="login">
                         <h1>Ingresar</h1>
                         <div class="social-container">
                             <a href="#" class="social"><i class="ri-google-fill"></i></a>
