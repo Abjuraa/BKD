@@ -2433,7 +2433,38 @@ input:where(.campo){
 /*--------------------------
  17. PROFILE
  * -------------------------*/
- 
+ .container-image{
+  display: flex;
+  flex-direction: column;
+  background-color: rebeccapurple;
+  height: 13em;
+  width: 90%;
+  margin: 2em 4em;
+  border: solid 1px ;
+  border-radius: 8px 8px 8px 8px;
+ }
+
+ .container-image-bg{
+  display: flex;
+  height: 10em;
+  width: 10em;
+  position: relative;
+  top: 6em;
+  background-color: black;
+  border-radius: 100%;
+  margin-left: 2em;
+ }
+
+ .name-user{
+  display: flex;
+  left: 9em;
+  top: 10em;
+  font-size: 2em;
+ }
+
+ section h1{
+  margin-left: 1em;
+ }
 
 @media screen and (max-width: 639px){
   #cart-table thead{

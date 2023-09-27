@@ -79,7 +79,11 @@
                         <input class="campo" type="email" name="correo" placeholder="Email" />
                         <input class="campo" type="password" name="contrasena"placeholder="Contraseña" />
                         <select class="select" name="tip_doc" id="tip_doc">
-                            <option value="0">Seleccione</option>
+                            <option value="0">Seleccione su tipo de documento</option>
+                            <option value="1">Cedula Ciudadana</option>
+                            <option value="2">Cedula Extranjera</option>
+                            <option value="3">Pasaporte</option>
+
                             <?php
                             include("conexion.php");
 
