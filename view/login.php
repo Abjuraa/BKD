@@ -89,7 +89,7 @@
 
                             $tipDocument = "SELECT * FROM `tip_documento`";
 
-                            // $resultado = mysqli_query($conexion,$tipDocument);
+                        //     $resultado = mysqli_query($conexion,$tipDocument);
                         //     while($valores = mysqli_fetch_array($resultado)){
                         //         echo '<option value ="' .$valores[nombre]. '">' .$valores[nombre]. '</option>';
                         //     }
