@@ -911,10 +911,9 @@
                                                 </div> -->
                                                 <div class="actions">
                                                     <div class="qty-control flexitem">
-                                                        <button id="decrementar" class="minus circle">-</button>
-                                                        <input id="valor" type="text" value="0">
-                                                        <span id="valor">0</span>
-                                                        <button id="incrementar"class="plus circle">+</button>
+                                                        <button id="disminuir" class="minus circle" onclick="disminuir()">-</button>
+                                                        <input id="cantidad" type="text" value="1" onchange="myFuction()">
+                                                        <button id="aumentar"class="plus circle" onclick="aumentar()">+</button>
                                                     </div>
                                                     <div class="button-cart"><button class="primary-button">Añadir al Carrito</button></div>
                                                     <div class="wish-share">
@@ -1658,6 +1657,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.js"></script> -->
     <script src="../js/index.js"></script>
+    <script src="../js/cantidad.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
                 //contador de promociones
 const countDate = new Date('september 18, 2023 00:00:00').getTime();

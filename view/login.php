@@ -84,7 +84,7 @@
                             <?php
                             include("../php/conexion.php");
 
-                            $tipDocument = "SELECT * FROM `documentos`";
+                            $tipDocument = "SELECT * FROM `tip_documento`";
 
                             $resultado = mysqli_query($conex,$tipDocument);
                             while($valores = mysqli_fetch_array($resultado)){

@@ -157,28 +157,3 @@ function filtrarElementos() {
     }
   }
 }
-
-// Obtener el elemento del valor y los botones
-const valorElement = document.getElementById('valor');
-const incrementarButton = document.getElementById('incrementar');
-const decrementarButton = document.getElementById('decrementar');
-
-// Inicializar el valor
-let valor = 0;
-
-// Función para incrementar el valor
-function incrementar() {
-    valor++;
-    valorElement.textContent = valor;
-}
-
-// Función para decrementar el valor
-function decrementar() {
-    valor--;
-    valorElement.textContent = valor;
-}
-
-// Agregar event listeners a los botones
-incrementarButton.addEventListener('click', incrementar);
-decrementarButton.addEventListener('click', decrementar);
-actualizarValor();
