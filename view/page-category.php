@@ -984,7 +984,7 @@
                                         <div class="cat-head">
                                             <div class="breadcrumb">
                                                 <ul class="flexitem">
-                                                    <li><a href="#">Home</a></li>
+                                                    <li><a href="../index.php">Inicio</a></li>
                                                     <li>Tienda</li>
                                                 </ul>
                                             </div>

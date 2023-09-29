@@ -180,27 +180,27 @@
                             <ul class="flexitem second-links">
                                 <li class="mobile-hide"><a href="#">
                                     <div class="icon-large"><i class="ri-heart-line"></i></div>
-                                    <div class="fly-item"><span class="item-number">0</span></div>
+                                    <!-- <div class="fly-item"><span class="item-number-fav">0</span></div> -->
                                 </a></li>
                                 <li  class="iscart"><a href="#">
                                     <div class="icon-large">
                                         <i class="ri-shopping-cart-line"></i>
-                                        <div class="fly-item"><span class="item-number">5</span></div>
+                                        <div class="fly-item"><span class="item-number-cart">0</span></div>
                                     </div>
                                     <div class="icon-text">
                                         <div class="mini-text">Total</div>
-                                        <div class="cart-total">$5.000</div>
+                                        <div class="cart-total">$0</div>
                                     </div>
 
                                 </a>
-                                <div class="mini-cart">
+                                <div class="mini-cart" id="products-id">
                                     <div class="content">
                                         <div class="cart-head">
-                                            5 Productos
+                                            0 Productos
                                         </div>
                                         <div class="cart-body">
                                             <ul class="products mini">
-                                                <li class="item">
+                                                <!-- <li class="item">
                                                     <div class="thumbnail object-cover">
                                                         <a href="#"><img src="../img/products/home2.jpg" alt=""></a>
                                                     </div>
@@ -251,13 +251,13 @@
                                                         </span>
                                                     </div>
                                                     <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-                                                </li>
+                                                </li> -->
                                             </ul>
                                         </div>
                                         <div class="cart-footer">
                                             <div class="subtotal">
                                                 <p>Subtotal</p>
-                                                <p><strong>$2.000</strong></p>
+                                                <p><strong>$0</strong></p>
                                             </div>
                                             <div class="actions">
                                                 <a href="checkout.html" class="primary-button">Pagar</a>
@@ -911,9 +911,12 @@
                                                 </div> -->
                                                 <div class="actions">
                                                     <div class="qty-control flexitem">
-                                                        <button id="disminuir" class="minus circle" onclick="disminuir()">-</button>
+                                                        <!-- <button id="disminuir" class="minus circle" onclick="disminuir()">-</button>
                                                         <input id="cantidad" type="text" value="1" onchange="myFuction()">
-                                                        <button id="aumentar"class="plus circle" onclick="aumentar()">+</button>
+                                                        <button id="aumentar"class="plus circle" onclick="aumentar()">+</button> -->
+                                                        <button class="minus circle">-</button>
+                                                        <input class="input_number" type="text" value="1">
+                                                        <button class="plus circle">+</button>
                                                     </div>
                                                     <div class="button-cart"><button class="primary-button">Añadir al Carrito</button></div>
                                                     <div class="wish-share">
@@ -1625,7 +1628,7 @@
                                     <i class="ri-shopping-cart-line"></i>
                                     <span>Carrito</span>
                                     <div class="fly-item">
-                                        <span class="item-number">0</span>
+                                        <span class="item-number-mincart">0</span>
                                     </div>
                                 </a>
                             </li>

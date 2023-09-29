@@ -1,41 +1,38 @@
-var max = 100;
-var min = 1;
+//Cambio de cantidad ingresado en el input
+let minusBtn = document.querySelector('.minus');
+let plusBtn = document.querySelector('.plus');
+let userInput = document.querySelector('.input_number');
 
-//funcion para validar cambio manual en el campo de texto
-function myFunction() {
-  var x = document.getElementById("cantidad").value;
-  if (x > max || x < min) {
-    alert('Valor no aceptado');
-    $('#cantidad').val(min);
-    $('#cantidad').trigger('change');
-    return false;
+let userInputNumber = 0;
+
+plusBtn.addEventListener('click', ()=>{
+  userInputNumber++;
+  userInput.value = userInputNumber;
+  console.log(userInputNumber)
+});
+
+minusBtn.addEventListener('click', ()=>{
+  userInputNumber--;
+  if(userInputNumber<= 0){
+    userInputNumber = 1;
   }
-  $('#pbi_reiterado').val();
-  $('#pbi_reiterado').trigger('change');
-  document.getElementById("demo").innerHTML = "You selected: " + x;
-}
+  userInput.value = userInputNumber;
+  console.log(userInputNumber);
+});
 
-//funciones incremento
-function aumentar() { // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id aumentar
+//Agregar la cantidad de productos al presionar el carrito de compras
 
-  var inicio = $("#cantidad").val();
-  var incrementado = ++inicio;
+const addToCartBtn = document.querySelector('.button-cart');
+let cartNotification = document.querySelector('.item-number-cart');
+let minCartNotification = document.querySelector('.item-number-mincart');
 
-  if (incrementado > max) {
-    alert('Máximo permitido: ' + max);
-    return false;
-  }
-  var cantidad = document.getElementById('cantidad').value = incrementado; //se obtiene el valor del input, y se incrementa en 1 el valor que tenga.
-}
+addToCartBtn.addEventListener('click', ()=>{
+  cartNotification.innerText = userInputNumber;
+  console.log(cartNotification);
+});
 
-//funciones decremento
-function disminuir() { // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id disminuir
-  var inicio = $("#cantidad").val();
+addToCartBtn.addEventListener('click', ()=>{
+  minCartNotification.innerText = userInputNumber;
+  console.log(cartNotification);
+});
 
-  var decrementado = --inicio;
-  if (decrementado < min) {
-    alert('Mínimo permitido: ' + min);
-    return false;
-  }
-  var cantidad = document.getElementById('cantidad').value = decrementado; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
-}
