@@ -8,17 +8,16 @@ let userInputNumber = 0;
 plusBtn.addEventListener('click', ()=>{
   userInputNumber++;
   userInput.value = userInputNumber;
-  console.log(userInputNumber)
 });
 
 minusBtn.addEventListener('click', ()=>{
   userInputNumber--;
-  if(userInputNumber<= 0){
+ if(userInputNumber<= 0){
     userInputNumber = 0;
   }
   userInput.value = userInputNumber;
-  console.log(userInputNumber);
 });
+
 
 //Agregar la cantidad de productos al presionar el carrito de compras
 
@@ -34,16 +33,102 @@ let imgCart = document.querySelector('.object-cover');
 let lastValue = parseInt(cartNotification.innerText);
 let nameProduct = product.innerText;
 let imgProduct = img.innerHTML;
+let products = document.querySelector('.products');
+
+
+let productos = [];
+  
 
 
 addToCartBtn.addEventListener('click', ()=>{
+  
   lastValue = lastValue + userInputNumber;
   cartNotification.innerText = lastValue;
   minCartNotification.innerText = lastValue;
   numProducts.innerHTML = lastValue;
-  priceModal.innerHTML = `<span>$${lastValue*2000}</span><span class="fly-item"><span>x${lastValue}</span></span>`;
-  nameItem.innerHTML = `<a href="#">${nameProduct}</a>`;
-  imgCart.innerHTML = `<a href="#"><img src="${imgProduct} alt=""></a>`;
+  
+  
+  
+  
+  if(productos.length==0){
+  
+  
+    productos.push(
+      {
+        id: 1,
+        name:nameProduct,
+        price:80.90,
+        image:imgProduct,
+        count: lastValue,
+        total: ()=> { 
+          lastValue* this.price
+        }
+      }
+    
+    )
+  
+    console.log(productos)
+  }
+  
+  
+  productos.forEach(p=>{
+    if(p.name ==  nameProduct){
+      p.count = p.count + userInputNumber;
+      p.total = p.count * p.price;
+    
+    }else{
+      
+      productos.push(
+        {
+          id: 1,
+          name:nameProduct,
+          price:80.90,
+          image:imgProduct,
+          count: lastValue,
+          total: ()=> { 
+            lastValue* this.price
+          }
+        }
+      
+      )
+    }
+    
+  })
+  
+  
+  
+
+  
+
+  
+  
+  productos.forEach( p=>{
+  
+    products.innerHTML  =`
+        <li class="item" id="${p.id}">
+        <div class="thumbnail object-cover">
+            <a href="#"><img src="${p.image}" alt=""></a>
+        </div>
+        <div class="item-content">
+            <p><a href="#">${p.name}</a></p>
+            <span class="price">
+                <span>$${p.total}</span>
+                <span class="fly-item"><span>X${p.count}</span></span>
+            </span>
+        </div>
+        <a href="" class="item-remove"><i class="ri-close-line"></i></a>
+      </li>
+    `
+  
+  } )     
+  
+
+  
+  
+  
+
+  
+  
 });
 
 //Mostrar el modal con los detalles del carrito
@@ -57,13 +142,24 @@ cartIconBtn.addEventListener('click', ()=>{
 //borrar el contenido del carrito
 
 const deleteCartBtn = document.querySelector('.item-remove');
-const productContainer = document.querySelector('.cart-body');
+const productContainer = document.querySelector('.products');
 
-deleteCartBtn.addEventListener('click', ()=>{
-  productContainer.innerHTML = '<p class="cart-empty">Tu carrito esta vacio</p>';
-  lastValue = 0;
-  cartNotification.innerText = lastValue;
-  numProducts.innerHTML = lastValue;
+deleteCartBtn.addEventListener('click', (e)=>{
+
+    let toDelete = e.target.parentElement;
+    
+    console.log(toDelete  );
+
+
+
+
+  //productContainer.innerHTML = '<li class="cart-empty">Tu carrito esta vacio</li>';
+  //lastValue = 0;
+  //cartNotification.innerText = lastValue;
+  //numProducts.innerHTML = lastValue;
+  
+  
+  
 });
 
 

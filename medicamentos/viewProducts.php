@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omega 3-6-9 Aceite De Linaza Capsulas Blandas Frasco X 30</title>
+    <title></title>
     <link rel="stylesheet" href="../css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    
 
 </head>
 <body>
@@ -42,14 +46,13 @@
                                         <ul>
                                             <li class="current"><a href="#">COP</a></li>
                                             <li><a href="#">USD</a></li>
-                                 
+
                                         </ul>
                                     </li>
                                     <li><a href="#">Español <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
                                         <ul>
                                             <li class="current"><a href="#">Español</a></li>
                                             <li><a href="#">Ingles</a></li>
-                                       
                                         </ul>
                                     </li>
                             </ul>
@@ -69,7 +72,7 @@
                                 <ul class="flexitem second-links">
                                     <li><a href="../index.php">Inicio</a></li>
                                     <li><a href="../view/page-category.php">Tienda</a></li>
-                                   
+                                    
                                 </ul>
                             </nav>
                         </div>
@@ -97,9 +100,19 @@
                                         </div>
                                         <div class="cart-body">
                                             <ul class="products mini">
-                                            
-                                               
-                                                
+                                                <li class="item">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="../img/products/home5.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <p><a href="#">Dimmable Light Modern</a></p>
+                                                        <span class="price">
+                                                            <span>$279.99</span>
+                                                            <span class="fly-item"><span>1x</span></span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
+                                                </li>
                                             </ul>
                                         </div>
                                         <div class="cart-footer">
@@ -590,7 +603,24 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        
+                                        <!-- <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-android-line"></i></div>
+                                                Pet Supplies
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-basketball-line"></i></div>
+                                                Sports
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-shield-star-line"></i></div>
+                                                Best Seller
+                                            </a>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -670,13 +700,55 @@
                                                 </div>
                                                 <div class="stock-sku">
                                                     <span class="available">En Venta</span>
-
+                                                    <!-- <span class="sku mini-text">SKU-881</span> -->
                                                 </div>
                                                 <div class="price">
                                                     <span class="current">$80.90</span>
                                                     <span class="normal">$119.90</span>
                                                 </div>
+                                                <!-- <div class="colors">
+                                                    <p>Color</p>
+                                                    <div class="variant">
+                                                        <form action="">
+                                                            <p>
+                                                                <input type="radio" name="color" id="cogrey">
+                                                                <label for="cogrey" class="circle"></label>
+                                                            </p>
+                                                            <p>
+                                                                <input type="radio" name="color" id="coblue">
+                                                                <label for="coblue" class="circle"></label>
+                                                            </p>
+                                                            <p>
+                                                                <input type="radio" name="color" id="cogreen">
+                                                                <label for="cogreen" class="circle"></label>
+                                                            </p>
+                                                        </form>
+                                                    </div>
+                                                </div> -->
                                                 
+                                                <!-- <div class="sizes">
+                                                    <p>size</p>
+                                                    <div class="variant">
+                                                        <form action="">
+                                                            <p>
+                                                                <input type="radio" name="size" id="size-40">
+                                                                <label for="size-40" class="circle"><span>40</span></label>
+                                                            </p>
+                                                            <p>
+                                                                <input type="radio" name="size" id="size-41">
+                                                                <label for="size-41" class="circle"><span>41</span></label>
+                                                            </p>
+                                                            <p>
+                                                                <input type="radio" name="size" id="size-42">
+                                                                <label for="size-42" class="circle"><span>42</span></label>
+                                                            </p>
+                                                            <p>
+                                                                <input type="radio" name="size" id="size-43">
+                                                                <label for="size-43" class="circle"><span>43</span></label>
+                                                            </p>
+                                                        </form>
+                                                    </div>
+                                                </div> -->
                                                 <div class="actions">
                                                     <div class="qty-control flexitem">
                                                         <button id="disminuir" class="minus circle" onclick="disminuir()">-</button>
@@ -864,6 +936,8 @@
                     </div>
                 </div>
             </div>
+
+           
 
             <div class="banners">
                 <div class="container">
@@ -1144,9 +1218,10 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.js"></script> -->
     <script src="../js/index.js"></script>
+    <script src="../js/cartActions.js"></script>
     <script src="../js/cantidad.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>

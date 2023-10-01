@@ -200,59 +200,24 @@
                                         </div>
                                         <div class="cart-body">
                                             <ul class="products mini">
-                                                 <li class="item">
-                                                    <div class="thumbnail object-cover">
-                                                        <a href="#"><img src="../img/products/omega 3.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="item-content">
-                                                        <p class="subname">Omega 3</p>
-                                                        <span class="price">
-                                                            <span>$279.99</span>
-                                                            <span class="fly-item"><span>x1</span></span>
-                                                        </span>
-                                                    </div>
-                                                    <!-- <div class="item-remove"><a href=""><i class="ri-close-line"></i></a></div> -->
-                                                    <div class="item-remove"><i class="ri-close-line"></i></div>
-                                                </li>
-                                                <!-- <li class="item">
-                                                    <div class="thumbnail object-cover">
-                                                        <a href="#"><img src="../img/products/home3.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="item-content">
-                                                        <p><a href="#">Dimmable Light Modern</a></p>
-                                                        <span class="price">
-                                                            <span>$279.99</span>
-                                                            <span class="fly-item"><span>1x</span></span>
-                                                        </span>
-                                                    </div>
-                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-                                                </li>
-                                                <li class="item">
-                                                    <div class="thumbnail object-cover">
-                                                        <a href="#"><img src="../img/products/home4.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="item-content">
-                                                        <p><a href="#">Dimmable Light Modern</a></p>
-                                                        <span class="price">
-                                                            <span>$279.99</span>
-                                                            <span class="fly-item"><span>1x</span></span>
-                                                        </span>
-                                                    </div>
-                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-                                                </li>
-                                                <li class="item">
-                                                    <div class="thumbnail object-cover">
-                                                        <a href="#"><img src="../img/products/home5.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="item-content">
-                                                        <p><a href="#">Dimmable Light Modern</a></p>
-                                                        <span class="price">
-                                                            <span>$279.99</span>
-                                                            <span class="fly-item"><span>1x</span></span>
-                                                        </span>
-                                                    </div>
-                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-                                                </li> -->
+                                                
+                                            <li class="item" id="${p.id}">
+        <div class="thumbnail object-cover">
+            <a href="#"><img src="${p.image}" alt=""></a>
+        </div>
+        <div class="item-content">
+            <p><a href="#">${p.name}</a></p>
+            <span class="price">
+                <span>$${p.total}</span>
+                <span class="fly-item"><span>X${p.count}</span></span>
+            </span>
+        </div>
+        <a href="" class="item-remove"><i class="ri-close-line"></i></a>
+      </li>
+                                                
+                                                
+                                                
+                                                
                                             </ul>
                                         </div>
                                         <div class="cart-footer">
