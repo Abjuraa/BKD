@@ -196,24 +196,25 @@
                                 <div class="mini-cart" id="products-id">
                                     <div class="content">
                                         <div class="cart-head">
-                                            0 Productos
+                                            <span class="num-products">0</span> Productos
                                         </div>
                                         <div class="cart-body">
                                             <ul class="products mini">
-                                                <!-- <li class="item">
+                                                 <li class="item">
                                                     <div class="thumbnail object-cover">
-                                                        <a href="#"><img src="../img/products/home2.jpg" alt=""></a>
+                                                        <a href="#"><img src="../img/products/omega 3.jpg" alt=""></a>
                                                     </div>
                                                     <div class="item-content">
-                                                        <p><a href="#">Dimmable Light Modern</a></p>
+                                                        <p class="subname">Omega 3</p>
                                                         <span class="price">
                                                             <span>$279.99</span>
-                                                            <span class="fly-item"><span>2x</span></span>
+                                                            <span class="fly-item"><span>x1</span></span>
                                                         </span>
                                                     </div>
-                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
+                                                    <!-- <div class="item-remove"><a href=""><i class="ri-close-line"></i></a></div> -->
+                                                    <div class="item-remove"><i class="ri-close-line"></i></div>
                                                 </li>
-                                                <li class="item">
+                                                <!-- <li class="item">
                                                     <div class="thumbnail object-cover">
                                                         <a href="#"><img src="../img/products/home3.jpg" alt=""></a>
                                                     </div>
@@ -831,7 +832,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="item">
-                                            <h1>Omega 3-6-9 Aceite De Linaza Capsulas Blandas Frasco X 30</h1>
+                                            <h1 class="name-product">Omega 3-6-9 Aceite De Linaza Capsulas Blandas Frasco X 30</h1>
                                             <div class="content">
                                                 <div class="rating">
                                                     <div class="stars"></div>
@@ -915,7 +916,7 @@
                                                         <input id="cantidad" type="text" value="1" onchange="myFuction()">
                                                         <button id="aumentar"class="plus circle" onclick="aumentar()">+</button> -->
                                                         <button class="minus circle">-</button>
-                                                        <input class="input_number" type="text" value="1">
+                                                        <input class="input_number" type="text" value="0">
                                                         <button class="plus circle">+</button>
                                                     </div>
                                                     <div class="button-cart"><button class="primary-button">Añadir al Carrito</button></div>

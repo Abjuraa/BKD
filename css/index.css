@@ -1787,6 +1787,12 @@ nav .fly-item,
     max-width: 400px;
     width: 90%;
   }
+  .cart-empty{
+    font-weight: 700;
+    color: var(--dark-color);
+    text-align: center;
+    margin: 30px 30px; 
+  }
 
   /* --------------------
    * 12. PAGE CART
