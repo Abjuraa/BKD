@@ -616,6 +616,25 @@
         <!-- header -->
 
         <main>
+             
+            <?php
+                include("../php/conexion.php");
+                
+                $id = $_GET['index'];
+                $queryM = "SELECT * FROM `productos` WHERE `id_prod`=  $id ";
+                // $resultado = mysqli_query($conex,$queryM);
+
+                // echo  $resultado;
+                $resultado = mysqli_query($conex, $queryM);
+                $datos = mysqli_fetch_assoc($resultado);
+
+                echo $datos['nombre_producto'];
+
+
+                // write_to_console($resultado);
+            
+                
+            ?>
 
             <div class="single-product">
                 <div class="container">
