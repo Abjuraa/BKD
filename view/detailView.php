@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omega 3-6-9 Aceite De Linaza Capsulas Blandas Frasco X 30</title>
+*    <title></title>
     <link rel="stylesheet" href="../css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link
@@ -33,7 +33,6 @@
                     <div class="wrapper flexitem">
                         <div class="left">
                             <ul class="flexitem main-links">
-                                <!-- <li><a href="#">Blog</a></li> -->
                                 <li><a href="#">Futuros productos</a></li>
                                 <li><a href="#">Deseados</a></li>
                         </div>
@@ -46,16 +45,14 @@
                                         <ul>
                                             <li class="current"><a href="#">COP</a></li>
                                             <li><a href="#">USD</a></li>
-                                            <!-- <li><a href="#"></a></li>
-                                            <li><a href="#"></a></li> -->
+                                       
                                         </ul>
                                     </li>
                                     <li><a href="#">Español <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
                                         <ul>
                                             <li class="current"><a href="#">Español</a></li>
                                             <li><a href="#">Ingles</a></li>
-                                            <!-- <li><a href="#"></a></li>
-                                            <li><a href="#"></a></li> -->
+                                        
                                         </ul>
                                     </li>
                             </ul>
@@ -75,104 +72,7 @@
                                 <ul class="flexitem second-links">
                                     <li><a href="../index.php">Inicio</a></li>
                                     <li><a href="../view/page-category.php">Tienda</a></li>
-                                    <!-- <li class="has-child">
-                                        <a href="#">Women
-                                            <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>
-                                        </a>
-                                        <div class="mega">
-                                            <div class="container">
-                                                <div class="wrapper">
-                                                    <div class="flexcol">
-                                                        <div class="row">
-                                                            <h4>Womens Clothings</h4>
-                                                            <ul>
-                                                                <li><a href="#">Dresses</a></li>
-                                                                <li><a href="#">Top & Tees</a></li>
-                                                                <li><a href="#">Jackets & Coats</a></li>
-                                                                <li><a href="#">Pants & Capris</a></li>
-                                                                <li><a href="#">Sweaters</a></li>
-                                                                <li><a href="#">Costumes</a></li>
-                                                                <li><a href="#">Hoddies & Sweatshirts</a></li>
-                                                                <li><a href="#">Pajamas & Robes</a></li>
-                                                                <li><a href="#">Shorts</a></li>
-                                                                <li><a href="#">Swimers</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flexcol">
-                                                        <div class="row">
-                                                            <h4>Jelwery</h4>
-                                                            <ul>
-                                                                <li><a href="#">Accesories</a></li>
-                                                                <li><a href="#">Bags & purses</a></li>
-                                                                <li><a href="#">Necklaces</a></li>
-                                                                <li><a href="#">Rings</a></li>
-                                                                <li><a href="#">Earrings</a></li>
-                                                                <li><a href="#">Bracelets</a></li>
-                                                                <li><a href="#">Body Jelwery</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flexcol">
-                                                        <div class="row">
-                                                            <h4>Beauty</h4>
-                                                            <ul>
-                                                                <li><a href="#">Bath Accesories</a></li>
-                                                                <li><a href="#">Makeup & Cosmetics</a></li>
-                                                                <li><a href="#">Skin Care</a></li>
-                                                                <li><a href="#">Hair Care</a></li>
-                                                                <li><a href="#">Essential Oils</a></li>
-                                                                <li><a href="#">Fragances</a></li>
-                                                                <li><a href="#">Soaps & Bathrooms</a></li>
-                                                                <li><a href="#">Face Mask & Coverings</a></li>
-                                                                <li><a href="#">Spa Kits & Gifts</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flexcol">
-                                                        <div class="row">
-                                                            <h4>Top Brands</h4>
-                                                            <ul class="women-brands">
-                                                                <li><a href="#">Nike</a></li>
-                                                                <li><a href="#">Louis Vuitton</a></li>
-                                                                <li><a href="#">Hermes</a></li>
-                                                                <li><a href="#">Gucci</a></li>
-                                                                <li><a href="#">Zalando</a></li>
-                                                                <li><a href="#">Tifanny</a></li>
-                                                                <li><a href="#">Zara</a></li>
-                                                                <li><a href="#">H&M</a></li>
-                                                                <li><a href="#">Cartier</a></li>
-                                                                <li><a href="#">Channel</a></li>
-                                                                <li><a href="#">Hurley</a></li>
-                                                            </ul>
-                                                            <a href="#" class="view-all">View All Brands <i class="ri-arrow-right-s-line"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flexcol products">
-                                                        <div class="row">
-                                                            <div class="media">
-                                                                <div class="thumbnail object-cover">
-                                                                    <a href="#">
-                                                                        <img src="../img/products/apparel4.jpg" alt="">
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="text-content">
-                                                                <h4>Most Wanted!</h4>
-                                                                <a href="#" class="primary-button">Order Now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li><a href="#">Men</a></li>
-                                    <li>
-                                        <a href="#">Sports
-                                            <div class="fly-item"><span>New!</span></div>
-                                        </a>
-                                    </li> -->
+                                    
                                 </ul>
                             </nav>
                         </div>
@@ -209,8 +109,7 @@
                                         </div>
                                         <div class="cart-footer">
                                             <div class="subtotal">
-                                                <p>Subtotal</p>
-                                                <p><strong>$0</strong></p>
+                                            <p>Subtotal</p>       
                                             </div>
                                             <div class="actions">
                                                 <a href="checkout.html" class="primary-button">Pagar</a>
@@ -696,24 +595,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <!-- <li>
-                                            <a href="#">
-                                                <div class="icon-large"><i class="ri-android-line"></i></div>
-                                                Pet Supplies
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="icon-large"><i class="ri-basketball-line"></i></div>
-                                                Sports
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="icon-large"><i class="ri-shield-star-line"></i></div>
-                                                Best Seller
-                                            </a>
-                                        </li> -->
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -742,27 +624,26 @@
                             <ul class="flexitem">
                                 <li><a href="#"></a>Inicio</li>
                                 <li><a href="#"></a>Ofertas</li>
-                                <li>Omega 3-6-9 Aceite De Linaza Capsulas Blandas Frasco X 30</li>
+*                                <li></li>
                             </ul>
                         </div>
                         <!-- breadcrumb -->
-
                         <div class="column">
                             <div class="products one">
                                 <div class="flexwrap">
                                     <div class="row">
                                         <div class="item is_sticky">
                                             <div class="price">
-                                                <span class="discount">32%<br>OFF</span>
+*                                                <span class="discount">32%<br>OFF</span>
                                             </div>
                                             <div class="big-image">
                                                 <div class="big-image-wrapper swiper-wrapper">
                                                     <div class="image-show swiper-slide">
-                                                        <a data-fslightbox href="../img/products/omega 3.jpg"><img src="../img/products/omega 3.jpg" alt=""></a>
+*                                                        <a data-fslightbox href="../img/products/omega 3.jpg"><img src="../img/products/omega 3.jpg" alt=""></a>
                                                     </div>
                                                     
                                                     <div  class="image-show swiper-slide">
-                                                        <a data-fslightbox href="../img/products/omega 3 reverso.jpg"><img src="../img/products/omega 3 reverso.jpg" alt=""></a>
+*                                                        <a data-fslightbox href="../img/products/omega 3 reverso.jpg"><img src="../img/products/omega 3 reverso.jpg" alt=""></a>
                                                     </div>
                                                 </div>
                                                 <div class="swiper-button-next"></div>
@@ -772,11 +653,11 @@
                                             <div thumbSlider="" class="small-image">
                                                 <ul class="small-image-wrapper flexitem swiper-wrapper">
                                                     <li class="thumbnail-show swiper-slide">
-                                                        <img src="../img/products/omega 3.jpg" alt="">
+*                                                        <img src="../img/products/omega 3.jpg" alt="">
                                                     </li>
                                                     
                                                     <li class="thumbnail-show swiper-slide">
-                                                        <img src="../img/products/omega 3 reverso.jpg" alt="">
+*                                                        <img src="../img/products/omega 3 reverso.jpg" alt="">
                                                     </li>
                                                 </ul>
                                             </div>
@@ -784,44 +665,26 @@
                                     </div>
                                     <div class="row">
                                         <div class="item">
-                                            <h1 class="name-product">Omega 3-6-9 Aceite De Linaza Capsulas Blandas Frasco X 30</h1>
+*                                            <h1 class="name-product"></h1>
                                             <div class="content">
                                                 <div class="rating">
                                                     <div class="stars"></div>
-                                                    <a href="#" class="mini-text">2,251 comentarios</a>
+*                                                    <a href="#" class="mini-text">2,251 comentarios</a>
                                                     <a href="" class="add-review mini-text">Añadir tu comentario</a>
                                                 </div>
                                                 <div class="stock-sku">
                                                     <span class="available">En Venta</span>
-                                                    <!-- <span class="sku mini-text">SKU-881</span> -->
+                                                  
                                                 </div>
                                                 <div class="price">
-                                                    <span class="current">$80.90</span>
-                                                    <span class="normal">$119.90</span>
+*                                                    <span class="current">$80.90</span>
+*                                                    <span class="normal">$119.90</span>
                                                 </div>
-                                                <!-- <div class="colors">
-                                                    <p>Color</p>
-                                                    <div class="variant">
-                                                        <form action="">
-                                                            <p>
-                                                                <input type="radio" name="color" id="cogrey">
-                                                                <label for="cogrey" class="circle"></label>
-                                                            </p>
-                                                            <p>
-                                                                <input type="radio" name="color" id="coblue">
-                                                                <label for="coblue" class="circle"></label>
-                                                            </p>
-                                                            <p>
-                                                                <input type="radio" name="color" id="cogreen">
-                                                                <label for="cogreen" class="circle"></label>
-                                                            </p>
-                                                        </form>
-                                                    </div>
-                                                </div> -->
+                                               
                                                 <div class="stock mini-text" data-stock="4000">
                                                     <div class="qty">
-                                                        <span>Vendidos:<strong class="qty-sold">3459</strong></span>
-                                                        <span>Stock:<strong class="qty-available">107</strong></span>
+*                                                        <span>Vendidos:<strong class="qty-sold">3459</strong></span>
+*                                                        <span>Stock:<strong class="qty-available">107</strong></span>
                                                     </div>
                                                     <div class="bar">
                                                         <div class="available">
@@ -839,34 +702,10 @@
                                                     </ul>
                                                 </div>
                                                 
-                                                <!-- <div class="sizes">
-                                                    <p>size</p>
-                                                    <div class="variant">
-                                                        <form action="">
-                                                            <p>
-                                                                <input type="radio" name="size" id="size-40">
-                                                                <label for="size-40" class="circle"><span>40</span></label>
-                                                            </p>
-                                                            <p>
-                                                                <input type="radio" name="size" id="size-41">
-                                                                <label for="size-41" class="circle"><span>41</span></label>
-                                                            </p>
-                                                            <p>
-                                                                <input type="radio" name="size" id="size-42">
-                                                                <label for="size-42" class="circle"><span>42</span></label>
-                                                            </p>
-                                                            <p>
-                                                                <input type="radio" name="size" id="size-43">
-                                                                <label for="size-43" class="circle"><span>43</span></label>
-                                                            </p>
-                                                        </form>
-                                                    </div>
-                                                </div> -->
+                                               
                                                 <div class="actions">
                                                     <div class="qty-control flexitem">
-                                                        <!-- <button id="disminuir" class="minus circle" onclick="disminuir()">-</button>
-                                                        <input id="cantidad" type="text" value="1" onchange="myFuction()">
-                                                        <button id="aumentar"class="plus circle" onclick="aumentar()">+</button> -->
+                                              
                                                         <button class="minus circle">-</button>
                                                         <input class="input_number" type="text" value="0">
                                                         <button class="plus circle">+</button>
@@ -1053,394 +892,7 @@
                 </div>
             </div>
 
-            <!-- <div class="features">
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="column">
-                            <div class="sectop flexitem">
-                                <h2><span class="circle"></span><span>Featured Products</span></h2>
-                                <div class="second-links">
-                                    <a href="#" class="view-all">View All<i class="ri-arrow-right-line"></i></a>
-                                </div>
-                            </div>
-                            <div class="products main flexwrap">
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../img/products/apparel1.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>25%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(1,955)</span>
-                                        </div>
-                                        <h3><a href="#">Under Armour men's Tech</a></h3>
-                                        <div class="price">
-                                            <span class="current">$56.50</span>
-                                            <span class="normal mini-text">676,50</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../img/products/apparel2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>32%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(994)</span>
-                                        </div>
-                                        <h3><a href="#">women's lightweigt knit hoodie sweater pullover</a></h3>
-                                        <div class="price">
-                                            <span class="current">$37.50</span>
-                                            <span class="normal mini-text">40.50</span>
-                                        </div>
-                                        <div class="footer">
-                                            <ul class="mini-text">
-                                                <li>polyester, cotton</li>
-                                                <li>pull on clousure</li>
-                                                <li>fashion personality</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../img/products/apparel3.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>32%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(2,548)</span>
-                                        </div>
-                                        <h3><a href="#">Black Women's Coat Dress</a></h3>
-                                        <div class="price">
-                                            <span class="current">$129.99</span>
-                                            <span class="normal mini-text">189.98</span>
-                                        </div>
-                                        <div class="footer">
-                                            <ul class="mini-text">
-                                                <li>65% polyster, 35% cotton</li>
-                                                <li>imported</li>
-                                                <li>machines wash</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../img/products/apparel4.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>32%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(2,548)</span>
-                                        </div>
-                                        <h3><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
-                                        <div class="price">
-                                            <span class="current">$129.99</span>
-                                            <span class="normal mini-text">189.98</span>
-                                        </div>
-                                        <div class="mini-text">
-                                            <p>2975 sold</p>
-                                            <p>Free Shipping</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../img/products/shoe1.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>32%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(2,548)</span>
-                                        </div>
-                                        <h3><a href="#">Men Slip On Shoes Casual Whith Arch Support Insoles</a></h3>
-                                        <div class="price">
-                                            <span class="current">$129.99</span>
-                                            <span class="normal mini-text">189.98</span>
-                                        </div>
-                                        <div class="mini-text">
-                                            <p>2975 sold</p>
-                                            <p>Free Shipping</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../img/products/shoe2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>32%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(2,548)</span>
-                                        </div>
-                                        <h3><a href="#">Men Slip On Shoes Casual Whith Arch Support Insoles</a></h3>
-                                        <div class="price">
-                                            <span class="current">$129.99</span>
-                                            <span class="normal mini-text">189.98</span>
-                                        </div>
-                                        <div class="mini-text">
-                                            <p>2975 sold</p>
-                                            <p>Free Shipping</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../img/products/shoe3.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>32%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(2,548)</span>
-                                        </div>
-                                        <h3><a href="#">Men Slip On Shoes Casual Whith Arch Support Insoles</a></h3>
-                                        <div class="price">
-                                            <span class="current">$129.99</span>
-                                            <span class="normal mini-text">189.98</span>
-                                        </div>
-                                        <div class="mini-text">
-                                            <p>2975 sold</p>
-                                            <p>Free Shipping</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../img/products/electronic2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>32%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(2,548)</span>
-                                        </div>
-                                        <h3><a href="#">Men Slip On Shoes Casual Whith Arch Support Insoles</a></h3>
-                                        <div class="price">
-                                            <span class="current">$129.99</span>
-                                            <span class="normal mini-text">189.98</span>
-                                        </div>
-                                        <div class="mini-text">
-                                            <p>2975 sold</p>
-                                            <p>Free Shipping</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- featured products -->
-
-            <!-- <div class="banners">
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="column">
-                            <div class="banner flexwrap">
-                                <div class="row">
-                                    <div class="item">
-                                        <div class="image">
-                                            <img src="../img/banner/banner1.jpg" alt="">
-                                        </div>
-                                        <div class="text-content flexcol">
-                                            <h4>Brutal Sale!</h4>
-                                            <h3><span>Get the deal in here</span><br>Living room chair</h3>
-                                            <a href="#" class="primary-button">Shop Now</a>
-                                        </div>
-                                        <a href="#" class="over-link"></a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="item get-gray">
-                                        <div class="image">
-                                            <img src="../img/banner/banner2.jpg" alt="">
-                                        </div>
-                                        <div class="text-content flexcol">
-                                            <h4>Brutal Sale!</h4>
-                                            <h3><span>Discount Every Day</span><br>Office outfit</h3>
-                                            <a href="#" class="primary-button">Shop Now</a>
-                                        </div>
-                                        <a href="#" class="over-link"></a>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- banners -->
-
-                            <!-- <div class="product-categories flexwrap">
-                                <div class="row">
-                                    <div class="item">
-                                        <div class="image">
-                                            <img src="../img/banner/procat1.jpg" alt="">
-                                        </div>
-                                        <div class="content mini-links">
-                                            <h4>Beauty</h4>
-                                            <ul class="flexcol">
-                                                <li><a href="#">Makeup</a></li>
-                                                <li><a href="#">Skin Care</a></li>
-                                                <li><a href="#">Hair Care</a></li>
-                                                <li><a href="#">Fragance</a></li>
-                                                <li><a href="#">Foot & Hand Care</a></li>
-                                            </ul>
-                                            <div class="second-links">
-                                                <a href="#" class="view-all">view-all<i class="ri-arrow-right-line"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="row">
-                                    <div class="item">
-                                        <div class="image">
-                                            <img src="../img/banner/procat2.jpg" alt="">
-                                        </div>
-                                        <div class="content mini-links">
-                                            <h4>Gatdets</h4>
-                                            <ul class="flexcol">
-                                                <li><a href="#">camera</a></li>
-                                                <li><a href="#">cell phones</a></li>
-                                                <li><a href="#">computers</a></li>
-                                                <li><a href="#">GPS & Navigation</a></li>
-                                                <li><a href="#">Headphones</a></li>
-                                            </ul>
-                                            <div class="second-links">
-                                                <a href="#" class="view-all">view-all<i class="ri-arrow-right-line"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="item">
-                                        <div class="image">
-                                            <img src="../img/banner/procat3.jpg" alt="">
-                                        </div>
-                                        <div class="content mini-links">
-                                            <h4>Home Decor</h4>
-                                            <ul class="flexcol">
-                                                <li><a href="#">kitchen</a></li>
-                                                <li><a href="#">Dining Room</a></li>
-                                                <li><a href="#">Pantry</a></li>
-                                                <li><a href="#">Great Room</a></li>
-                                                <li><a href="#">breakfast nook</a></li>
-                                            </ul>
-                                            <div class="second-links">
-                                                <a href="#" class="view-all">view-all<i class="ri-arrow-right-line"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
         </main>
-        <!-- main -->
 
         <footer>
             <div class="newsletter">
@@ -1611,7 +1063,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.js"></script> -->
     <script src="../js/index.js"></script>
     <script src="../js/cantidad.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -840,6 +840,16 @@
                 </div>
             </div>
             <!-- slider -->
+            
+            <?php
+                include("./php/conexion.php");
+                
+                $id = $_GET['index'];
+                $queryM = "SELECT * FROM `productos` WHERE `id_prod`=  $id ";
+                $resultado = mysqli_query($conex,$queryM);
+            
+                
+            ?>
 
             <div class="brands">
                 <div class="container">
@@ -900,7 +910,7 @@
                                         </div>
                                         <div class="media">
                                             <div class="image">
-                                                <a href="ofertas/Omega 3-6-9 Aceite De Linaza Capsulas Blandas Frasco X 30.php">
+                                                <a href="view/detailView.php?index=1">
                                                     <img src="img/products/omega 3.jpg" alt="">
                                                 </a>
                                             </div>

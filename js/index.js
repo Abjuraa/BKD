@@ -1,3 +1,6 @@
+
+
+
 //copy menu for mobile
 function copyMenu(){
     //copy inside .dpt-cat to .departments
