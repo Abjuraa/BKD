@@ -1089,7 +1089,8 @@ setInterval(function(){
     newYear();
 },1000)
     </script>
-    <script>
+            <script>
+                
                 let id_prod = <?= json_encode($id_prod)?>;
                 let nombre_producto = <?= json_encode($nombre_producto)?>;
                 let oferta_producto = <?= json_encode($oferta_producto)?>;
