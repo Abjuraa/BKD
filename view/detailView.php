@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-*    <title></title>
+*    <title id="title"></title>
     <link rel="stylesheet" href="../css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link
@@ -622,19 +622,25 @@
                 
                 $id = $_GET['index'];
                 $queryM = "SELECT * FROM `productos` WHERE `id_prod`=  $id ";
-                // $resultado = mysqli_query($conex,$queryM);
 
-                // echo  $resultado;
                 $resultado = mysqli_query($conex, $queryM);
                 $datos = mysqli_fetch_assoc($resultado);
 
-                echo $datos['nombre_producto'];
+                $id_prod = $datos['id_prod'];
+                $nombre_producto = $datos['nombre_producto'];
+                $oferta_producto = $datos['oferta_producto'];
+                $img_producto_frente = $datos['img_producto_frente'];
+                $img_producto_reverso = $datos['img_producto_reverso'];
+                $precio_producto = $datos['precio_producto']; 
+                $producto_vendido = $datos['producto_vendido'];
+                $producto_stock = $datos['producto_stock'];
+                $producto_comentario = $datos['producto_comentario'];
+                $producto_detalle = $datos['producto_detalle'];
 
-
-                // write_to_console($resultado);
             
                 
             ?>
+
 
             <div class="single-product">
                 <div class="container">
@@ -643,7 +649,7 @@
                             <ul class="flexitem">
                                 <li><a href="#"></a>Inicio</li>
                                 <li><a href="#"></a>Ofertas</li>
-*                                <li></li>
+                                <li><a href="#" id="nameplace"></a></li>
                             </ul>
                         </div>
                         <!-- breadcrumb -->
@@ -653,7 +659,7 @@
                                     <div class="row">
                                         <div class="item is_sticky">
                                             <div class="price">
-*                                                <span class="discount">32%<br>OFF</span>
+                                                <span class="discount" id="discount">32%<br>OFF</span>
                                             </div>
                                             <div class="big-image">
                                                 <div class="big-image-wrapper swiper-wrapper">
@@ -684,11 +690,11 @@
                                     </div>
                                     <div class="row">
                                         <div class="item">
-*                                            <h1 class="name-product"></h1>
+                                          <h1 class="name-product" id="nameProduct"></h1>
                                             <div class="content">
                                                 <div class="rating">
                                                     <div class="stars"></div>
-*                                                    <a href="#" class="mini-text">2,251 comentarios</a>
+                                                    <a href="#" class="mini-text" id="commentsCount"> comentarios</a>
                                                     <a href="" class="add-review mini-text">Añadir tu comentario</a>
                                                 </div>
                                                 <div class="stock-sku">
@@ -696,14 +702,14 @@
                                                   
                                                 </div>
                                                 <div class="price">
-*                                                    <span class="current">$80.90</span>
-*                                                    <span class="normal">$119.90</span>
+                                                    <span class="current" id="priceCurrent"></span>
+                                                    <span class="normal" id="priceNormal"></span>
                                                 </div>
                                                
                                                 <div class="stock mini-text" data-stock="4000">
                                                     <div class="qty">
-*                                                        <span>Vendidos:<strong class="qty-sold">3459</strong></span>
-*                                                        <span>Stock:<strong class="qty-available">107</strong></span>
+*                                                        <span>Vendidos:<strong class="qty-sold" id="productosVendidos">3459</strong></span>
+*                                                        <span>Stock:<strong class="qty-available" id="productosStock">107</strong></span>
                                                     </div>
                                                     <div class="bar">
                                                         <div class="available">
@@ -809,7 +815,7 @@
                                                             </div>
                                                         </li>
                                                         <li class="has-child">
-                                                            <a href="#" class="icon-small">Comentarios<span class="mini-text">2.2k</span></a>
+                                                            <a href="#" class="icon-small">Comentarios<span class="mini-text" id="commentsCurrentBig"></span></a>
                                                             <div class="content">
                                                                 <div class="reviews">
                                                                     <h4>Reseñas Clientes</h4>
@@ -817,45 +823,15 @@
                                                                         <div class="review-block-head">
                                                                             <div class="flexitem">
                                                                                 <span class="rate-sum">4.9</span>
-                                                                                <span>2,251 Comentarios</span>
+                                                                                <span id="commentsSpan"> </span>
                                                                             </div>
                                                                             <a href="#review-form" class="secondary-button">Escribir Comentario</a>
                                                                         </div>
                                                                         <div class="review-block-body">
-                                                                            <ul>
-                                                                                <li class="item">
-                                                                                    <div class="review-form">
-                                                                                        <p class="person">Reseña por Sarah</p>
-                                                                                        <p class="mini-text">7/7/22</p>
-                                                                                    </div>
-                                                                                    <div class="review-rating rating">
-                                                                                        <div class="stars"></div>
-                                                                                    </div>
-                                                                                    <div class="review-title">
-                                                                                        <p>¡Impresionante Producto!</p>
-                                                                                    </div>
-                                                                                    <div class="review-text">
-                                                                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ullam quisquam fuga quidem fugit laudantium, veniam quo. Cumque debitis repellendus consectetur temporibus assumenda odit ipsum id, ullam fuga aspernatur eum.</p>
-                                                                                    </div>
-                                                                                </li>
-                                                                                <li class="item">
-                                                                                    <div class="review-form">
-                                                                                        <p class="person">Reseña por carlos</p>
-                                                                                        <p class="mini-text">7/7/22</p>
-                                                                                    </div>
-                                                                                    <div class="review-rating rating">
-                                                                                        <div class="stars"></div>
-                                                                                    </div>
-                                                                                    <div class="review-title">
-                                                                                        <p>¡Impresionante Producto!</p>
-                                                                                    </div>
-                                                                                    <div class="review-text">
-                                                                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ullam quisquam fuga quidem fugit laudantium, veniam quo. Cumque debitis repellendus consectetur temporibus assumenda odit ipsum id, ullam fuga aspernatur eum.</p>
-                                                                                    </div>
-                                                                                </li>
+                                                                            <ul class="reviewList">
+                                                                                
                                                                             </ul>
-                                                                            <div class="second-links">
-                                                                                <a href="#" class="view-all">Ver Todas Las Reseñas <i class="ri-arrow-right-line"></i></a>
+                                                                                
                                                                             </div>
                                                                         </div>
                                                                         <div id="review-form" class="review-form">
@@ -1113,5 +1089,88 @@ setInterval(function(){
     newYear();
 },1000)
     </script>
+    <script>
+                let id_prod = <?= json_encode($id_prod)?>;
+                let nombre_producto = <?= json_encode($nombre_producto)?>;
+                let oferta_producto = <?= json_encode($oferta_producto)?>;
+                // let img_producto_frente = <?= json_encode($img_producto_frente)?>;
+                // let img_producto_reverso = <?= json_encode($img_producto_reverso)?>;
+                let precio_producto = <?= json_encode($precio_producto)?>;
+                let producto_vendido = <?= json_encode($producto_vendido)?>;
+                let producto_stock = <?= json_encode($producto_stock)?>;
+                let producto_comentario = <?= json_encode($producto_comentario)?>;
+                let producto_detalle = <?= json_encode($producto_detalle)?>;
+
+
+                const title = document.querySelector('#title');
+                const namePlace = document.querySelector('#nameplace');
+                const offert = document.querySelector('#discount');
+                const titleProduct = document.querySelector('#nameProduct');
+                let comentarios = producto_comentario.split(';');
+                const reviews = document.querySelector('.reviewList');
+                const priceCurrent = document.querySelector('#priceCurrent');
+                const priceNormal = document.querySelector('#priceNormal');
+                const commentsCount = document.querySelector('#commentsCount');
+                const commentsCurrentBig = document.querySelector('#commentsCurrentBig');
+                const commentsSpan = document.querySelector('#commentsSpan');
+                const productosVendidos = document.querySelector('#productosVendidos');
+                const productosStock = document.querySelector('#productosStock');
+                
+                
+                comentarios.forEach(c => {
+                    let comentario = c.split(',');
+                    console.log(comentario);
+
+                    let itemComment = document.createElement('li');
+                    itemComment.className += "item";
+                    let reviewForm = document.createElement('div');
+                    reviewForm.className += "review-form";
+                    let person = document.createElement('p');
+                    person.className += "person";
+                    person.innerHTML = 'Reseña por ' + comentario[1].trim();
+                    let miniText = document.createElement('p');
+                    miniText.className += "mini-text"
+                    miniText.innerHTML = comentario[0].trim();
+                    let reviewRatting = document.createElement('div');
+                    reviewRatting.className += 'review-rating rating';
+                    reviewRatting.innerHTML = '<div class="stars"></div>';
+                    let reviewTitle = document.createElement('div');
+                    reviewTitle.className += 'review-title';
+                    reviewTitle.innerHTML = '<p>'+ comentario[3].trim() + '</p>';
+                    let reviewText = document.createElement('div');
+                    reviewText.innerHTML =  '<p>'+ comentario[4].trim() + '</p>';
+                    reviewText.className += 'review-text';
+                    
+                    
+                    reviewForm.appendChild(person);
+                    reviewForm.appendChild(miniText);
+                    itemComment.appendChild(reviewForm);
+                    itemComment.appendChild(reviewRatting);
+                    itemComment.appendChild(reviewTitle);
+                    itemComment.appendChild(reviewText);
+                    reviews.appendChild(itemComment);
+                    
+                });
+
+                let precioDescuento = precio_producto -((oferta_producto * precio_producto) /100);
+                
+                title.innerHTML = nombre_producto;
+                namePlace.innerHTML = nombre_producto;
+                offert.innerHTML = oferta_producto + '%<br>OFF';
+                titleProduct.innerHTML = nombre_producto;
+                priceCurrent.innerHTML = '$'+ precioDescuento;
+                priceNormal.innerHTML = '$'+ precio_producto;
+                commentsCount.innerHTML = comentarios.length +' Comentarios';
+                commentsCurrentBig.innerHTML = comentarios.length;
+                commentsSpan.innerHTML = comentarios.length + ' Comentarios';
+                productosVendidos.innerHTML = producto_vendido;
+                productosStock.innerHTML = producto_stock
+                
+                ;
+
+
+
+
+            </script>
 </body>
 </html>
