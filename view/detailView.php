@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-*    <title id="title"></title>
+    <title id="title"></title>
     <link rel="stylesheet" href="../css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link
@@ -708,8 +708,8 @@
                                                
                                                 <div class="stock mini-text" data-stock="4000">
                                                     <div class="qty">
-*                                                        <span>Vendidos:<strong class="qty-sold" id="productosVendidos">3459</strong></span>
-*                                                        <span>Stock:<strong class="qty-available" id="productosStock">107</strong></span>
+                                                        <span>Vendidos:<strong class="qty-sold" id="productosVendidos">3459</strong></span>
+                                                        <span>Stock:<strong class="qty-available" id="productosStock">107</strong></span>
                                                     </div>
                                                     <div class="bar">
                                                         <div class="available">
@@ -763,8 +763,8 @@
                                                         <li class="has-child">
                                                             <a href="#0" class="icon-small">Detalles</a>
                                                             <div class="content">
-                                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta excepturi cupiditate distinctio magni et veritatis eaque quam vel quaerat enim ipsum nihil, ducimus, provident recusandae consequuntur! Doloremque in dignissimos expedita!</p>
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem veritatis soluta, aliquid sit recusandae atque omnis magni inventore illo totam quis, natus aliquam! Recusandae rerum laborum atque accusamus ipsam nisi.</p>
+ *                                                               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta excepturi cupiditate distinctio magni et veritatis eaque quam vel quaerat enim ipsum nihil, ducimus, provident recusandae consequuntur! Doloremque in dignissimos expedita!</p>
+ *                                                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem veritatis soluta, aliquid sit recusandae atque omnis magni inventore illo totam quis, natus aliquam! Recusandae rerum laborum atque accusamus ipsam nisi.</p>
                                                             </div>
                                                         </li>
                                                         <li class="has-child">
@@ -1122,24 +1122,24 @@ setInterval(function(){
                     let comentario = c.split(',');
                     console.log(comentario);
 
-                    let itemComment = document.createElement('li');
-                    itemComment.className += "item";
-                    let reviewForm = document.createElement('div');
-                    reviewForm.className += "review-form";
-                    let person = document.createElement('p');
-                    person.className += "person";
-                    person.innerHTML = 'Reseña por ' + comentario[1].trim();
+                     let itemComment = document.createElement('li');
+                     itemComment.className += "item";
+                     let reviewForm = document.createElement('div');
+                     reviewForm.className += "review-form";
+                     let person = document.createElement('p');
+                     person.className += "person";
+                     person.innerHTML = 'Reseña por ' + comentario[1];
                     let miniText = document.createElement('p');
-                    miniText.className += "mini-text"
-                    miniText.innerHTML = comentario[0].trim();
+                    miniText.className += "mini-text";
+                    miniText.innerHTML = comentario[0];
                     let reviewRatting = document.createElement('div');
                     reviewRatting.className += 'review-rating rating';
                     reviewRatting.innerHTML = '<div class="stars"></div>';
                     let reviewTitle = document.createElement('div');
                     reviewTitle.className += 'review-title';
-                    reviewTitle.innerHTML = '<p>'+ comentario[3].trim() + '</p>';
+                    reviewTitle.innerHTML = '<p>'+ comentario[3] + '</p>';
                     let reviewText = document.createElement('div');
-                    reviewText.innerHTML =  '<p>'+ comentario[4].trim() + '</p>';
+                    reviewText.innerHTML =  '<p>'+ comentario[4] + '</p>';
                     reviewText.className += 'review-text';
                     
                     
