@@ -186,22 +186,22 @@
                                 <li  class="iscart"><a href="#">
                                     <div class="icon-large">
                                         <i class="ri-shopping-cart-line"></i>
-                                        <div class="fly-item"><span class="item-number">5</span></div>
+                                        <div class="fly-item"><span class="item-number">0</span></div>
                                     </div>
                                     <div class="icon-text">
                                         <div class="mini-text">Total</div>
-                                        <div class="cart-total">$5.000</div>
+                                        <div class="cart-total">$0</div>
                                     </div>
 
                                 </a>
-                                <div class="mini-cart">
+                                <div class="mini-cart" id="">
                                     <div class="content">
                                         <div class="cart-head">
-                                            5 Productos
+                                            0 Productos
                                         </div>
                                         <div class="cart-body">
                                             <ul class="products mini">
-                                                <li class="item">
+                                                <!-- <li class="item">
                                                     <div class="thumbnail object-cover">
                                                         <a href="#"><img src="../img/products/home2.jpg" alt=""></a>
                                                     </div>
@@ -252,13 +252,13 @@
                                                         </span>
                                                     </div>
                                                     <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-                                                </li>
+                                                </li> -->
                                             </ul>
                                         </div>
                                         <div class="cart-footer">
                                             <div class="subtotal">
                                                 <p>Subtotal</p>
-                                                <p><strong>$2.000</strong></p>
+                                                <p><strong>$0</strong></p>
                                             </div>
                                             <div class="actions">
                                                 <a href="view/checkout.php" class="primary-button">Pagar</a>
@@ -900,7 +900,7 @@
                                         </div>
                                         <div class="media">
                                             <div class="image">
-                                                <a href="ofertas/Omega 3-6-9 Aceite De Linaza Capsulas Blandas Frasco X 30.php">
+                                                <a href="view/detailView.php?index=1">
                                                     <img src="img/products/omega 3.jpg" alt="">
                                                 </a>
                                             </div>
@@ -1217,7 +1217,7 @@
                             <div class="sectop flexitem">
                                 <h2><span class="circle"></span><span>Productos Destacados</span></h2>
                                 <div class="second-links">
-                                    <a href="#" class="view-all">Ver Todo<i class="ri-arrow-right-line"></i></a>
+                                    <a href="view/page-category.php" class="view-all">Ver Todo<i class="ri-arrow-right-line"></i></a>
                                 </div>
                             </div>
                             <div class="products main flexwrap">

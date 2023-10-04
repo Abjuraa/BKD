@@ -1217,7 +1217,7 @@
                             <div class="sectop flexitem">
                                 <h2><span class="circle"></span><span>Productos Destacados</span></h2>
                                 <div class="second-links">
-                                    <a href="#" class="view-all">Ver Todo<i class="ri-arrow-right-line"></i></a>
+                                    <a href="view/page-category.php" class="view-all">Ver Todo<i class="ri-arrow-right-line"></i></a>
                                 </div>
                             </div>
                             <div class="products main flexwrap">

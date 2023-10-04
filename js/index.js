@@ -1,3 +1,6 @@
+
+
+
 //copy menu for mobile
 function copyMenu(){
     //copy inside .dpt-cat to .departments
@@ -108,7 +111,7 @@ const divtoShow = '.mini-cart';
 const divPopup = document.querySelector(divtoShow);
 const divTrigger = document.querySelector('.cart-trigger');
 
-divTrigger.addEventListener('click', () => {
+divTrigger.addEventListener('click', ()=>{
     setTimeout(() => {
         if (!divPopup.classList.contains('show')) {
             divPopup.classList.add('show');

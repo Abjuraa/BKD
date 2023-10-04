@@ -71,11 +71,11 @@
                     <div class="wrapper flexitem">
                         <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
                         <div class="left flexitem">
-                            <div class="logo"><a href="index.php"><span class="circle"></span>Hamburgo D.C</a></div>
+                            <div class="logo"><a href="../index.php"><span class="circle"></span>Hamburgo D.C</a></div>
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
                                     <li><a href="../index.php">Inicio</a></li>
-                                    <li><a href="view/page-category.php">Tienda</a></li>
+                                    <!-- <li><a href="view/page-category.php">Tienda</a></li> -->
                                     <!-- <li class="has-child">
                                         <a href="#">Categorías
                                             <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>
@@ -789,7 +789,7 @@
                                 <div class="row sidebar">
                                     <div class="filter">
                                         <div class="filter-block">
-                                            <h4>Category</h4>
+                                            <h4>Categosrias</h4>
                                             <ul>
                                                 <li>
                                                     <input type="checkbox" name="checkbox" id="bags">
@@ -984,44 +984,44 @@
                                         <div class="cat-head">
                                             <div class="breadcrumb">
                                                 <ul class="flexitem">
-                                                    <li><a href="#">Home</a></li>
-                                                    <li>Women</li>
+                                                    <li><a href="../index.php">Inicio</a></li>
+                                                    <li>Tienda</li>
                                                 </ul>
                                             </div>
                                             <div class="page-title">
-                                                <h1>Women</h1>
+                                                <h1>Productos</h1>
                                             </div>
                                             <div class="cat-description">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis, voluptates veritatis incidunt vero cum eligendi sint fugiat numquam sapiente nesciunt rerum ad explicabo placeat facere. Repudiandae minus ducimus sed dolorum eveniet eius atque aliquid dolores optio obcaecati ipsam commodi, nulla non nesciunt soluta molestiae aliquam ipsa quibusdam impedit voluptatibus. Quisquam fugiat nihil asperiores neque molestias ab eaque aperiam id possimus corporis sapiente magni maiores exercitationem, vitae quod. Quia repellendus fugit praesentium id! In, illum?</p>
+                                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis, voluptates veritatis incidunt vero cum eligendi sint fugiat numquam sapiente nesciunt rerum ad explicabo placeat facere. Repudiandae minus ducimus sed dolorum eveniet eius atque aliquid dolores optio obcaecati ipsam commodi, nulla non nesciunt soluta molestiae aliquam ipsa quibusdam impedit voluptatibus. Quisquam fugiat nihil asperiores neque molestias ab eaque aperiam id possimus corporis sapiente magni maiores exercitationem, vitae quod. Quia repellendus fugit praesentium id! In, illum?</p> -->
                                             </div>
                                             <div class="cat-navigation flexitem">
                                                 <div class="item-filter desktop-hide">
                                                     <a href="#" class="filter-trigger label">
                                                         <i class="ri-menu-2-line ri-2x"></i>
-                                                        <span>Filter</span>
+                                                        <span>Filtro</span>
                                                     </a>
                                                 </div>
                                                 <div class="item-sortir">
                                                     <div class="label">
-                                                        <span class="mobile-hide">Sort by default</span>
+                                                        <span class="mobile-hide">Busqueda predeterminada</span>
                                                         <div class="desktop-hide">Default</div>
                                                         <i class="ri-arrow-down-s-line"></i>
                                                     </div>
                                                     <ul>
                                                         <li>Default</li>
-                                                        <li>Product name</li>
-                                                        <li>Price</li>
-                                                        <li>Brand</li>
+                                                        <li>Nombre producto</li>
+                                                        <li>Precio</li>
+                                                        <li>Marca</li>
                                                     </ul>
                                                 </div>
                                                 <div class="item-perpage mobile-hide">
-                                                    <div class="label">Items 10 per page</div>
+                                                    <div class="label">10 Produtos por página</div>
                                                     <div class="desktop-hide">10</div>
                                                 </div>
                                                 
                                                 <div class="item-options">
                                                     <div class="label">
-                                                        <span class="mobile-hide">Show 10 per page</span>
+                                                        <span class="mobile-hide">Mostrar 10 por pagina</span>
                                                         <div class="desktop-hide">10</div>
                                                         <i class="ri-arrow-down-s-line"></i>
                                                     </div>
@@ -1029,7 +1029,7 @@
                                                         <li>10</li>
                                                         <li>20</li>
                                                         <li>30</li>
-                                                        <li>ALL</li>
+                                                        <li>Todo</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -1043,7 +1043,7 @@
                                     <div class="media">
                                         <div class="thumbnail object-cover">
                                             <a href="#">
-                                                <img src="../img/products/apparel1.jpg" alt="">
+                                                <img src="../img/products/Fotoultra Active Unify Fusion Isdin Frasco X 50mL SPF50+ Fluid Color.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="hoverable">
@@ -1060,7 +1060,7 @@
                                             <div class="stars"></div>
                                             <span class="mini-text">(1,955)</span>
                                         </div>
-                                        <h3><a href="#">Under Armour men's Tech</a></h3>
+                                        <h3><a href="#">Fotoultra Active Unify Fusion Isdin Frasco X 50mL SPF50+ Fluid Color</a></h3>
                                         <div class="price">
                                             <span class="current">$56.50</span>
                                             <span class="normal mini-text">676,50</span>
@@ -1072,7 +1072,7 @@
                                     <div class="media">
                                         <div class="thumbnail object-cover">
                                             <a href="#">
-                                                <img src="../img/products/apparel2.jpg" alt="">
+                                                <img src="../img/products/Cerave Moisturising Crema Gel Hidratante Pote X 454 G Piel Seca A Muy Seca.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="hoverable">
@@ -1089,7 +1089,7 @@
                                             <div class="stars"></div>
                                             <span class="mini-text">(994)</span>
                                         </div>
-                                        <h3><a href="#">women's lightweigt knit hoodie sweater pullover</a></h3>
+                                        <h3><a href="#">Cerave Moisturising Crema Gel Hidratante Pote X 454 G Piel Seca A Muy Seca</a></h3>
                                         <div class="price">
                                             <span class="current">$37.50</span>
                                             <span class="normal mini-text">40.50</span>
@@ -1109,7 +1109,7 @@
                                     <div class="media">
                                         <div class="thumbnail object-cover">
                                             <a href="#">
-                                                <img src="../img/products/apparel3.jpg" alt="">
+                                                <img src="../img/products/Pañal Huggies Active Sec Xtra Flex Xg4 Paquete X 25.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="hoverable">
@@ -1126,7 +1126,7 @@
                                             <div class="stars"></div>
                                             <span class="mini-text">(2,548)</span>
                                         </div>
-                                        <h3><a href="#">Black Women's Coat Dress</a></h3>
+                                        <h3><a href="#">Pañal Huggies Active Sec Xtra Flex Xg4 Paquete X 25</a></h3>
                                         <div class="price">
                                             <span class="current">$129.99</span>
                                             <span class="normal mini-text">189.98</span>
@@ -1145,7 +1145,7 @@
                                     <div class="media">
                                         <div class="thumbnail object-cover">
                                             <a href="#">
-                                                <img src="../img/products/apparel4.jpg" alt="">
+                                                <img src="../img/products/Noxpirin Plus Adultos Dia-Noche Cápsulas (500+30+5+10)Mg Caja X 6 atras.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="hoverable">
@@ -1162,7 +1162,7 @@
                                             <div class="stars"></div>
                                             <span class="mini-text">(2,548)</span>
                                         </div>
-                                        <h3><a href="#">Happy Sailed Womens Summer Boho Floral</a></h3>
+                                        <h3><a href="#">Noxpirin Plus Adultos Dia-Noche Cápsulas (500+30+5+10)Mg Caja X 6</a></h3>
                                         <div class="price">
                                             <span class="current">$129.99</span>
                                             <span class="normal mini-text">189.98</span>
@@ -1178,7 +1178,7 @@
                                     <div class="media">
                                         <div class="thumbnail object-cover">
                                             <a href="#">
-                                                <img src="../img/products/shoe1.jpg" alt="">
+                                                <img src="../img/products/Condones Triple Pleasure Caja X 3.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="hoverable">
@@ -1195,7 +1195,7 @@
                                             <div class="stars"></div>
                                             <span class="mini-text">(2,548)</span>
                                         </div>
-                                        <h3><a href="#">Men Slip On Shoes Casual Whith Arch Support Insoles</a></h3>
+                                        <h3><a href="#">Condones Triple Pleasure Caja X 3</a></h3>
                                         <div class="price">
                                             <span class="current">$129.99</span>
                                             <span class="normal mini-text">189.98</span>
@@ -1211,7 +1211,7 @@
                                     <div class="media">
                                         <div class="thumbnail object-cover">
                                             <a href="#">
-                                                <img src="../img/products/shoe2.jpg" alt="">
+                                                <img src="../img/products/Antitranspirante No Sweat Clásico Frasco X 30mL.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="hoverable">
@@ -1228,7 +1228,7 @@
                                             <div class="stars"></div>
                                             <span class="mini-text">(2,548)</span>
                                         </div>
-                                        <h3><a href="#">Men Slip On Shoes Casual Whith Arch Support Insoles</a></h3>
+                                        <h3><a href="#">Antitranspirante No Sweat Clásico Frasco X 30mL</a></h3>
                                         <div class="price">
                                             <span class="current">$129.99</span>
                                             <span class="normal mini-text">189.98</span>
@@ -1244,7 +1244,7 @@
                                     <div class="media">
                                         <div class="thumbnail object-cover">
                                             <a href="#">
-                                                <img src="../img/products/shoe3.jpg" alt="">
+                                                <img src="../img/products/Ensure Advance Polvo Tarro X 850Gr Vainilla.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="hoverable">
@@ -1261,7 +1261,7 @@
                                             <div class="stars"></div>
                                             <span class="mini-text">(2,548)</span>
                                         </div>
-                                        <h3><a href="#">Men Slip On Shoes Casual Whith Arch Support Insoles</a></h3>
+                                        <h3><a href="#">Ensure Advance Polvo Tarro X 850Gr Vainilla</a></h3>
                                         <div class="price">
                                             <span class="current">$129.99</span>
                                             <span class="normal mini-text">189.98</span>
@@ -1277,7 +1277,7 @@
                                     <div class="media">
                                         <div class="thumbnail object-cover">
                                             <a href="#">
-                                                <img src="../img/products/electronic2.jpg" alt="">
+                                                <img src="../img/products/Postday 1 1.5Mg Caja X 1 Tableta.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="hoverable">
@@ -1294,7 +1294,7 @@
                                             <div class="stars"></div>
                                             <span class="mini-text">(2,548)</span>
                                         </div>
-                                        <h3><a href="#">Men Slip On Shoes Casual Whith Arch Support Insoles</a></h3>
+                                        <h3><a href="#">Postday 1 1.5Mg Caja X 1 Tableta</a></h3>
                                         <div class="price">
                                             <span class="current">$129.99</span>
                                             <span class="normal mini-text">189.98</span>
@@ -1307,7 +1307,7 @@
                                 </div>
                                     </div>
                                     <div class="load-more flexcenter">
-                                        <a href="#" class="secondary-button">Load more</a>
+                                        <a href="#" class="secondary-button">Más productos</a>
                                     </div>
                                 </div>
                             </div>

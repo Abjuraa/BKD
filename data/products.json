@@ -1,0 +1,25 @@
+{
+    "productos":[
+        {
+            "id":1,
+            "name":"Acetaminofen 500mg",
+            "price": 1500,
+            "image": ""
+        },
+        {
+            "id":2,
+            "name":"Amoxicilina 250 Jarabe",
+            "price": 25000,
+            "image": ""
+        },
+        {
+            "id":3,
+            "name":"Dolex Niños",
+            "price": 30000,
+            "image": ""
+        }
+    ]
+        
+        
+    
+}

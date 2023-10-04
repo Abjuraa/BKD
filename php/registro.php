@@ -8,8 +8,9 @@ if (isset($_POST['registro'])) {
         $pass = trim($_POST['contrasena']);
         $tip_doc = trim($_POST['tip_doc']);
         $num_doc = trim($_POST['num_doc']);
+        // $rol = trim($_POST['rol']);
         //$consulta = "INSERT INTO `prueba`(`nombre`, `mail`) VALUES ('$name','$email')";
-        $consulta = "INSERT INTO `login_prueba2`(`nombre_completo`, `tip_doc`, `num_doc`, `email`, `contrasena`) VALUES ('$name','$tip_doc','$num_doc','$email','$pass')";
+        $consulta = "INSERT INTO `login`(`nom`, `email`, `pass`, `id_tip_doc`, `n_doc`) VALUES ('$name','$email','$pass','$tip_doc','$num_doc')";
         $resultado = mysqli_query($conex,$consulta);
         if ($resultado) {
             ?>
