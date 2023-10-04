@@ -1164,9 +1164,7 @@ setInterval(function(){
                 commentsCurrentBig.innerHTML = comentarios.length;
                 commentsSpan.innerHTML = comentarios.length + ' Comentarios';
                 productosVendidos.innerHTML = producto_vendido;
-                productosStock.innerHTML = producto_stock
-                
-                ;
+                productosStock.innerHTML = producto_stock;
 
 
 
