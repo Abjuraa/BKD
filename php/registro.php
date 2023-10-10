@@ -1,6 +1,7 @@
 <?php
 include("conexion.php");
 
+
 if (isset($_POST['registro'])) {
     if (strlen($_POST['nombres']) >= 1 && strlen($_POST['tip_doc']) >= 1 && strlen($_POST['num_doc']) >= 1 && strlen($_POST['correo']) >= 1 && strlen($_POST['contrasena']) >= 1){
         $name = trim($_POST['nombres']);

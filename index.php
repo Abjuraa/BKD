@@ -940,7 +940,7 @@
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
-                                                <a href="view/detailView.php?index=4">
+                                                <a href="view/detailView.php?index=3">
                                                     <img src="img/products/ENJUAGUE_BUCAL_PERIOGARD.jpg" alt="">
                                                 </a>
                                             </div>
@@ -954,7 +954,7 @@
                                             <div class="discount circle flexcenter"><span>32%</span></div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="main-links"><a href="view/detailView.php?index=4">Enjuague Bucal PerioGard Sin Alcohol Frasco X 250mL</a></h3>
+                                            <h3 class="main-links"><a href="view/detailView.php?index=3">Enjuague Bucal PerioGard Sin Alcohol Frasco X 250mL</a></h3>
                                             <div class="rating">
                                                 <div class="stars"></div>
                                                 <span class="mini-text">(2,548)</span>
@@ -973,7 +973,7 @@
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
-                                                <a href="view/detailView.php?index=5">
+                                                <a href="view/detailView.php?index=4">
                                                     <img src="img/products/botiquin.jpg" alt="">
                                                 </a>
                                             </div>
@@ -987,7 +987,7 @@
                                             <div class="discount circle flexcenter"><span>25%</span></div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="main-links"><a href="view/detailView.php?index=5">Botiquin Rojo Paquete X 1 Nexcara</a></h3>
+                                            <h3 class="main-links"><a href="view/detailView.php?index=4">Botiquin Rojo Paquete X 1 Nexcara</a></h3>
                                             <div class="rating">
                                                 <div class="stars"></div>
                                                 <span class="mini-text">(1,955)</span>
@@ -1007,7 +1007,7 @@
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
-                                                <a href="view/detailView.php?index=6">
+                                                <a href="view/detailView.php?index=5">
                                                     <img src="img/products/calcio.jpg" alt="">
                                                 </a>
                                             </div>
@@ -1021,7 +1021,7 @@
                                             <div class="discount circle flexcenter"><span>32%</span></div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="main-links"><a href="view/detailView.php?index=6">Calcio + Vitamina D3 1200Mg + 400Ui Capsulas Blandas Frasco X 60</a></h3>
+                                            <h3 class="main-links"><a href="view/detailView.php?index=5">Calcio + Vitamina D3 1200Mg + 400Ui Capsulas Blandas Frasco X 60</a></h3>
                                             <div class="rating">
                                                 <div class="stars"></div>
                                                 <span class="mini-text">(2,548)</span>
@@ -1040,7 +1040,7 @@
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
-                                                <a href="view/detailView.php?index=7">
+                                                <a href="view/detailView.php?index=6">
                                                     <img src="img/products/corega.jpg" alt="">
                                                 </a>
                                             </div>
@@ -1054,7 +1054,7 @@
                                             <div class="discount circle flexcenter"><span>32%</span></div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="main-links"><a href="view/detailView.php?index=7">Corega Tabs Tabletas Efervescentes Caja X 30</a></h3>
+                                            <h3 class="main-links"><a href="view/detailView.php?index=6">Corega Tabs Tabletas Efervescentes Caja X 30</a></h3>
                                             <div class="rating">
                                                 <div class="stars"></div>
                                                 <span class="mini-text">(2,548)</span>
@@ -1074,7 +1074,7 @@
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
-                                                <a href="view/detailView.php?index=3">
+                                                <a href="view/detailView.php?index=7">
                                                     <img src="img/products/crema dental.jpg" alt="">
                                                 </a>
                                             </div>
@@ -1088,7 +1088,7 @@
                                             <div class="discount circle flexcenter"><span>32%</span></div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="main-links"><a href="view/detailView.php?index=3">Crema Dental Sensitive Pro-Alivio Tubo X 75 mL</a></h3>
+                                            <h3 class="main-links"><a href="view/detailView.php?index=7">Crema Dental Sensitive Pro-Alivio Tubo X 75 mL</a></h3>
                                             <div class="rating">
                                                 <div class="stars"></div>
                                                 <span class="mini-text">(2,548)</span>
@@ -1770,7 +1770,7 @@
     <script src="js/index.js"></script>
     <script>
         //contador de promociones
-const countDate = new Date('september 18, 2023 00:00:00').getTime();
+const countDate = new Date('october 20, 2023 00:00:00').getTime();
 
 function newYear(){
     const now = new Date().getTime();

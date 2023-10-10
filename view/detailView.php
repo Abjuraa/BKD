@@ -629,13 +629,13 @@
                 $id_prod = $datos['id_prod'];
                 $nombre_producto = $datos['nombre_producto'];
                 $oferta_producto = $datos['oferta_producto'];
-                $img_producto_frente = $datos['img_producto_frente'];
-                $img_producto_reverso = $datos['img_producto_reverso'];
                 $precio_producto = $datos['precio_producto']; 
                 $producto_vendido = $datos['producto_vendido'];
                 $producto_stock = $datos['producto_stock'];
                 $producto_comentario = $datos['producto_comentario'];
                 $producto_detalle = $datos['producto_detalle'];
+                $img_producto_frente = base64_encode($datos['img_producto_frente']);
+                $img_producto_reverso = base64_encode($datos['img_producto_reverso']);
 
             
                 
@@ -664,11 +664,11 @@
                                             <div class="big-image">
                                                 <div class="big-image-wrapper swiper-wrapper">
                                                     <div class="image-show swiper-slide">
-*                                                        <a data-fslightbox href="../img/products/omega 3.jpg"><img src="../img/products/omega 3.jpg" alt=""></a>
+                                                        <a data-fslightbox id="image_full" class="image_img_full"><img src="" class="big_img"  alt=""></a>
                                                     </div>
                                                     
                                                     <div  class="image-show swiper-slide">
-*                                                        <a data-fslightbox href="../img/products/omega 3 reverso.jpg"><img src="../img/products/omega 3 reverso.jpg" alt=""></a>
+                                                        <a data-fslightbox id="image_full_back" class="image_img_full"><img src="" class="big_img_back" alt=""></a>
                                                     </div>
                                                 </div>
                                                 <div class="swiper-button-next"></div>
@@ -678,11 +678,11 @@
                                             <div thumbSlider="" class="small-image">
                                                 <ul class="small-image-wrapper flexitem swiper-wrapper">
                                                     <li class="thumbnail-show swiper-slide">
-*                                                        <img src="../img/products/omega 3.jpg" alt="">
+                                                        <img src="" class="big_img" alt="">
                                                     </li>
                                                     
                                                     <li class="thumbnail-show swiper-slide">
-*                                                        <img src="../img/products/omega 3 reverso.jpg" alt="">
+                                                        <img src="" class="big_img_back" alt="">
                                                     </li>
                                                 </ul>
                                             </div>
@@ -767,7 +767,7 @@
  *                                                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem veritatis soluta, aliquid sit recusandae atque omnis magni inventore illo totam quis, natus aliquam! Recusandae rerum laborum atque accusamus ipsam nisi.</p>
                                                             </div>
                                                         </li>
-                                                        <li class="has-child">
+                                                        <!-- <li class="has-child">
                                                             <a href="#0" class="icon-small">Custom</a>
                                                             <div class="content">
                                                                 <table>
@@ -813,7 +813,7 @@
                                                                     </tbody>
                                                                 </table>
                                                             </div>
-                                                        </li>
+                                                        </li> -->
                                                         <li class="has-child">
                                                             <a href="#" class="icon-small">Comentarios<span class="mini-text" id="commentsCurrentBig"></span></a>
                                                             <div class="content">
@@ -834,41 +834,43 @@
                                                                                 
                                                                             </div>
                                                                         </div>
+                                                                    <form  method="post">
                                                                         <div id="review-form" class="review-form">
                                                                             <h4>Escribir Comentario</h4>
                                                                             <div class="rating">
                                                                                 <p>¿Estas lo suficientemente satisfecho (a)?</p>
                                                                                 <div class="rate-this">
-                                                                                    <input type="radio" name="rating" id="star5">
+                                                                                    <input class="star_rating" type="radio" name="rating" id="star5" value="5">
                                                                                     <label for="star5"><i class="ri-star-fill"></i></label>
 
-                                                                                    <input type="radio" name="rating" id="star4">
+                                                                                    <input class="star_rating" type="radio" name="rating" id="star4" value="4">
                                                                                     <label for="star4"><i class="ri-star-fill"></i></label>
                                                                                     
-                                                                                    <input type="radio" name="rating" id="star3">
+                                                                                    <input class="star_rating" type="radio" name="rating" id="star3" value="3">
                                                                                     <label for="star3"><i class="ri-star-fill"></i></label>
                                                                                     
-                                                                                    <input type="radio" name="rating" id="star2">
+                                                                                    <input  class="star_rating" type="radio" name="rating" id="star2" value="2">
                                                                                     <label for="star2"><i class="ri-star-fill"></i></label>
                                                                                     
-                                                                                    <input type="radio" name="rating" id="star1">
+                                                                                    <input  class="star_rating" type="radio" name="rating" id="star1" value="1">
                                                                                     <label for="star1"><i class="ri-star-fill"></i></label>
                                                                                 </div>
                                                                             </div>
-                                                                            <form action="">
+                                                                            
                                                                                 <p>
                                                                                     <label>Nombre</label>
-                                                                                    <input type="text">
+                                                                                    <input class="nombre_comment" type="text" name="nombre_comment">
                                                                                 </p>
                                                                                 <p>
                                                                                     <label>Resumen</label>
-                                                                                    <input type="text">
+                                                                                    <input class="comment_preview" type="text" name="comment_preview">
                                                                                 </p>
                                                                                 <p>
                                                                                     <label>Comentario</label>
-                                                                                    <textarea cols="30" rows="10"></textarea>
+                                                                                    <textarea class="comment" cols="30" rows="10" name="comment"></textarea>
                                                                                 </p>
-                                                                                <p><a href="#" class="primary-button">Enviar Comentario</a></p>
+                                                                                <!-- <p><a href="#" class="primary-button">Enviar Comentario</a></p> -->
+                                                                                <button class="primary-button" name="comentarios">Enviar comentario</button>
                                                                             </form>
                                                                         </div>
                                                                     </div>
@@ -1063,7 +1065,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
                 //contador de promociones
-const countDate = new Date('september 18, 2023 00:00:00').getTime();
+const countDate = new Date('october 20, 2023 00:00:00').getTime();
 
 function newYear(){
     const now = new Date().getTime();
@@ -1087,89 +1089,29 @@ function newYear(){
 
 setInterval(function(){
     newYear();
-},1000)
-    </script>
-            <script>
+},1000);
+</script>
+
+
+<script>
                 
-                let id_prod = <?= json_encode($id_prod)?>;
-                let nombre_producto = <?= json_encode($nombre_producto)?>;
-                let oferta_producto = <?= json_encode($oferta_producto)?>;
-                // let img_producto_frente = <?= json_encode($img_producto_frente)?>;
-                // let img_producto_reverso = <?= json_encode($img_producto_reverso)?>;
-                let precio_producto = <?= json_encode($precio_producto)?>;
-                let producto_vendido = <?= json_encode($producto_vendido)?>;
-                let producto_stock = <?= json_encode($producto_stock)?>;
-                let producto_comentario = <?= json_encode($producto_comentario)?>;
-                let producto_detalle = <?= json_encode($producto_detalle)?>;
+let id_prod = <?= json_encode($id_prod)?>;
+let nombre_producto = <?= json_encode($nombre_producto)?>;
+let oferta_producto = <?= json_encode($oferta_producto)?>;
+let precio_producto = <?= json_encode($precio_producto)?>;
+let producto_vendido = <?= json_encode($producto_vendido)?>;
+let producto_stock = <?= json_encode($producto_stock)?>;
+let producto_comentario = <?= json_encode($producto_comentario)?>;
+let producto_detalle = <?= json_encode($producto_detalle)?>;
+let  img_producto_reverso = '<?= $img_producto_reverso ?>';
+let img_producto_frente = '<?= $img_producto_frente ?>';
 
 
-                const title = document.querySelector('#title');
-                const namePlace = document.querySelector('#nameplace');
-                const offert = document.querySelector('#discount');
-                const titleProduct = document.querySelector('#nameProduct');
-                let comentarios = producto_comentario.split(';');
-                const reviews = document.querySelector('.reviewList');
-                const priceCurrent = document.querySelector('#priceCurrent');
-                const priceNormal = document.querySelector('#priceNormal');
-                const commentsCount = document.querySelector('#commentsCount');
-                const commentsCurrentBig = document.querySelector('#commentsCurrentBig');
-                const commentsSpan = document.querySelector('#commentsSpan');
-                const productosVendidos = document.querySelector('#productosVendidos');
-                const productosStock = document.querySelector('#productosStock');
-                
-                
-                comentarios.forEach(c => {
-                    let comentario = c.split(',');
-                    console.log(comentario);
+</script>
+<script src="../js/getProduct.js"></script>
+<?php
+include("../php/comentarios.php");
+?>
 
-                     let itemComment = document.createElement('li');
-                     itemComment.className += "item";
-                     let reviewForm = document.createElement('div');
-                     reviewForm.className += "review-form";
-                     let person = document.createElement('p');
-                     person.className += "person";
-                     person.innerHTML = 'Reseña por ' + comentario[1];
-                    let miniText = document.createElement('p');
-                    miniText.className += "mini-text";
-                    miniText.innerHTML = comentario[0];
-                    let reviewRatting = document.createElement('div');
-                    reviewRatting.className += 'review-rating rating';
-                    reviewRatting.innerHTML = '<div class="stars"></div>';
-                    let reviewTitle = document.createElement('div');
-                    reviewTitle.className += 'review-title';
-                    reviewTitle.innerHTML = '<p>'+ comentario[3] + '</p>';
-                    let reviewText = document.createElement('div');
-                    reviewText.innerHTML =  '<p>'+ comentario[4] + '</p>';
-                    reviewText.className += 'review-text';
-                    
-                    
-                    reviewForm.appendChild(person);
-                    reviewForm.appendChild(miniText);
-                    itemComment.appendChild(reviewForm);
-                    itemComment.appendChild(reviewRatting);
-                    itemComment.appendChild(reviewTitle);
-                    itemComment.appendChild(reviewText);
-                    reviews.appendChild(itemComment);
-                    
-                });
-
-                let precioDescuento = precio_producto -((oferta_producto * precio_producto) /100);
-                
-                title.innerHTML = nombre_producto;
-                namePlace.innerHTML = nombre_producto;
-                offert.innerHTML = oferta_producto + '%<br>OFF';
-                titleProduct.innerHTML = nombre_producto;
-                priceCurrent.innerHTML = '$'+ precioDescuento;
-                priceNormal.innerHTML = '$'+ precio_producto;
-                commentsCount.innerHTML = comentarios.length +' Comentarios';
-                commentsCurrentBig.innerHTML = comentarios.length;
-                commentsSpan.innerHTML = comentarios.length + ' Comentarios';
-                productosVendidos.innerHTML = producto_vendido;
-                productosStock.innerHTML = producto_stock;
-
-
-
-
-            </script>
 </body>
 </html>
