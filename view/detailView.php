@@ -654,7 +654,7 @@
                         </div>
                         <!-- breadcrumb -->
                         <div class="column">
-                            <div class="products one product-Id">
+                            <div class="products one">
                                 <div class="flexwrap">
                                     <div class="row">
                                         <div class="item is_sticky">
@@ -735,7 +735,7 @@
                                                         <input class="input_number" type="text" value="0">
                                                         <button class="plus circle">+</button>
                                                     </div>
-                                                    <div class="button-cart"><button class="primary-button">Añadir al Carrito</button></div>
+                                                    <div class="button-cart" id="product-id"><button class="primary-button">Añadir al Carrito</button></div>
                                                     <div class="wish-share">
                                                         <ul class="flexitem second-links">
                                                             <li><a href="#">
