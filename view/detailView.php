@@ -654,7 +654,7 @@
                         </div>
                         <!-- breadcrumb -->
                         <div class="column">
-                            <div class="products one">
+                            <div class="products one product-Id">
                                 <div class="flexwrap">
                                     <div class="row">
                                         <div class="item is_sticky">
@@ -1105,6 +1105,7 @@ let producto_comentario = <?= json_encode($producto_comentario)?>;
 let producto_detalle = <?= json_encode($producto_detalle)?>;
 let  img_producto_reverso = '<?= $img_producto_reverso ?>';
 let img_producto_frente = '<?= $img_producto_frente ?>';
+
 
 
 </script>

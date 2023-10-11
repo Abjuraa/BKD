@@ -29,6 +29,9 @@ const bigImageBack = document.querySelectorAll('.big_img_back');
 const imageFull = document.querySelector('#image_full');
 const imageFullBack = document.querySelector('#image_full_back');
 const imageView = document.querySelectorAll('.image_img_full');
+const product = document.querySelector('#product-id');
+
+product.id = id_prod;
 
 comentarios.forEach(c => {
     let comentario = c.split(',');

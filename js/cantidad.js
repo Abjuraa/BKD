@@ -32,77 +32,83 @@ const carContent = [];
 
 let productos = [];
 
-addToCartBtn.addEventListener("click", () => {
-  lastValue = lastValue + userInputNumber;
-  cartNotification.innerText = lastValue;
-  minCartNotification.innerText = lastValue;
-  numProducts.innerHTML = lastValue;
-  if (productos.length == 0) {
-    productos.push({
-      id: 1,
-      name: nombre_producto,
-      price: precio_producto,
-      image: img_producto_frente,
-      count: lastValue,
-      total: lastValue * precio_producto,
-    });
-    console.log(productos);
-  } else {
-    productos.forEach((p) => {
-      if (p.name == nameProduct) {
-        p.count = p.count + userInputNumber;
-        p.total = p.count + p.price;
-      } else {
-        productos.push({
-          name: nombre_producto,
-          price: precio_producto,
-          image: img_producto_frente,
-          count: lastValue,
-          total: lastValue * precio_producto,
-        });
-      }
-    });
-    
-  }
-  
-  productos.forEach((p) => {
-    products.innerHTML = `
-      <li class="item" id="${p.id}">
-      <div class="thumbnail object-cover">
-          <a href="#"><img src="${p.image}" alt=""></a>
-      </div>
-      <div class="item-content">
-          <p><a href="#">${p.name}</a></p>
-          <span class="price">
-              <span>$${p.total.toFixed(0)}</span>
-              <span class="fly-item"><span>X${p.count}</span></span>
-          </span>
-      </div>
-      <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-    </li>
-  `;
-  });
-  
-  const cartTotal = document.querySelector(".cart-total");
-  const subTotal =  document.querySelector(".subtotal");
-  let total=0;
-  
-  productos.forEach((p)=>{
-     total += p.total;
-  })
-  
-  cartTotal.innerHTML=`
-    $ ${total.toFixed(0)}
-  `;
-  
-  
-  subTotal.innerHTML =`
-  <p>Subtotal</p>
-  <p><strong class="">${total.toFixed(0)}</strong></p>
-  `;
-  
-  
+
+addToCartBtn.addEventListener("click", (e) => {
+    let count = userInputNumber;
+    console.log(e); 
 });
+
+// addToCartBtn.addEventListener("click", () => {
+//   lastValue = lastValue + userInputNumber;
+//   cartNotification.innerText = lastValue;
+//   minCartNotification.innerText = lastValue;
+//   numProducts.innerHTML = lastValue;
+//   if (productos.length == 0) {
+//     productos.push({
+//       id: 1,
+//       name: nombre_producto,
+//       price: precio_producto,
+//       image: img_producto_frente,
+//       count: lastValue,
+//       total: lastValue * precio_producto,
+//     });
+//     console.log(productos);
+//   } else {
+//     productos.forEach((p) => {
+//       if (p.name == nameProduct) {
+//         p.count = p.count + userInputNumber;
+//         p.total = p.count + p.price;
+//       } else {
+//         productos.push({
+//           name: nombre_producto,
+//           price: precio_producto,
+//           image: img_producto_frente,
+//           count: lastValue,
+//           total: lastValue * precio_producto,
+//         });
+//       }
+//     });
+    
+//   }
+  
+//   productos.forEach((p) => {
+//     products.innerHTML = `
+//       <li class="item" id="${p.id}">
+//       <div class="thumbnail object-cover">
+//           <a href="#"><img src="${p.image}" alt=""></a>
+//       </div>
+//       <div class="item-content">
+//           <p><a href="#">${p.name}</a></p>
+//           <span class="price">
+//               <span>$${p.total.toFixed(0)}</span>
+//               <span class="fly-item"><span>X${p.count}</span></span>
+//           </span>
+//       </div>
+//       <a href="" class="item-remove"><i class="ri-close-line"></i></a>
+//     </li>
+//   `;
+//   });
+  
+//   const cartTotal = document.querySelector(".cart-total");
+//   const subTotal =  document.querySelector(".subtotal");
+//   let total=0;
+  
+//   productos.forEach((p)=>{
+//      total += p.total;
+//   })
+  
+//   cartTotal.innerHTML=`
+//     $ ${total.toFixed(0)}
+//   `;
+  
+  
+//   subTotal.innerHTML =`
+//   <p>Subtotal</p>
+//   <p><strong class="">${total.toFixed(0)}</strong></p>
+//   `;
+  
+  
+// });
 //Mostrar el modal con los detalles del carrito
 const cartIconBtn = document.querySelector(".icon-large");
 const cartModal = document.querySelector(".mini-cart");
