@@ -28,7 +28,10 @@ let lastValue = parseInt(cartNotification.innerText);
 let nameProduct = product.innerText;
 let imgProduct = img.innerHTML;
 let products = document.querySelector(".products");
+const carContent = [];
+
 let productos = [];
+
 addToCartBtn.addEventListener("click", () => {
   lastValue = lastValue + userInputNumber;
   cartNotification.innerText = lastValue;
@@ -37,26 +40,25 @@ addToCartBtn.addEventListener("click", () => {
   if (productos.length == 0) {
     productos.push({
       id: 1,
-      name: nameProduct,
-      price: 80.9,
-      image: imgProduct,
+      name: nombre_producto,
+      price: precio_producto,
+      image: img_producto_frente,
       count: lastValue,
-      total:lastValue * 80.9,
+      total: lastValue * precio_producto,
     });
     console.log(productos);
   } else {
     productos.forEach((p) => {
       if (p.name == nameProduct) {
         p.count = p.count + userInputNumber;
-        p.total = p.count * p.price;
+        p.total = p.count + p.price;
       } else {
         productos.push({
-          id: 1,
-          name: nameProduct,
-          price: 80.9,
-          image: imgProduct,
+          name: nombre_producto,
+          price: precio_producto,
+          image: img_producto_frente,
           count: lastValue,
-          total: lastValue * 80.9,
+          total: lastValue * precio_producto,
         });
       }
     });
@@ -72,7 +74,7 @@ addToCartBtn.addEventListener("click", () => {
       <div class="item-content">
           <p><a href="#">${p.name}</a></p>
           <span class="price">
-              <span>$${p.total.toFixed(1)}</span>
+              <span>$${p.total.toFixed(0)}</span>
               <span class="fly-item"><span>X${p.count}</span></span>
           </span>
       </div>
@@ -90,13 +92,13 @@ addToCartBtn.addEventListener("click", () => {
   })
   
   cartTotal.innerHTML=`
-    $ ${total.toFixed(1)}
+    $ ${total.toFixed(0)}
   `;
   
   
   subTotal.innerHTML =`
   <p>Subtotal</p>
-  <p><strong class="">${total.toFixed(1)}</strong></p>
+  <p><strong class="">${total.toFixed(0)}</strong></p>
   `;
   
   
