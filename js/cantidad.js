@@ -28,15 +28,81 @@ let lastValue = parseInt(cartNotification.innerText);
 let nameProduct = product.innerText;
 let imgProduct = img.innerHTML;
 let products = document.querySelector(".products");
-const carContent = [];
+//
+
+
+const carContent = JSON.parse(localStorage.getItem("carrito")) || [];
+console.log(carContent);
 
 let productos = [];
 
-
 addToCartBtn.addEventListener("click", (e) => {
-    let count = userInputNumber;
-    console.log(e.target.parentElement); 
+
+    const id_Click = parseInt(e.target.parentElement.id);
+
+    const exist = carContent.some(product => product.id === id_Click);
+    if(exist){
+      let index = carContent.findIndex(p =>  p.id === id_Click);
+      carContent[index].count += userInputNumber;
+      carContent[index].total = carContent[index].count * carContent[index].price;
+      carContent[index].total = carContent[index].total - ((oferta_producto * carContent[index].total ) /100); 
+
+    } else{
+      let temTotal = precio_producto * userInputNumber;
+      carContent.push({
+        id: parseInt(id_prod),
+        name: nombre_producto,
+        price: parseInt(precio_producto),
+        count: userInputNumber,
+        image: img_producto_frente,
+        total: temTotal - ((oferta_producto * temTotal)/100),
+      })
+      
+    }
+    localStorage.setItem("carrito", JSON.stringify(carContent));
+    console.log(carContent);
+
+
+    const localSavage = JSON.parse(localStorage.getItem("carrito")) || [];
+    localSavage.forEach((p) => {
+      console.log(p)
+      products.innerHTML = `
+        <li class="item" id="${p.id}">
+        <div class="thumbnail object-cover">
+            <a href="#"><img src="${p.image}" alt=""></a>
+        </div>
+        <div class="item-content">
+            <p><a href="#">${p.name}</a></p>
+            <span class="price">
+                <span>$${p.total.toFixed(0)}</span>
+                <span class="fly-item"><span>X${p.count}</span></span>
+            </span>
+        </div>
+        <a href="" class="item-remove"><i class="ri-close-line"></i></a>
+      </li>
+    `;
 });
+  const cartTotal = document.querySelector(".cart-total");
+  const subTotal =  document.querySelector(".subtotal");
+  let total=0;
+  
+  productos.forEach((p)=>{
+     total += p.total;
+  })
+  
+  cartTotal.innerHTML=`
+    $ ${total.toFixed(0)}
+  `;
+  
+  
+  subTotal.innerHTML =`
+  <p>Subtotal</p>
+  <p><strong class="">${total.toFixed(0)}</strong></p>
+  `;
+});
+
+
+
 
 // addToCartBtn.addEventListener("click", () => {
 //   lastValue = lastValue + userInputNumber;

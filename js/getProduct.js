@@ -32,7 +32,7 @@ const imageView = document.querySelectorAll('.image_img_full');
 const itemProductCart = document.querySelector('#product-id');
 console.log(itemProductCart);
 
-// product.id = id_prod;
+itemProductCart.id = id_prod;
 
 comentarios.forEach(c => {
     let comentario = c.split(',');
