@@ -11,6 +11,8 @@ function decode_img(image){
 
 
 
+
+
 const title = document.querySelector('#title');
 const namePlace = document.querySelector('#nameplace');
 const offert = document.querySelector('#discount');
@@ -75,8 +77,8 @@ title.innerHTML = nombre_producto;
 namePlace.innerHTML = nombre_producto;
 offert.innerHTML = oferta_producto + '%<br>OFF';
 titleProduct.innerHTML = nombre_producto;
-priceCurrent.innerHTML = '$'+ precioDescuento;
-priceNormal.innerHTML = '$'+ precio_producto;
+priceCurrent.innerHTML =  precioDescuento;
+priceNormal.innerHTML = precio_producto;
 commentsCount.innerHTML = comentarios.length +' Comentarios';
 commentsCurrentBig.innerHTML = comentarios.length;
 commentsSpan.innerHTML = comentarios.length + ' Comentarios';
@@ -90,3 +92,5 @@ bigImage.forEach(b => {
 bigImageBack.forEach(b => {
     b.src = decode_img(img_producto_reverso);
 });
+
+

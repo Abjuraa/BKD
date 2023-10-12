@@ -1,3 +1,11 @@
+// formato de numero a moneda
+let USDollar = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+  minimumFractionDigits: 0,
+});
+
+
 //Cambio de cantidad ingresado en el input
 let minusBtn = document.querySelector(".minus");
 let plusBtn = document.querySelector(".plus");
@@ -14,32 +22,42 @@ minusBtn.addEventListener("click", () => {
   }
   userInput.value = userInputNumber;
 });
+
 //Agregar la cantidad de productos al presionar el carrito de compras
 const addToCartBtn = document.querySelector(".button-cart");
-let cartNotification = document.querySelector(".item-number-cart");
-let minCartNotification = document.querySelector(".item-number-mincart");
-let numProducts = document.querySelector(".num-products");
 let priceModal = document.querySelector(".price");
 var product = document.querySelector(".name-product");
 let nameItem = document.querySelector(".subname");
 let img = document.querySelector(".image-show");
 let imgCart = document.querySelector(".object-cover");
+let minCartNotification = document.querySelector(".item-number-mincart");
+let cartNotification = document.querySelector(".item-number-cart");
+const cartIconBtn = document.querySelector(".icon-large");
+const cartModal = document.querySelector(".mini-cart");
+const productContainer = document.querySelector(".products");
 let lastValue = parseInt(cartNotification.innerText);
 let nameProduct = product.innerText;
 let imgProduct = img.innerHTML;
-let products = document.querySelector(".products");
-//
 
+renderCart();
 
-const carContent = JSON.parse(localStorage.getItem("carrito")) || [];
-console.log(carContent);
-
-let productos = [];
+function decode_img(image){
+  const binaryString = atob(image);
+  const length = binaryString.length;
+  const bytes = new Uint8Array(length);
+      for (let i = 0; i < length; i++) {
+          bytes[i] = binaryString.charCodeAt(i);
+      }
+  const blob = new Blob([bytes], { type: 'image/jpeg' });
+  return URL.createObjectURL(blob);
+};
 
 addToCartBtn.addEventListener("click", (e) => {
-
+  if(userInputNumber >= 1){
+    
+  
+    const carContent = JSON.parse(localStorage.getItem("carrito")) || [];
     const id_Click = parseInt(e.target.parentElement.id);
-
     const exist = carContent.some(product => product.id === id_Click);
     if(exist){
       let index = carContent.findIndex(p =>  p.id === id_Click);
@@ -57,195 +75,92 @@ addToCartBtn.addEventListener("click", (e) => {
         image: img_producto_frente,
         total: temTotal - ((oferta_producto * temTotal)/100),
       })
-      
     }
     localStorage.setItem("carrito", JSON.stringify(carContent));
-    console.log(carContent);
-
-
-    const localSavage = JSON.parse(localStorage.getItem("carrito")) || [];
-    localSavage.forEach((p) => {
-      console.log(p)
-      
-      let liProductHTML = document.createElement('li');    
-      liProductHTML.className += "item";
-      liProductHTML.id = p.id;
-      let thumbnailHTML = document.createElement('div');
-      thumbnailHTML.className += "thumbnail object-cover";
-      let aHTML = document.createElement('a');
-      aHTML.href = "#";
-      let imgHTML = document.createElement('img');
-      imgHTML.src = p.image;
-      let itemContentHTML = document.createElement('div');
-      itemContentHTML.className += "item-content";
-      let pHTML = document.createElement('p');
-      let a2HTML = document.createElement('a');
-      a2HTML.href = "#";
-      a2HTML.innerHTML = p.name;
-      let spanHTML = document.createElement('span');
-      spanHTML.className += "price";
-      let span2HTML = document.createElement('span');
-      span2HTML.innerHTML = '$'+ p.total.toFixed(0);
-      let span3HTML = document.createElement('span');
-      span3HTML.className += "fly-item";
-      let span4HTML = document.createElement('span');
-      span4HTML.innerHTML = 'X'+ p.count;
-      let a3HTML = document.createElement('a');
-      a3HTML.href = "";
-      a3HTML.className += "item-remove";
-      let iHTML = document.createElement('i');
-      iHTML.className += "ri-close-line";
-      
-      a3HTML.appendChild(iHTML);
-      span3HTML.appendChild(span4HTML);
-      spanHTML.appendChild(span2HTML);
-      spanHTML.appendChild(span3HTML);
-      pHTML.appendChild(a2HTML);
-      itemContentHTML.appendChild(pHTML);
-      itemContentHTML.appendChild(spanHTML);
-      aHTML.appendChild(imgHTML);
-      thumbnailHTML.appendChild(aHTML);
-      liProductHTML.appendChild(thumbnailHTML);
-      liProductHTML.appendChild(itemContentHTML);
-      liProductHTML.appendChild(a3HTML);
-      products.appendChild(liProductHTML);
-      
-    //   products.innerHTML = `
-    //     <li class="item" id="${p.id}">
-    //     <div class="thumbnail object-cover">
-    //         <a href="#"><img src="${p.image}" alt=""></a>
-    //     </div>
-    //     <div class="item-content">
-    //         <p><a href="#">${p.name}</a></p>
-    //         <span class="price">
-    //             <span>$${p.total.toFixed(0)}</span>
-    //             <span class="fly-item"><span>X${p.count}</span></span>
-    //         </span>
-    //     </div>
-    //     <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-    //   </li>
-    // `;
+    renderCart();
+    // const localSavage = JSON.parse(localStorage.getItem("carrito")) || [];
+  }
 });
-  const cartTotal = document.querySelector(".cart-total");
-  const subTotal =  document.querySelector(".subtotal");
-  let total=0;
-  
-  productos.forEach((p)=>{
-     total += p.total;
+
+function renderCart (){
+  const localGetOut = JSON.parse(localStorage.getItem("carrito")) || [];
+  let numProducts = document.querySelector(".num-products");
+  let products = document.querySelector(".products");
+
+  numProducts.innerHTML = localGetOut.length;
+  cartNotification.innerHTML = localGetOut.length;
+  products.innerHTML = "";
+
+  localGetOut.forEach((p) => {
+    let liProductHTML = document.createElement('li');    
+    liProductHTML.className += "item";
+    liProductHTML.id = p.id;
+    let thumbnailHTML = document.createElement('div');
+    thumbnailHTML.className += "thumbnail object-cover";
+    let aHTML = document.createElement('a');
+    aHTML.href = "#";
+    let imgHTML = document.createElement('img');
+    imgHTML.src = decode_img(p.image);
+    let itemContentHTML = document.createElement('div');
+    itemContentHTML.className += "item-content";
+    let pHTML = document.createElement('p');
+    let a2HTML = document.createElement('a');
+    a2HTML.href = "#";
+    a2HTML.innerHTML = p.name;
+    let spanHTML = document.createElement('span');
+    spanHTML.className += "price";
+    let span2HTML = document.createElement('span');
+    span2HTML.innerHTML = USDollar.format(p.total.toFixed(0));
+    let span3HTML = document.createElement('span');
+    span3HTML.className += "fly-item";
+    let span4HTML = document.createElement('span');
+    span4HTML.innerHTML = 'X'+ p.count;
+    let a3HTML = document.createElement('div');
+    a3HTML.className += "item-remove";
+    let iHTML = document.createElement('i');
+    iHTML.className += "ri-close-line";
+     
+    a3HTML.appendChild(iHTML);
+    span3HTML.appendChild(span4HTML);
+    spanHTML.appendChild(span2HTML);
+    spanHTML.appendChild(span3HTML);
+    pHTML.appendChild(a2HTML);
+    itemContentHTML.appendChild(pHTML);
+    itemContentHTML.appendChild(spanHTML);
+    aHTML.appendChild(imgHTML);
+    thumbnailHTML.appendChild(aHTML);
+    liProductHTML.appendChild(thumbnailHTML);
+    liProductHTML.appendChild(itemContentHTML);
+    liProductHTML.appendChild(a3HTML);
+    products.appendChild(liProductHTML);
+});
+
+const cartTotal = document.querySelector(".cart-total");
+const subTotal =  document.querySelector(".subtotal");
+let total=0;
+
+localGetOut.forEach((p)=>{
+   total += p.total;
+})
+
+cartTotal.innerHTML=`
+  $ ${USDollar.format(total.toFixed(0))}
+`;
+subTotal.innerHTML =`
+<p>Subtotal</p>
+<p><strong class="">${USDollar.format(total.toFixed(0))}</strong></p>
+`;
+const deleteCartBtn = document.querySelectorAll(".item-remove");
+deleteCartBtn.forEach( b =>{
+  b.addEventListener('click', (e) => {
+    console.log(e.target.parentElement.parentElement.id);
+    let itemTrash = parseInt(e.target.parentElement.parentElement.id);
+    let indexDelete = localGetOut.findIndex(p => p.id === itemTrash);
+    console.log(indexDelete);
+    localGetOut.splice(indexDelete, 1);
+    console.log(localGetOut);
+    localStorage.setItem("carrito", JSON.stringify(localGetOut));
+    renderCart();
   })
-  
-  cartTotal.innerHTML=`
-    $ ${total.toFixed(0)}
-  `;
-  
-  
-  subTotal.innerHTML =`
-  <p>Subtotal</p>
-  <p><strong class="">${total.toFixed(0)}</strong></p>
-  `;
-});
-
-
-
-
-// addToCartBtn.addEventListener("click", () => {
-//   lastValue = lastValue + userInputNumber;
-//   cartNotification.innerText = lastValue;
-//   minCartNotification.innerText = lastValue;
-//   numProducts.innerHTML = lastValue;
-//   if (productos.length == 0) {
-//     productos.push({
-//       id: 1,
-//       name: nombre_producto,
-//       price: precio_producto,
-//       image: img_producto_frente,
-//       count: lastValue,
-//       total: lastValue * precio_producto,
-//     });
-//     console.log(productos);
-//   } else {
-//     productos.forEach((p) => {
-//       if (p.name == nameProduct) {
-//         p.count = p.count + userInputNumber;
-//         p.total = p.count + p.price;
-//       } else {
-//         productos.push({
-//           name: nombre_producto,
-//           price: precio_producto,
-//           image: img_producto_frente,
-//           count: lastValue,
-//           total: lastValue * precio_producto,
-//         });
-//       }
-//     });
-    
-//   }
-  
-//   productos.forEach((p) => {
-//     products.innerHTML = `
-//       <li class="item" id="${p.id}">
-//       <div class="thumbnail object-cover">
-//           <a href="#"><img src="${p.image}" alt=""></a>
-//       </div>
-//       <div class="item-content">
-//           <p><a href="#">${p.name}</a></p>
-//           <span class="price">
-//               <span>$${p.total.toFixed(0)}</span>
-//               <span class="fly-item"><span>X${p.count}</span></span>
-//           </span>
-//       </div>
-//       <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-//     </li>
-//   `;
-//   });
-  
-//   const cartTotal = document.querySelector(".cart-total");
-//   const subTotal =  document.querySelector(".subtotal");
-//   let total=0;
-  
-//   productos.forEach((p)=>{
-//      total += p.total;
-//   })
-  
-//   cartTotal.innerHTML=`
-//     $ ${total.toFixed(0)}
-//   `;
-  
-  
-//   subTotal.innerHTML =`
-//   <p>Subtotal</p>
-//   <p><strong class="">${total.toFixed(0)}</strong></p>
-//   `;
-  
-  
-// });
-//Mostrar el modal con los detalles del carrito
-const cartIconBtn = document.querySelector(".icon-large");
-const cartModal = document.querySelector(".mini-cart");
-cartIconBtn.addEventListener("click", () => {
-  cartModal.style.display = "block";
-});
-//borrar el contenido del carrito
-const deleteCartBtn = document.querySelector(".item-remove");
-const productContainer = document.querySelector(".products");
-// deleteCartBtn.addEventListener("click", (e) => {
-//   let toDelete = e.target.parentElement;
-//   console.log(toDelete);
-  
-  
-//   if(productos.length == 0){
-    
-//     const mesage =  document.createElement('li');
-    
-//       mesage.innerHTML =`
-//         Tu carrito esta vacio
-//       `
-    
-//     productContainer.appendChild(mesage);
-  
-//   }
-  //productContainer.innerHTML = '<li class="cart-empty">Tu carrito esta vacio</li>';
-  //lastValue = 0;
-  //cartNotification.innerText = lastValue;
-  //numProducts.innerHTML = lastValue;
-// });
+ })
+}
