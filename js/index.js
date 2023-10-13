@@ -1,4 +1,20 @@
+function decode_img(image){
+    const binaryString = atob(image);
+    const length = binaryString.length;
+    const bytes = new Uint8Array(length);
+        for (let i = 0; i < length; i++) {
+            bytes[i] = binaryString.charCodeAt(i);
+        }
+    const blob = new Blob([bytes], { type: 'image/jpeg' });
+    return URL.createObjectURL(blob);
+};
 
+// formato de numero a moneda
+let USDollar = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 0,
+  });
 
 
 //copy menu for mobile
@@ -111,7 +127,7 @@ const divtoShow = '.mini-cart';
 const divPopup = document.querySelector(divtoShow);
 const divTrigger = document.querySelector('.cart-trigger');
 
-divTrigger.addEventListener('click', ()=>{
+divTrigger.addEventListener("click", ()=>{
     setTimeout(() => {
         if (!divPopup.classList.contains('show')) {
             divPopup.classList.add('show');

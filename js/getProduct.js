@@ -1,18 +1,3 @@
-function decode_img(image){
-    const binaryString = atob(image);
-    const length = binaryString.length;
-    const bytes = new Uint8Array(length);
-        for (let i = 0; i < length; i++) {
-            bytes[i] = binaryString.charCodeAt(i);
-        }
-    const blob = new Blob([bytes], { type: 'image/jpeg' });
-    return URL.createObjectURL(blob);
-};
-
-
-
-
-
 const title = document.querySelector('#title');
 const namePlace = document.querySelector('#nameplace');
 const offert = document.querySelector('#discount');
@@ -33,6 +18,7 @@ const imageFullBack = document.querySelector('#image_full_back');
 const imageView = document.querySelectorAll('.image_img_full');
 const itemProductCart = document.querySelector('#product-id');
 console.log(itemProductCart);
+
 
 itemProductCart.id = id_prod;
 
@@ -77,8 +63,8 @@ title.innerHTML = nombre_producto;
 namePlace.innerHTML = nombre_producto;
 offert.innerHTML = oferta_producto + '%<br>OFF';
 titleProduct.innerHTML = nombre_producto;
-priceCurrent.innerHTML =  precioDescuento;
-priceNormal.innerHTML = precio_producto;
+priceCurrent.innerHTML =  USDollar.format(precioDescuento);
+priceNormal.innerHTML = USDollar.format(precio_producto);
 commentsCount.innerHTML = comentarios.length +' Comentarios';
 commentsCurrentBig.innerHTML = comentarios.length;
 commentsSpan.innerHTML = comentarios.length + ' Comentarios';

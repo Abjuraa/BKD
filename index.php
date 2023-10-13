@@ -181,12 +181,12 @@
                             <ul class="flexitem second-links">
                                 <li class="mobile-hide"><a href="#">
                                     <div class="icon-large"><i class="ri-heart-line"></i></div>
-                                    <div class="fly-item"><span class="item-number">0</span></div>
+                                    <!-- <div class="fly-item"><span class="item-number-fav">0</span></div> -->
                                 </a></li>
                                 <li  class="iscart"><a href="#">
                                     <div class="icon-large">
                                         <i class="ri-shopping-cart-line"></i>
-                                        <div class="fly-item"><span class="item-number">0</span></div>
+                                        <div class="fly-item"><span class="item-number-cart">0</span></div>
                                     </div>
                                     <div class="icon-text">
                                         <div class="mini-text">Total</div>
@@ -194,75 +194,27 @@
                                     </div>
 
                                 </a>
-                                <div class="mini-cart" id="">
+                                <div class="mini-cart" id="products-id">
                                     <div class="content">
                                         <div class="cart-head">
-                                            0 Productos
+                                            <span class="num-products">0</span> Productos
                                         </div>
                                         <div class="cart-body">
                                             <ul class="products mini">
-                                                <!-- <li class="item">
-                                                    <div class="thumbnail object-cover">
-                                                        <a href="#"><img src="../img/products/home2.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="item-content">
-                                                        <p><a href="#">Dimmable Light Modern</a></p>
-                                                        <span class="price">
-                                                            <span>$279.99</span>
-                                                            <span class="fly-item"><span>2x</span></span>
-                                                        </span>
-                                                    </div>
-                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-                                                </li>
-                                                <li class="item">
-                                                    <div class="thumbnail object-cover">
-                                                        <a href="#"><img src="../img/products/home3.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="item-content">
-                                                        <p><a href="#">Dimmable Light Modern</a></p>
-                                                        <span class="price">
-                                                            <span>$279.99</span>
-                                                            <span class="fly-item"><span>1x</span></span>
-                                                        </span>
-                                                    </div>
-                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-                                                </li>
-                                                <li class="item">
-                                                    <div class="thumbnail object-cover">
-                                                        <a href="#"><img src="../img/products/home4.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="item-content">
-                                                        <p><a href="#">Dimmable Light Modern</a></p>
-                                                        <span class="price">
-                                                            <span>$279.99</span>
-                                                            <span class="fly-item"><span>1x</span></span>
-                                                        </span>
-                                                    </div>
-                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-                                                </li>
-                                                <li class="item">
-                                                    <div class="thumbnail object-cover">
-                                                        <a href="#"><img src="../img/products/home5.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="item-content">
-                                                        <p><a href="#">Dimmable Light Modern</a></p>
-                                                        <span class="price">
-                                                            <span>$279.99</span>
-                                                            <span class="fly-item"><span>1x</span></span>
-                                                        </span>
-                                                    </div>
-                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-                                                </li> -->
+                                            
+                                                
+                                                
+                                                
+                                                
                                             </ul>
                                         </div>
                                         <div class="cart-footer">
                                             <div class="subtotal">
-                                                <p>Subtotal</p>
-                                                <p><strong>$0</strong></p>
+                                            <p>Subtotal</p>       
                                             </div>
                                             <div class="actions">
-                                                <a href="view/checkout.php" class="primary-button">Pagar</a>
-                                                <a href="view/cart.php" class="secondary-button">Ver Carrito</a>
+                                                <a href="checkout.html" class="primary-button">Pagar</a>
+                                                <a href="cart.html" class="secondary-button">Ver Carrito</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1767,10 +1719,16 @@
         <div class="overlay"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/renderCart.js"></script>
     <script src="js/index.js"></script>
+    <script>
+        renderCart();
+    </script>
+
     <script>
         //contador de promociones
 const countDate = new Date('october 20, 2023 00:00:00').getTime();
+
 
 function newYear(){
     const now = new Date().getTime();

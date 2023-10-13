@@ -10,6 +10,8 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <script src="../js/index.js"></script>
+
     
 
 </head>
@@ -1060,7 +1062,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
-    <script src="../js/index.js"></script>
+    <script src="../js/renderCart.js"></script>
     <script src="../js/cantidad.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
