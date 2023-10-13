@@ -14,7 +14,13 @@ let USDollar = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
     minimumFractionDigits: 0,
-  });
+});
+
+function capitalizar(str) {
+    return str.replace(/\w\S*/g, function(txt){
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+}
 
 
 //copy menu for mobile
@@ -127,7 +133,7 @@ const divtoShow = '.mini-cart';
 const divPopup = document.querySelector(divtoShow);
 const divTrigger = document.querySelector('.cart-trigger');
 
-divTrigger.addEventListener("click", ()=>{
+divTrigger.addEventListener('click', ()=>{
     setTimeout(() => {
         if (!divPopup.classList.contains('show')) {
             divPopup.classList.add('show');
