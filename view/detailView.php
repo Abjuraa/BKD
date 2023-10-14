@@ -7,11 +7,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <script src="../js/index.js"></script>
-
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     
 
 </head>
@@ -638,10 +634,7 @@
                 $producto_detalle = $datos['producto_detalle'];
                 $img_producto_frente = base64_encode($datos['img_producto_frente']);
                 $img_producto_reverso = base64_encode($datos['img_producto_reverso']);
-
-            
-                
-            ?>
+                ?>
 
 
             <div class="single-product">
@@ -1062,6 +1055,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
+    <script src="../js/index.js"></script>
     <script src="../js/renderCart.js"></script>
     <script src="../js/cantidad.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

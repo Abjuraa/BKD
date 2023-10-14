@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -729,11 +728,43 @@
                 <div class="container">
                     <div class="wrapper">
                         <div class="sectop flexitem">
-                            <h2><span class="circle"></span><span>Productos más buscados</span></h2>
+                            <h2><span class="circle"></span><span>Productos más vendidos</span></h2>
                         </div>
                         <div class="column">
                             <div class="flexwrap">
                                 <div class="row products big">
+
+                                <?php
+
+                                include("php/conexion.php");
+
+                                $queryM = "SELECT * FROM `productos` WHERE `producto_estrella` = 1";       
+                                $resultado = mysqli_query($conex, $queryM);
+                                $datos = mysqli_fetch_assoc($resultado); 
+                                $id_producto_star = $datos['id_prod'];       
+                                $producto_nombre_star = $datos['nombre_producto'];
+                                $producto_oferta_star = $datos['oferta_producto'];
+                                $producto_img_star = base64_encode($datos['img_producto_frente']);
+                                $producto_precio_star = $datos['precio_producto'];
+                                $producto_vendido_star = $datos['producto_vendido'];
+                                $producto_stock_star = $datos['producto_stock'];   
+                                $producto_comment_star = $datos['producto_comentario'];                   
+                                ?>
+
+                                <script>
+                                let id_producto_star = <?= json_encode($id_producto_star)?>;
+                                let producto_nombre_star = <?= json_encode($producto_nombre_star)?>;
+                                let producto_oferta_star = <?= json_encode($producto_oferta_star)?>;
+                                let producto_img_star = '<?= $producto_img_star?>';
+                                let producto_precio_star = <?= json_encode($producto_precio_star)?>;
+                                let producto_vendido_star = <?= json_encode($producto_vendido_star)?>;
+                                let producto_stock_star = <?= json_encode($producto_stock_star)?>;
+                                let producto_comentario_star = <?= json_encode($producto_comment_star)?>;
+                                console.log(id_producto_star, producto_nombre_star);
+
+                                </script>
+
+
                                     <div class="item">
                                         <div class="offer">
                                             <p>La oferta acaba en:</p>
@@ -746,8 +777,8 @@
                                         </div>
                                         <div class="media">
                                             <div class="image">
-                                                <a href="view/detailView.php?index=2">
-                                                    <img src="img/products/omega 3.jpg" alt="">
+                                                <a id="product_id_link" href="view/detailView.php?index=">
+                                                    <img id="img_product_star" src="img/products/omega 3.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="hoverable">
@@ -757,22 +788,22 @@
                                                     <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
                                                 </ul>
                                             </div>
-                                            <div class="discount circle flexcenter"><span>31%</span></div>
+                                            <div class="discount circle flexcenter"><span id="discount_product_star"></span></div>
                                         </div>
                                         <div class="content">
                                             <div class="rating">
                                                 <div class="stars"></div>
-                                                <span class="mini-text">(2,548)</span>
+                                                <span id="comments_star" class="mini-text"> </span>
                                             </div>
-                                            <h3 class="main-links"><a href="view/detailView.php?index=2">Omega 3-6-9 Aceite De Linaza Capsulas Blandas Frasco X 30</a></h3>
+                                            <h3 class="main-links"><a id="nombre_producto_star" href="view/detailView.php?index="> </a></h3>
                                             <div class="price">
-                                                <span class="current">$129.99</span>
-                                                <span class="normal mini-text">189.98</span>
+                                                <span id="precio_descuento_star" class="current"> </span>
+                                               <span id="precio_normal_star" class="normal mini-text"> </span>
                                             </div>
                                             <div class="stock mini-text">
                                                 <div class="qty">
-                                                    <span>Stock:<strong class="qty-available">107</strong></span>
-                                                    <span>Vendidos:<strong class="qty-sold">3,459</strong></span>
+                                                    <span>Stock:<strong id="producto_stock_star" class="qty-available"> </strong></span>
+                                                   <span>Vendidos:<strong id="producto_sold_star" class="qty-sold"> </strong></span>
 
                                                 </div>
                                                 <div class="bar">
@@ -781,6 +812,9 @@
                                             </div>
                                         </div>
                                     </div>
+
+
+
                                 </div>
                                 <div class="row products mini">
                                     <div class="item">
@@ -1549,8 +1583,10 @@
         <div class="overlay"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="js/renderCart.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/renderCart.js"></script>
+    <script src="js/productStarLogic.js"></script>
+
     <script>
         renderCart();
     </script>
