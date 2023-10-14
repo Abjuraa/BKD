@@ -651,7 +651,7 @@ if ($jsonDatosProd === false) {
                     echo 'Error en json_encode: ' . json_last_error_msg();
                 } else {
                     echo '<script>';
-                    echo 'let datosProd = ' . $jsonDatosProd . ';';
+                    echo 'let datosProdOfferts = ' . $jsonDatosProd . ';';
                     echo '</script>';
                 }
                 
@@ -815,7 +815,7 @@ if ($jsonDatosProd === false) {
                                     </div>
 
                                 </div>
-                                <div id="colum_products_offert" class="row products mini">
+                                <div id="colum1_products_offert" class="row products mini">
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
@@ -950,7 +950,7 @@ if ($jsonDatosProd === false) {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="colum_products_offert" class="row products mini">
+                                <div id="colum2_products_offert" class="row products mini">
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
@@ -1630,9 +1630,10 @@ setInterval(function(){
     let producto_vendido_star = <?= json_encode($producto_vendido_star)?>;
     let producto_stock_star = <?= json_encode($producto_stock_star)?>;
     let producto_comentario_star = <?= json_encode($producto_comment_star)?>;
-    console.log(datosProd);
+    console.log(datosProdOfferts);
     </script>
 
 <script src="js/productStarLogic.js"></script>
+<script src="js/productsOffertList.js"></script>
 </body>
 </html>
