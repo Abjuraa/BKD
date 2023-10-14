@@ -1194,7 +1194,6 @@
     <script>
         renderCart();
     </script>
-
     <script>
         const FtoShow = '.filter';
         const Fpopup = document.querySelector(FtoShow);
@@ -1216,7 +1215,6 @@
             }
         })
     </script>
-
     <script>
     const seccionesHtml = document.querySelector('#seccions');
     const categoriaHtml = document.querySelector('#categoria');
