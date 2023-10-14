@@ -625,20 +625,20 @@
         <!-- header -->
 
         <main>
-        
+
         <?php
 
-            include("php/conexion.php");
-            include("php/productsOffets.php");
+        include("php/conexion.php");
+include("php/productsOffets.php");
+        
+        $queryPO = "SELECT * FROM `productos` WHERE `offert_now` = 1";
+            $resultadoProducts = mysqli_query($conex, $queryPO);
+            $datosProd = array();
+
+            while ($row = mysqli_fetch_assoc($resultadoProducts)) {
+                $datosProd[] = $row;
+            }
             
-            $queryPO = "SELECT * FROM `productos` WHERE `offert_now` = 1";
-                $resultadoProducts = mysqli_query($conex, $queryPO);
-                $datosProd = array(); 
-            
-                while ($row = mysqli_fetch_assoc($resultadoProducts)) {
-                    $datosProd[] = $row;
-                }
-                
                // Codifica cada elemento en UTF-8
                 foreach ($datosProd as &$fila) {
                     foreach ($fila as &$valor) {
@@ -647,7 +647,7 @@
                 }
                 
                 $jsonDatosProd = json_encode($datosProd);
-                if ($jsonDatosProd === false) {
+if ($jsonDatosProd === false) {
                     echo 'Error en json_encode: ' . json_last_error_msg();
                 } else {
                     echo '<script>';
@@ -1583,54 +1583,56 @@
 
         <div class="overlay"></div>
     </div>
-    
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/renderCart.js"></script>
+
     <script>
         renderCart();
     </script>
-    <script>
-        let id_producto_star = <?= json_encode($id_producto_star)?>;
-        let producto_nombre_star = <?= json_encode($producto_nombre_star)?>;
-        let producto_oferta_star = <?= json_encode($producto_oferta_star)?>;
-        let producto_img_star = '<?= $producto_img_star?>';
-        let producto_precio_star = <?= json_encode($producto_precio_star)?>;
-        let producto_vendido_star = <?= json_encode($producto_vendido_star)?>;
-        let producto_stock_star = <?= json_encode($producto_stock_star)?>;
-        let producto_comentario_star = <?= json_encode($producto_comment_star)?>;
-        
-        console.log(datosProd);
-    </script>
-    <script src="js/productStarLogic.js"></script>
+
     <script>
         //contador de promociones
-       
-        const countDate = new Date('october 20, 2023 00:00:00').getTime();
-        
-        
-        function newYear(){
-            const now = new Date().getTime();
-            gap = countDate - now;
-        
-            const segundos = 1000;
-            const minutos = segundos * 60;
-            const horas = minutos * 60;
-            const dias = horas * 24;
-        
-            const d = Math.floor(gap / (dias));
-            const h = Math.floor((gap % (dias)) / (horas));
-            const m = Math.floor((gap % (horas)) / (minutos));
-            const s = Math.floor((gap % (minutos)) / (segundos)); 
-        
-            document.getElementById('dias').innerText = d;
-            document.getElementById('horas').innerText = h;
-            document.getElementById('minutos').innerText = m;
-            document.getElementById('segundos').innerText = s;
-        }
-        setInterval(function(){
-            newYear();
-        },1000)
+const countDate = new Date('october 20, 2023 00:00:00').getTime();
+
+
+function newYear(){
+    const now = new Date().getTime();
+    gap = countDate - now;
+
+    const segundos = 1000;
+    const minutos = segundos * 60;
+    const horas = minutos * 60;
+    const dias = horas * 24;
+
+    const d = Math.floor(gap / (dias));
+    const h = Math.floor((gap % (dias)) / (horas));
+    const m = Math.floor((gap % (horas)) / (minutos));
+    const s = Math.floor((gap % (minutos)) / (segundos)); 
+
+    document.getElementById('dias').innerText = d;
+    document.getElementById('horas').innerText = h;
+    document.getElementById('minutos').innerText = m;
+    document.getElementById('segundos').innerText = s;
+}
+
+setInterval(function(){
+    newYear();
+},1000)
     </script>
+    
+    <script>
+    let id_producto_star = <?= json_encode($id_producto_star)?>;
+    let producto_nombre_star = <?= json_encode($producto_nombre_star)?>;
+    let producto_oferta_star = <?= json_encode($producto_oferta_star)?>;
+    let producto_img_star = '<?= $producto_img_star?>';
+    let producto_precio_star = <?= json_encode($producto_precio_star)?>;
+    let producto_vendido_star = <?= json_encode($producto_vendido_star)?>;
+    let producto_stock_star = <?= json_encode($producto_stock_star)?>;
+    let producto_comentario_star = <?= json_encode($producto_comment_star)?>;
+    console.log(datosProd);
+    </script>
+
+<script src="js/productStarLogic.js"></script>
 </body>
 </html>
