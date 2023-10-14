@@ -102,6 +102,7 @@ h4{
 .colum .row{
   padding: 0 0.938em;
 }
+
 .flexwrap{
   display: flex;
   flex-wrap: wrap;

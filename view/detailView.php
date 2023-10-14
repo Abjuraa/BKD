@@ -762,53 +762,7 @@
  *                                                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem veritatis soluta, aliquid sit recusandae atque omnis magni inventore illo totam quis, natus aliquam! Recusandae rerum laborum atque accusamus ipsam nisi.</p>
                                                             </div>
                                                         </li>
-                                                        <!-- <li class="has-child">
-                                                            <a href="#0" class="icon-small">Custom</a>
-                                                            <div class="content">
-                                                                <table>
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>Size</th>
-                                                                            <th>Bust<span class="mini-text">(cm)</span></th>
-                                                                            <th>Waist<span class="mini-text">(cm)</span></th>
-                                                                            <th>Hip<span class="mini-text">(cm)</span></th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>Xs</td>
-                                                                            <td>82,5</td>
-                                                                            <td>62</td>
-                                                                            <td>87,5</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>S</td>
-                                                                            <td>85</td>
-                                                                            <td>63,5</td>
-                                                                            <td>89</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>M</td>
-                                                                            <td>87,5</td>
-                                                                            <td>67,5</td>
-                                                                            <td>93</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>L</td>
-                                                                            <td>90</td>
-                                                                            <td>72,5</td>
-                                                                            <td>98</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>XL</td>
-                                                                            <td>93</td>
-                                                                            <td>77,5</td>
-                                                                            <td>103</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </li> -->
+                                                        
                                                         <li class="has-child">
                                                             <a href="#" class="icon-small">Comentarios<span class="mini-text" id="commentsCurrentBig"></span></a>
                                                             <div class="content">
@@ -1060,49 +1014,47 @@
     <script src="../js/cantidad.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-                //contador de promociones
-const countDate = new Date('october 20, 2023 00:00:00').getTime();
+        //contador de promociones
+        const countDate = new Date('october 20, 2023 00:00:00').getTime();
 
-function newYear(){
-    const now = new Date().getTime();
-    gap = countDate - now;
+        function newYear(){
+            const now = new Date().getTime();
+            gap = countDate - now;
 
-    const segundos = 1000;
-    const minutos = segundos * 60;
-    const horas = minutos * 60;
-    const dias = horas * 24;
+            const segundos = 1000;
+            const minutos = segundos * 60;
+            const horas = minutos * 60;
+            const dias = horas * 24;
 
-    const d = Math.floor(gap / (dias));
-    const h = Math.floor((gap % (dias)) / (horas));
-    const m = Math.floor((gap % (horas)) / (minutos));
-    const s = Math.floor((gap % (minutos)) / (segundos)); 
+            const d = Math.floor(gap / (dias));
+            const h = Math.floor((gap % (dias)) / (horas));
+            const m = Math.floor((gap % (horas)) / (minutos));
+            const s = Math.floor((gap % (minutos)) / (segundos)); 
 
-    document.getElementById('dias').innerText = d;
-    document.getElementById('horas').innerText = h;
-    document.getElementById('minutos').innerText = m;
-    document.getElementById('segundos').innerText = s;
-}
+            document.getElementById('dias').innerText = d;
+            document.getElementById('horas').innerText = h;
+            document.getElementById('minutos').innerText = m;
+            document.getElementById('segundos').innerText = s;
+        }
 
-setInterval(function(){
-    newYear();
-},1000);
-</script>
+        setInterval(function(){
+            newYear();
+        },1000);
+    </script>
 
 
 <script>
                 
-let id_prod = <?= json_encode($id_prod)?>;
-let nombre_producto = <?= json_encode($nombre_producto)?>;
-let oferta_producto = <?= json_encode($oferta_producto)?>;
-let precio_producto = <?= json_encode($precio_producto)?>;
-let producto_vendido = <?= json_encode($producto_vendido)?>;
-let producto_stock = <?= json_encode($producto_stock)?>;
-let producto_comentario = <?= json_encode($producto_comentario)?>;
-let producto_detalle = <?= json_encode($producto_detalle)?>;
-let  img_producto_reverso = '<?= $img_producto_reverso ?>';
-let img_producto_frente = '<?= $img_producto_frente ?>';
-
-
+    let id_prod = <?= json_encode($id_prod)?>;
+    let nombre_producto = <?= json_encode($nombre_producto)?>;
+    let oferta_producto = <?= json_encode($oferta_producto)?>;
+    let precio_producto = <?= json_encode($precio_producto)?>;
+    let producto_vendido = <?= json_encode($producto_vendido)?>;
+    let producto_stock = <?= json_encode($producto_stock)?>;
+    let producto_comentario = <?= json_encode($producto_comentario)?>;
+    let producto_detalle = <?= json_encode($producto_detalle)?>;
+    let  img_producto_reverso = '<?= $img_producto_reverso ?>';
+    let img_producto_frente = '<?= $img_producto_frente ?>';
 
 </script>
 <script src="../js/getProduct.js"></script>

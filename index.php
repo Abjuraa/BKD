@@ -1,3 +1,29 @@
+<?php
+
+include("php/conexion.php");
+
+$queryM = "SELECT * FROM `productos` WHERE `producto_estrella` = 1";       
+$resultado = mysqli_query($conex, $queryM);
+$datos = mysqli_fetch_assoc($resultado); 
+
+$id_producto_star = $datos['id_prod'];       
+$producto_nombre_star = $datos['nombre_producto'];
+$producto_oferta_star = $datos['oferta_producto'];
+$producto_img_star = base64_encode($datos['img_producto_frente']);
+$producto_precio_star = $datos['precio_producto'];
+$producto_vendido_star = $datos['producto_vendido'];
+$producto_stock_star = $datos['producto_stock'];   
+$producto_comment_star = $datos['producto_comentario'];      
+
+$queryPO = "SELECT * FROM `productos` WHERE `offert_now` = 1";
+    $resultadoProducts = mysqli_query($conex, $queryPO);
+    $datosProd = array(); 
+
+    while ($row = mysqli_fetch_assoc($resultadoProducts)) {
+        $datosProd[] = $row;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -625,6 +651,7 @@
         <!-- header -->
 
         <main>
+
             <div class="slider">
                 <div class="container">
                     <div class="wrapper">
@@ -728,42 +755,11 @@
                 <div class="container">
                     <div class="wrapper">
                         <div class="sectop flexitem">
-                            <h2><span class="circle"></span><span>Productos más vendidos</span></h2>
+                            <h2><span class="circle"></span><span>Productos en oferta</span></h2>
                         </div>
                         <div class="column">
                             <div class="flexwrap">
                                 <div class="row products big">
-
-                                <?php
-
-                                include("php/conexion.php");
-
-                                $queryM = "SELECT * FROM `productos` WHERE `producto_estrella` = 1";       
-                                $resultado = mysqli_query($conex, $queryM);
-                                $datos = mysqli_fetch_assoc($resultado); 
-                                $id_producto_star = $datos['id_prod'];       
-                                $producto_nombre_star = $datos['nombre_producto'];
-                                $producto_oferta_star = $datos['oferta_producto'];
-                                $producto_img_star = base64_encode($datos['img_producto_frente']);
-                                $producto_precio_star = $datos['precio_producto'];
-                                $producto_vendido_star = $datos['producto_vendido'];
-                                $producto_stock_star = $datos['producto_stock'];   
-                                $producto_comment_star = $datos['producto_comentario'];                   
-                                ?>
-
-                                <script>
-                                let id_producto_star = <?= json_encode($id_producto_star)?>;
-                                let producto_nombre_star = <?= json_encode($producto_nombre_star)?>;
-                                let producto_oferta_star = <?= json_encode($producto_oferta_star)?>;
-                                let producto_img_star = '<?= $producto_img_star?>';
-                                let producto_precio_star = <?= json_encode($producto_precio_star)?>;
-                                let producto_vendido_star = <?= json_encode($producto_vendido_star)?>;
-                                let producto_stock_star = <?= json_encode($producto_stock_star)?>;
-                                let producto_comentario_star = <?= json_encode($producto_comment_star)?>;
-                                console.log(id_producto_star, producto_nombre_star);
-
-                                </script>
-
 
                                     <div class="item">
                                         <div class="offer">
@@ -813,10 +809,8 @@
                                         </div>
                                     </div>
 
-
-
                                 </div>
-                                <div class="row products mini">
+                                <div id="colum_products_offert" class="row products mini">
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
@@ -884,6 +878,7 @@
                                         </div>
                                     </div>
 
+
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
@@ -950,7 +945,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row products mini">
+                                <div id="colum_products_offert" class="row products mini">
                                     <div class="item">
                                         <div class="media">
                                             <div class="thumbnail object-cover">
@@ -1415,6 +1410,7 @@
 
         </main>
         <!-- main -->
+        
 
         <footer>
             <div class="newsletter">
@@ -1585,7 +1581,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/renderCart.js"></script>
-    <script src="js/productStarLogic.js"></script>
 
     <script>
         renderCart();
@@ -1620,5 +1615,19 @@ setInterval(function(){
     newYear();
 },1000)
     </script>
+    
+    <script>
+    let id_producto_star = <?= json_encode($id_producto_star)?>;
+    let producto_nombre_star = <?= json_encode($producto_nombre_star)?>;
+    let producto_oferta_star = <?= json_encode($producto_oferta_star)?>;
+    let producto_img_star = '<?= $producto_img_star?>';
+    let producto_precio_star = <?= json_encode($producto_precio_star)?>;
+    let producto_vendido_star = <?= json_encode($producto_vendido_star)?>;
+    let producto_stock_star = <?= json_encode($producto_stock_star)?>;
+    let producto_comentario_star = <?= json_encode($producto_comment_star)?>;
+    let products_offert_categoria = <?php echo json_encode($datosProd) ?>;
+
+</script>
+<script src="js/productStarLogic.js"></script>
 </body>
 </html>
