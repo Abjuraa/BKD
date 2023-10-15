@@ -23,13 +23,13 @@ function renderProductsOffert(columData, columHtml){
                             <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
                         </ul>
                     </div>
-                    <div class="discount circle flexcenter"><span>${p.oferta_producto}</span></div>
+                    <div class="discount circle flexcenter"><span>${p.oferta_producto + '%'}</span></div>
                 </div>
                 <div class="content">
                     <h3 class="main-links"><a href="view/detailView.php?index=${p.id_prod}">${p.nombre_producto}</a></h3>
                     <div class="rating">
                         <div class="stars"></div>
-                        <span class="mini-text">${p.producto_comentario.split(";").length}</span>
+                        <span class="mini-text">${'(' + p.producto_comentario.split(";").length + ') Valoraciones'}</span>
                     </div>
                     <div class="price">
                         <span class="current">${USDollar.format(p.precio_producto - ((p.oferta_producto * p.precio_producto)) /100)}</span>
