@@ -881,6 +881,31 @@ nav .fly-item,
        .products:where(.mini,.main) h3{
         font-weight: 400;
        }
+       .content-text{
+        height: -webkit-fill-available;
+        position: relative;
+       }
+
+       .nameProductContent{
+        display: block;
+        height: 50%;
+       }
+
+       .nameCardProduct{
+        overflow: hidden;
+        text-overflow: ellipsis;
+       }
+
+      .ratingRandom{
+        height: 25%;
+      }
+      .priceRandom{
+        height: 25%;
+      }
+      .offOfferts{
+        display: none;
+      }
+       
 
       /* 04. PRODUCTS ---------------------------
       * d. MAIN product
