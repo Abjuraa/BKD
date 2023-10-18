@@ -704,33 +704,21 @@
                                                         <span>Filtro</span>
                                                     </a>
                                                 </div>
-                                                <div class="item-sortir">
-                                                    <div class="label">
-                                                        <span class="mobile-hide">Busqueda predeterminada</span>
-                                                        <div class="desktop-hide">Default</div>
-                                                        <i class="ri-arrow-down-s-line"></i>
-                                                    </div>
-                                                    <ul>
-                                                        <li>Default</li>
-                                                        <li>Nombre producto</li>
-                                                        <li>Precio</li>
-                                                    </ul>
-                                                </div>
                                                 <div class="item-perpage mobile-hide">
-                                                    <div class="label">10 Produtos por página</div>
+                                                    <div id="infoSizePage" class="label">Mostrar 10 por pagina</div>
                                                     <div class="desktop-hide">10</div>
                                                 </div>
                                                 
                                                 <div class="item-options">
-                                                    <div class="label">
+                                                    <div class="label" id="dropdown-label">
                                                         <span class="mobile-hide">Mostrar 10 por pagina</span>
                                                         <div class="desktop-hide">10</div>
-                                                        <i class="ri-arrow-down-s-line"></i>
+                                                        <i class="ri-arrow-down-s-line" id="dropdown-icon"></i>
                                                     </div>
-                                                    <ul>
-                                                        <li>10</li>
-                                                        <li>20</li>
-                                                        <li>30</li>
+                                                    <ul id="dropdown-list">
+                                                        <li>Mostrar 10 por pagina</li>
+                                                        <li>Mostrar 20 por pagina</li>
+                                                        <li>Mostrar 30 por pagina</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -1191,6 +1179,7 @@
     <script src="../js/index.js"></script>
     <script src="../js/renderCart.js"></script>
     <script src="../js/inputRank.js"></script>
+
     <script>
         renderCart();
     </script>
@@ -1215,35 +1204,13 @@
             }
         })
     </script>
+    
     <script>
-    const seccionesHtml = document.querySelector('#seccions');
-    const categoriaHtml = document.querySelector('#categoria');
+
     let secciones = <?= json_encode($datos)?>;
     let categoria = <?= json_encode($categorias)?>;
-
-    secciones.forEach(e => {
-        let childSection = `<li id=${e.id_secciones}>
-        <input type="checkbox" name="checkbox" id="${(e.nombre_seccion).split(" ")}">
-        <label for=${(e.nombre_seccion).split(" ")}>
-            <span class="checked"></span>
-            <span>${capitalizar(e.nombre_seccion)}</span>
-        </label>
-        
-    </li>`;
-    seccionesHtml.innerHTML += childSection;
-    });
-
-    categoria.forEach(e => {
-        let childCategoria = `<li id=${e.id_categoria}>
-        <input type="checkbox" name="checkbox" id="${(e.nombre_categoria).split(" ")}">
-        <label for=${(e.nombre_categoria).split(" ")}>
-            <span class="checked"></span>
-            <span>${capitalizar(e.nombre_categoria)}</span>
-        </label>
-        
-    </li>`
-    categoriaHtml.innerHTML += childCategoria;
-    });
 </script>
+<script src="../js/getProductsListForFilters.js"></script>
+<script src="../js/logicSelectInput.js"></script>
 </body>
 </html>

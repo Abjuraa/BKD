@@ -77,7 +77,11 @@ bigImage.forEach(b => {
     b.src = decode_img(img_producto_frente);
 });
 bigImageBack.forEach(b => {
-    b.src = decode_img(img_producto_reverso ? img_producto_reverso : "../img/frascoAn.png") ;
+    if(img_producto_reverso === ""){
+        b.src = "../img/frascoAn.png" ;
+        console.log(img_producto_reverso);
+        console.log(decode_img(img_producto_reverso));
+    }
 });
 
 function validateOffert(){

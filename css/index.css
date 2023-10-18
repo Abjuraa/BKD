@@ -1725,6 +1725,26 @@ nav .fly-item,
     visibility: visible;
     opacity: 1;
    }
+   #dropdown-list {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  #dropdown-list.active {
+    display: block;
+  }
+  
+  .label-text {
+    display: block; /* Mostrar el texto por defecto */
+  }
+  
+  #dropdown-label.active .label-text {
+    display: none; /* Ocultar el texto cuando la lista está activa */
+  }
+  
+  
   /* --------------- 
   * 11. CART
   * ------------- */
