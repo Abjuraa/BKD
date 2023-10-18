@@ -1,5 +1,11 @@
 const seccionesHtml = document.querySelector('#seccions');
 const categoriaHtml = document.querySelector('#categoria');
+const itemByPage = document.querySelector('#items-forPage');
+const seccionsByPage = document.getElementsByName('seccions-options');
+const categoryByPage = document.getElementsByName('category-options');
+const bigPrice = document.querySelector('#maxPrice');
+const littlePrice = document.querySelector('#minPrice');
+const buttonSearch = document.querySelector('#button-searchStore');
 
 secciones.forEach(e => {
     let childSection = `<li id=${e.id_secciones}>
@@ -25,15 +31,10 @@ categoria.forEach(e => {
 categoriaHtml.innerHTML += childCategoria;
 });
 
-const itemByPage = document.querySelector('#items-forPage');
-const seccionsByPage = document.getElementsByName('seccions-options');
-const categoryByPage = document.getElementsByName('category-options');
-
 function getSelectedFilters(elementsHtml) {
     const selected = [];
 
 elementsHtml.forEach((item) => {
-    console.log(item.value);
     item.addEventListener ('click', (e)=> {
     if(item.checked){
         selected.push(item.value);
@@ -43,14 +44,69 @@ elementsHtml.forEach((item) => {
             selected.splice(toDelete, 1);
         }
     }
-    console.log(selected); 
     });
     
 })
 return selected;
 }
 let selectedSeccions = getSelectedFilters(seccionsByPage);
-let categorySeccions= getSelectedFilters(categoryByPage);
+let categorySeccions = getSelectedFilters(categoryByPage);
+let sizePage = 10;
+
+const listItems = document.querySelectorAll("#dropdown-list li");
+
+listItems.forEach(item => {
+  item.addEventListener("click", () => {
+    const selectedItemText = item.textContent;
+    switch (selectedItemText) {
+        case 'Mostrar 10 por página':
+            sizePage = 10;
+            break;
+
+        case 'Mostrar 20 por página':
+            sizePage = 20;
+            break;
+
+        case 'Mostrar 30 por página':
+            sizePage = 30;
+            break;
+    
+        default:
+            break;
+    }
+  });
+});
+
+buttonSearch.addEventListener('click', e => {
+    let littlePriceValue = littlePrice.value;
+    let bigPriceValue = bigPrice.value;
+    console.log(selectedSeccions);
+    console.log(categorySeccions);
+    console.log(sizePage);
+    console.log(littlePriceValue);
+    console.log(bigPriceValue);
+    let requestObject = {
+        'selectedSeccions' : selectedSeccions,
+        'categorySeccions' : categorySeccions,
+        'sizePage' : sizePage,
+        'littlePriceValue' : littlePriceValue,
+        'bigPriceValue' : bigPriceValue,
+    }
+const xhr = new XMLHttpRequest();
+xhr.open("POST", "../php/requestProductsStore.php", true);
+xhr.setRequestHeader("Content-Type", "application/json");
+
+xhr.onreadystatechange = function () {
+if (xhr.readyState == 4 && xhr.status == 200) {
+// Manejar la respuesta del servidor (si es necesario)
+console.log(xhr.responseText);
+}
+};
+    xhr.send(JSON.stringify(requestObject));
+})
+
+
+
 
 
 

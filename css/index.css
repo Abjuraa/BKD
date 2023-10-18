@@ -1743,6 +1743,10 @@ nav .fly-item,
   #dropdown-label.active .label-text {
     display: none; /* Ocultar el texto cuando la lista está activa */
   }
+  .button-search{
+    padding: 2em 4em;
+    width: 3em;
+  }
   
   
   /* --------------- 
