@@ -29,3 +29,6 @@ function viewSelect (label, icon, list, infoLabel){
     });
 
 }
+
+
+viewSelect(labelPage, iconPage, listPage, infoLabelPage);
