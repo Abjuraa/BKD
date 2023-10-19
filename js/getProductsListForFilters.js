@@ -19,17 +19,17 @@ secciones.forEach(e => {
 seccionesHtml.innerHTML += childSection;
 });
 
-categoria.forEach(e => {
-    let childCategoria = `<li id=${e.id_categoria}>
-    <input type="checkbox" name="category-options" id="${(e.nombre_categoria).split(" ")}" value="${e.id_categoria}">
-    <label for=${(e.nombre_categoria).split(" ")}>
-        <span class="checked"></span>
-        <span>${capitalizar(e.nombre_categoria)}</span>
-    </label>
+// categoria.forEach(e => {
+//     let childCategoria = `<li id=${e.id_categoria}>
+//     <input type="checkbox" name="category-options" id="${(e.nombre_categoria).split(" ")}" value="${e.id_categoria}">
+//     <label for=${(e.nombre_categoria).split(" ")}>
+//         <span class="checked"></span>
+//         <span>${capitalizar(e.nombre_categoria)}</span>
+//     </label>
     
-</li>`
-categoriaHtml.innerHTML += childCategoria;
-});
+// </li>`
+// categoriaHtml.innerHTML += childCategoria;
+// });
 
 function getSelectedFilters(elementsHtml) {
     const selected = [];
@@ -50,7 +50,7 @@ elementsHtml.forEach((item) => {
 return selected;
 }
 let selectedSeccions = getSelectedFilters(seccionsByPage);
-let categorySeccions = getSelectedFilters(categoryByPage);
+// let categorySeccions = getSelectedFilters(categoryByPage);
 let sizePage = 10;
 
 const listItems = document.querySelectorAll("#dropdown-list li");
@@ -80,14 +80,9 @@ listItems.forEach(item => {
 buttonSearch.addEventListener('click', e => {
     let littlePriceValue = littlePrice.value;
     let bigPriceValue = bigPrice.value;
-    console.log(selectedSeccions);
-    console.log(categorySeccions);
-    console.log(sizePage);
-    console.log(littlePriceValue);
-    console.log(bigPriceValue);
     let requestObject = {
         'selectedSeccions' : selectedSeccions,
-        'categorySeccions' : categorySeccions,
+        // 'categorySeccions' : categorySeccions,
         'sizePage' : sizePage,
         'littlePriceValue' : littlePriceValue,
         'bigPriceValue' : bigPriceValue,

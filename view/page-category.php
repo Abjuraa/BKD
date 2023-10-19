@@ -650,12 +650,12 @@
                                             <ul id="seccions"></ul>
                                         </div>
 
-                                        <div class="filter-block">
+                                        <!-- <div class="filter-block">
                                             <h4>Categorias</h4>
                                             <ul id="categoria">
                                                 
                                             </ul>
-                                        </div>
+                                        </div> -->
 
                                         <div class="filter-block pricing">
                                             <h4>Precio</h4>
