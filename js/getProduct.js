@@ -17,6 +17,7 @@ const imageFull = document.querySelector('#image_full');
 const imageFullBack = document.querySelector('#image_full_back');
 const imageView = document.querySelectorAll('.image_img_full');
 const itemProductCart = document.querySelector('#product-id');
+const offertAvailable = document.querySelectorAll('.contentOffertAvailable');
 console.log(itemProductCart);
 
 
@@ -61,12 +62,12 @@ let precioDescuento = precio_producto -((oferta_producto * precio_producto) /100
 
 title.innerHTML = nombre_producto;
 namePlace.innerHTML = nombre_producto;
-offert.innerHTML = oferta_producto + '%<br>OFF';
 titleProduct.innerHTML = nombre_producto;
 priceCurrent.innerHTML =  USDollar.format(precioDescuento);
 priceNormal.innerHTML = USDollar.format(precio_producto);
 commentsCount.innerHTML = comentarios.length +' Comentarios';
 commentsCurrentBig.innerHTML = comentarios.length;
+offert.innerHTML? offert.innerHTML = oferta_producto + '%<br>OFF':'';
 commentsSpan.innerHTML = comentarios.length + ' Comentarios';
 productosVendidos.innerHTML = producto_vendido;
 productosStock.innerHTML = producto_stock;
@@ -76,7 +77,22 @@ bigImage.forEach(b => {
     b.src = decode_img(img_producto_frente);
 });
 bigImageBack.forEach(b => {
-    b.src = decode_img(img_producto_reverso);
+    if(img_producto_reverso === ""){
+        b.src = "../img/frascoAn.png" ;
+        console.log(img_producto_reverso);
+        console.log(decode_img(img_producto_reverso));
+    }
 });
+
+function validateOffert(){
+    if(offertNow == 0){
+        offertAvailable.forEach(os => {
+            os.className += " offOfferts";
+        })
+        } else{
+           
+        } 
+}
+validateOffert();
 
 

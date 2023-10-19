@@ -881,6 +881,31 @@ nav .fly-item,
        .products:where(.mini,.main) h3{
         font-weight: 400;
        }
+       .content-text{
+        height: -webkit-fill-available;
+        position: relative;
+       }
+
+       .nameProductContent{
+        display: block;
+        height: 50%;
+       }
+
+       .nameCardProduct{
+        overflow: hidden;
+        text-overflow: ellipsis;
+       }
+
+      .ratingRandom{
+        height: 25%;
+      }
+      .priceRandom{
+        height: 25%;
+      }
+      .offOfferts{
+        display: none;
+      }
+       
 
       /* 04. PRODUCTS ---------------------------
       * d. MAIN product
@@ -1700,6 +1725,30 @@ nav .fly-item,
     visibility: visible;
     opacity: 1;
    }
+   #dropdown-list {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  #dropdown-list.active {
+    display: block;
+  }
+  
+  .label-text {
+    display: block; /* Mostrar el texto por defecto */
+  }
+  
+  #dropdown-label.active .label-text {
+    display: none; /* Ocultar el texto cuando la lista está activa */
+  }
+  .button-search{
+    padding: 2em 4em;
+    width: 3em;
+  }
+  
+  
   /* --------------- 
   * 11. CART
   * ------------- */
