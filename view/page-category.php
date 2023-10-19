@@ -647,9 +647,18 @@
                                     <div class="filter">
                                         <div class="filter-block">
                                             <h4>Secciones</h4>
-                                            <ul id="seccions">
-                                                
-                                            </ul>
+                                            <div class="item-options">
+                                                    <div class="label" id="dropdown-label">
+                                                        <span class="mobile-hide">Mostrar 10 por página</span>
+                                                        <div class="desktop-hide">10</div>
+                                                        <i class="ri-arrow-down-s-line" id="dropdown-icon"></i>
+                                                    </div>
+                                                    <ul id="seccions">
+                                                        <li>Mostrar 10 por página</li>
+                                                        <li>Mostrar 20 por página</li>
+                                                        <li>Mostrar 30 por página</li>
+                                                    </ul>
+                                                </div>
                                         </div>
 
                                         <div class="filter-block">

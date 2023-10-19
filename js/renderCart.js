@@ -61,7 +61,7 @@ localGetOut.forEach((p)=>{
 })
 
 cartTotal.innerHTML=`
-  $ ${USDollar.format(total.toFixed(0))}
+   ${USDollar.format(total.toFixed(0))}
 `;
 subTotal.innerHTML =`
 <p>Subtotal</p>
