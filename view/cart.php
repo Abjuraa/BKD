@@ -18,8 +18,8 @@
         <aside class="site-off desktop-hide">
             <div class="off-canvas">
                 <div class="canvas-head flexitem">
-                    <div class="logo"><a href="index.php"><span class="circle"></span>Hamburgo</a></div>
-                    <a href="#" class="t-close flexcenter"><span class="ri-close-line"></span></a>
+                    <div class="logo"><a href="../index.php"><span class="circle"></span>Hamburgo</a></div>
+                    <a href="../index.php" class="t-close flexcenter"><span class="ri-close-line"></span></a>
                 </div>
                 <div class="departments"></div>
                 <nav></nav>
@@ -41,23 +41,16 @@
                         <div class="right">
                             <ul class="flexitem main-links">
                                 <li><a href="login.php">Iniciar sesión</a></li>
-                                <li><a href="#">Mi cuenta</a></li>
-                                <li><a href="#">Domicilios</a></li>
                                 <li><a href="#">COP<span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
                                         <ul>
                                             <li class="current"><a href="#">COP</a></li>
                                             <li><a href="#">USD</a></li>
-                                            <!-- <li><a href="#"></a></li>
-                                            <li><a href="#"></a></li> -->
                                         </ul>
                                     </li>
                                     <li><a href="#">English <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
                                         <ul>
                                             <li class="current"><a href="#">Español</a></li>
                                             <li><a href="#">Ingles</a></li>
-                                            <!-- <li><a href="#"></a></li>
-                                            <li><a href="#"></a></li> -->
-                                        </ul>
                                     </li>
                             </ul>
                         </div>
@@ -71,7 +64,7 @@
                     <div class="wrapper flexitem">
                         <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
                         <div class="left flexitem">
-                            <div class="logo"><a href="/"><span class="circle"></span>Hamburgo</a></div>
+                            <div class="logo"><a href="../index.php"><span class="circle"></span>Hamburgo</a></div>
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
                                     <li><a href="../index.php">Inicio</a></li>
@@ -102,11 +95,6 @@
                                             </div>
                                             <div class="cart-body">
                                                 <ul class="products mini">
-
-
-
-
-
                                                 </ul>
                                             </div>
                                             <div class="cart-footer">
@@ -115,7 +103,6 @@
                                                 </div>
                                                 <div class="actions">
                                                     <a href="checkout.php" class="primary-button">Pagar</a>
-                                                    <a href="cart.php" class="secondary-button">Ver Carrito</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -679,12 +666,7 @@
                                                         <form action="">
                                                             <label for="country">Pais</label>
                                                             <select name="country" id="country">
-                                                                <!-- <option value="1">Afganistan</option> -->
                                                                 <option value="2" selected="selected">Colombia</option>
-                                                                <!-- <option value="3">Peru</option>
-                                                                <option value="4">Venezuela</option>
-                                                                <option value="5">Brasil</option>
-                                                                <option value="6">Others</option> -->
                                                             </select>
                                                         </form>
                                                     </div>
@@ -702,26 +684,6 @@
                                                             </select>
                                                         </form>
                                                     </div>
-                                                    <!-- <div class="postal-code">
-                                                        <form action="">
-                                                            <label for="postal">Zip-Codigo postal</label>
-                                                            <input type="number" name="postal" id="postal">
-                                                        </form>
-                                                    </div> -->
-                                                    <!-- <div class="rate-options variant">
-                                                        <form action="">
-                                                            <p>
-                                                                <span>Flat: $10.00</span>
-                                                                <input type="radio" name="rate-options" id="flat" checked>
-                                                                <label for="flat" class="circle"></label>
-                                                            </p>
-                                                            <p>
-                                                                <span>Best: $0.00</span>
-                                                                <input type="radio" name="rate-options" id="best">
-                                                                <label for="best" class="circle"></label>
-                                                            </p>
-                                                        </form>
-                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -919,24 +881,6 @@
         </div>
         <!-- search bottom -->
 
-        <!-- <div id="modal" class="modal">
-            <div class="content flexcol">
-                <div class="image object-cover">
-                    <img src="../img/products/apparel4.jpg" alt="">
-                </div>
-                <h2>Get the latest deals and coupons</h2>
-                <p class="mobile-hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est repellendus nobis obcaecati possimus, beatae modi.</p>
-                <form action="" class="search">
-                    <span class="icon-large"><i class="ri-mail-line"></i></span>
-                    <input type="mail" placeholder="Your email address">
-                    <button>Subscribe</button>
-                </form>
-                <a href="#" class="mini-text">Do not show me this again</a>
-                <a href="#" class="t-close modalclose flexcenter">
-                    <i class="ri-close-line"></i>
-                </a>
-            </div>
-        </div> -->
 
         <div class="overlay"></div>
     </div>
@@ -952,22 +896,6 @@
         const FtoShow = '.filter';
         const Fpopup = document.querySelector(FtoShow);
         const Ftrigger = document.querySelector('.filter-trigger');
-
-        // Ftrigger.addEventListener('click', () => {
-        //     setTimeout(() => {
-        //         if(!Fpopup.classList.contains('show')) {
-        //             Fpopup.classList.add('show')
-        //         }
-        //     }, 250)
-        // })
-
-        //auto close by click outside .filter
-        // document.addEventListener('click', (e) => {
-        //     const isClosest = e.target.closest(FtoShow);
-        //     if(!isClosest && Fpopup.classList.contains('show')) {
-        //         Fpopup.classList.remove('show')
-        //     }
-        // })
     </script>
 </body>
 </html>

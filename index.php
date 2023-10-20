@@ -37,8 +37,6 @@
                         <div class="right">
                             <ul class="flexitem main-links">
                                     <li><a href="view/login.php">Iniciar sesión</a></li>
-                                    <li><a href="#">Mi cuenta</a></li>
-                                    <li><a href="#">Domicilios</a></li>
                                     <li><a href="#">COP<span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
                                         <ul>
                                             <li class="current"><a href="#">COP</a></li>
@@ -94,11 +92,6 @@
                                         </div>
                                         <div class="cart-body">
                                             <ul class="products mini">
-                                            
-                                                
-                                                
-                                                
-                                                
                                             </ul>
                                         </div>
                                         <div class="cart-footer">
@@ -829,34 +822,6 @@
                 <div class="container">
                     <div class="wrapper">
                         <div class="column">
-                            <!-- <div class="banner flexwrap">
-                                <div class="row">
-                                    <div class="item">
-                                        <div class="image">
-                                            <img src="img/banner/banner1.jpg" alt="">
-                                        </div>
-                                        <div class="text-content flexcol">
-                                            <h4>Increibles Descuentos!</h4>
-                                            <h3><span>Consigue Increibles descuentos en</span><br>Living room chair</h3>
-                                            <a href="#" class="primary-button">Compralo Ahora</a>
-                                        </div>
-                                        <a href="#" class="over-link"></a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="item get-gray">
-                                        <div class="image">
-                                            <img src="img/banner/banner2.jpg" alt="">
-                                        </div>
-                                        <div class="text-content flexcol">
-                                            <h4>Increibles Descuentos!</h4>
-                                            <h3><span>Descuento todo el día</span><br>Office outfit</h3>
-                                            <a href="#" class="primary-button">Compralo ahora</a>
-                                        </div>
-                                        <a href="#" class="over-link"></a>
-                                    </div>
-                                </div>
-                            </div> -->
                             <!-- banners -->
 
                         </div>

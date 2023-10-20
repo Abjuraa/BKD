@@ -663,7 +663,7 @@
                                     <div class="row">
                                         <div class="item is_sticky">
                                             <div class="price">
-                                                <span class="discount contentOffertAvailable" id="discount">32%<br>OFF</span>
+                                                <span class="discount contentOffertAvailable" id="discount">0%<br>OFF</span>
                                             </div>
                                             <div class="big-image">
                                                 <div class="big-image-wrapper swiper-wrapper">
@@ -768,24 +768,15 @@
                                                 </div>
                                                 <div class="description collapse">
                                                     <ul>
-                                                        <li class="has-child expand">
-                                                            <a href="#0" class="icon-small">Informacion</a>
-                                                            <ul class="content">
-                                                                <li><span>Marcas</span> <span>Nike</span></li>
-                                                                <li><span>Actividad</span> <span>Running</span></li>
-                                                                <li><span>Material</span> <span>Fleece</span></li>
-                                                                <li><span>Género</span> <span>Men</span></li>
-                                                            </ul>
-                                                        </li>
                                                         <li class="has-child">
                                                             <a href="#0" class="icon-small">Detalles</a>
                                                             <div class="content">
-                                                                * <p>Lorem ipsum dolor sit, amet consectetur adipisicing
+                                                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing
                                                                     elit. Dicta excepturi cupiditate distinctio magni et
                                                                     veritatis eaque quam vel quaerat enim ipsum nihil,
                                                                     ducimus, provident recusandae consequuntur!
                                                                     Doloremque in dignissimos expedita!</p>
-                                                                * <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                                                                     elit. Dolorem veritatis soluta, aliquid sit
                                                                     recusandae atque omnis magni inventore illo totam
                                                                     quis, natus aliquam! Recusandae rerum laborum atque

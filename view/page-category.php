@@ -54,7 +54,6 @@ while ($row = mysqli_fetch_assoc($resultado2)) {
                     <div class="wrapper flexitem">
                         <div class="left">
                             <ul class="flexitem main-links">
-                                <!-- <li><a href="#">Blog</a></li> -->
                                 <li><a href="#">Futuros productos</a></li>
                                 <li><a href="#">Deseados</a></li>
                             </ul>
@@ -62,22 +61,17 @@ while ($row = mysqli_fetch_assoc($resultado2)) {
                         <div class="right">
                             <ul class="flexitem main-links">
                                     <li><a href="login.php">Iniciar sesión</a></li>
-                                    <li><a href="#">Mi cuenta</a></li>
-                                    <li><a href="#">Domicilios</a></li>
                                     <li><a href="#">COP<span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
                                         <ul>
                                             <li class="current"><a href="#">COP</a></li>
                                             <li><a href="#">USD</a></li>
-                                            <!-- <li><a href="#"></a></li>
-                                            <li><a href="#"></a></li> -->
+
                                         </ul>
                                     </li>
                                     <li><a href="#">Español <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
                                         <ul>
                                             <li class="current"><a href="#">Español</a></li>
                                             <li><a href="#">Ingles</a></li>
-                                            <!-- <li><a href="#"></a></li>
-                                            <li><a href="#"></a></li> -->
                                         </ul>
                                     </li>
                             </ul>
@@ -646,25 +640,8 @@ while ($row = mysqli_fetch_assoc($resultado2)) {
                                             <h4>Secciones</h4>
                                             <ul id="seccions"></ul>
                                         </div>
-
-                                        <!-- <div class="filter-block">
-                                            <h4>Categorias</h4>
-                                            <ul id="categoria">
-                                                
-                                            </ul>
-                                        </div> -->
-
                                         <div class="filter-block pricing">
                                             <h4>Precio</h4>
-                                            <!-- <div class="byprice">
-                                                <div class="range-track">
-                                                    <input type="range" value="0" min="0" max="1000000" step="20000">
-                                                </div>
-                                                <div class="price-range">
-                                                    <span class="price-form">$0</span>
-                                                    <span class="price-to">$1'000.000</span>
-                                                </div>
-                                            </div> -->
                                             <div class="byprice">
                                                 <div class="range-track">
                                                     <input type="range" id="minPrice" value="0" min="0" max="1000000" step="20000">
@@ -695,7 +672,7 @@ while ($row = mysqli_fetch_assoc($resultado2)) {
                                                 <h1>Productos</h1>
                                             </div>
                                             <div class="cat-description">
-                                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis, voluptates veritatis incidunt vero cum eligendi sint fugiat numquam sapiente nesciunt rerum ad explicabo placeat facere. Repudiandae minus ducimus sed dolorum eveniet eius atque aliquid dolores optio obcaecati ipsam commodi, nulla non nesciunt soluta molestiae aliquam ipsa quibusdam impedit voluptatibus. Quisquam fugiat nihil asperiores neque molestias ab eaque aperiam id possimus corporis sapiente magni maiores exercitationem, vitae quod. Quia repellendus fugit praesentium id! In, illum?</p> -->
+                                               
                                             </div>
                                             <div class="cat-navigation flexitem">
                                                 <div class="item-filter desktop-hide">
@@ -704,31 +681,11 @@ while ($row = mysqli_fetch_assoc($resultado2)) {
                                                         <span>Filtro</span>
                                                     </a>
                                                 </div>
-                                                <!-- <div class="item-perpage mobile-hide">
-                                                    <div id="infoSizePage" class="label">Mostrar 10 por página</div>
-                                                    <div class="desktop-hide">10</div>
-                                                </div> -->
-                                                
-                                                <!-- <div class="item-options">
-                                                    <div class="label" id="dropdown-label">
-                                                        <span class="mobile-hide">Mostrar 10 por página</span>
-                                                        <div class="desktop-hide">10</div>
-                                                        <i class="ri-arrow-down-s-line" id="dropdown-icon"></i>
-                                                    </div>
-                                                    <ul id="dropdown-list">
-                                                        <li>Mostrar 10 por página</li>
-                                                        <li>Mostrar 20 por página</li>
-                                                        <li>Mostrar 30 por página</li>
-                                                    </ul>
-                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
                                     <div id="productsListFilter" class="products main flexwrap">
                                     </div>
-                                    <!-- <div class="load-more flexcenter">
-                                        <a href="#" class="secondary-button">Más productos</a>
-                                    </div> -->
                                 </div>
                             </div>
                         </div>

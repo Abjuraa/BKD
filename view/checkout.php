@@ -33,7 +33,6 @@
                     <div class="wrapper flexitem">
                         <div class="left">
                             <ul class="flexitem main-links">
-                                <!-- <li><a href="#">Blog</a></li> -->
                                 <li><a href="#">Futuros productos</a></li>
                                 <li><a href="#">Deseados</a></li>
                             </ul>
@@ -41,22 +40,16 @@
                         <div class="right">
                             <ul class="flexitem main-links">
                                 <li><a href="login.php">Iniciar sesión</a></li>
-                                <li><a href="#">Mi cuenta</a></li>
-                                <li><a href="#">Domicilios</a></li>
                                 <li><a href="#">COP<span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
                                         <ul>
                                             <li class="current"><a href="#">COP</a></li>
                                             <li><a href="#">USD</a></li>
-                                            <!-- <li><a href="#"></a></li>
-                                            <li><a href="#"></a></li> -->
                                         </ul>
                                     </li>
                                     <li><a href="#">English <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
                                         <ul>
                                             <li class="current"><a href="#">Español</a></li>
                                             <li><a href="#">Ingles</a></li>
-                                            <!-- <li><a href="#"></a></li>
-                                            <li><a href="#"></a></li> -->
                                         </ul>
                                     </li>
                             </ul>
@@ -71,7 +64,7 @@
                     <div class="wrapper flexitem">
                         <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
                         <div class="left flexitem">
-                            <div class="logo"><a href="/"><span class="circle"></span>Hamburgo</a></div>
+                            <div class="logo"><a href="../index.php"><span class="circle"></span>Hamburgo</a></div>
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
                                     <li><a href="../index.php">Inicio</a></li>
@@ -82,7 +75,6 @@
                             <ul class="flexitem second-links">
                                 <li class="mobile-hide"><a href="#">
                                         <div class="icon-large"><i class="ri-heart-line"></i></div>
-                                        <!-- <div class="fly-item"><span class="item-number-fav">0</span></div> -->
                                     </a></li>
                                 <li class="iscart"><a href="#">
                                         <div class="icon-large">
@@ -102,11 +94,6 @@
                                             </div>
                                             <div class="cart-body">
                                                 <ul class="products mini">
-
-
-
-
-
                                                 </ul>
                                             </div>
                                             <div class="cart-footer">
@@ -114,7 +101,6 @@
                                                     <p>Subtotal</p>
                                                 </div>
                                                 <div class="actions">
-                                                    <a href="checkout.php" class="primary-button">Pagar</a>
                                                     <a href="cart.php" class="secondary-button">Ver Carrito</a>
                                                 </div>
                                             </div>
@@ -596,24 +582,6 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <!-- <li>
-                                            <a href="#">
-                                                <div class="icon-large"><i class="ri-android-line"></i></div>
-                                                Pet Supplies
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="icon-large"><i class="ri-basketball-line"></i></div>
-                                                Sports
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="icon-large"><i class="ri-shield-star-line"></i></div>
-                                                Best Seller
-                                            </a>
-                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -640,7 +608,7 @@
                         <div class="checkout flexwrap">
                             <div class="item left styled">
                                 <h1>Dirección De Envío</h1>
-                                <form action="">
+                                <form action="../php/gmailPurchaseSend.php" method="post">
                                     <p>
                                         <label for="email">Correo Electrónico <span></span></label>
                                         <input type="email" name="email" id="email" autocomplete="off" required>
@@ -690,23 +658,12 @@
                                     </p>
                                     <p>
                                         <label>Notas Pedido (Opcional)</label>
-                                        <textarea cols="30" rows="10"></textarea>
+                                        <textarea name="npedido" cols="30" rows="10"></textarea>
                                     </p>
-                                    <p class="checkset">
-                                        <input type="checkbox" id="anaccount">
-                                        <label for="anaccount">Crear Cuenta</label>
-                                    </p>
-                                </form>
-                                <div class="shipping-methods">
-                                    <h2>Metodo De Envío</h2>
-                                    <p class="checkset">
-                                        <input type="radio" checked>
-                                        <label>$5.00 Flade Rate</label>
-                                    </p>
-                                </div>
-                                <div class="primary-checkout">
+                                    <div class="primary-checkout">
                                     <button class="primary-button">Realizar Pedido</button>
                                 </div>
+                                </form>
                             </div>
                             <div class="item right " >
                                 <h2>Resumen Pedido</h2>
@@ -715,71 +672,23 @@
                                         <ul>
                                             <li>
                                                 <span>Subtotal</span>
-                                                <span>$2155.95</span>
+                                                <span id="subTotalCompra">$0</span>
                                             </li>
                                             <li>
                                                 <span>Descuento</span>
-                                                <span>-$100.00</span>
+                                                <span id="descuentoCompra">$0</span>
                                             </li>
                                             <li>
                                                 <span>Envío</span>
-                                                <span>$10.00</span>
+                                                <span id="envioCompra">$0</span>
                                             </li>
                                             <li>
                                                 <span>Total</span>
-                                                <strong>2065.95</strong>
+                                                <strong id="totalCompra">$0</strong>
                                             </li>
                                         </ul>
                                     </div>
-                                    <ul class="products mini">
-                                        <li class="item">
-                                            <div class="thumbnail object-cover">
-                                                <img src="../img/products/home2.jpg" alt="">
-                                            </div>
-                                            <div class="item-content">
-                                                <p>Dimmable Ceiling Light Modern</p>
-                                                <span class="price">
-                                                    <span>$279.00</span>
-                                                    <span>x2</span>
-                                                </span>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="thumbnail object-cover">
-                                                <img src="../img/products/home3.jpg" alt="">
-                                            </div>
-                                            <div class="item-content">
-                                                <p>Dimmable Ceiling Light Modern</p>
-                                                <span class="price">
-                                                    <span>$279.00</span>
-                                                    <span>x1</span>
-                                                </span>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="thumbnail object-cover">
-                                                <img src="../img/products/home4.jpg" alt="">
-                                            </div>
-                                            <div class="item-content">
-                                                <p>Dimmable Ceiling Light Modern</p>
-                                                <span class="price">
-                                                    <span>$279.00</span>
-                                                    <span>x1</span>
-                                                </span>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="thumbnail object-cover">
-                                                <img src="../img/products/home5.jpg" alt="">
-                                            </div>
-                                            <div class="item-content">
-                                                <p>Dimmable Ceiling Light Modern</p>
-                                                <span class="price">
-                                                    <span>$279.00</span>
-                                                    <span>x1</span>
-                                                </span>
-                                            </div>
-                                        </li>
+                                    <ul id="payProductsList" class="products mini">
                                     </ul>
                                 </div>
                             </div>
@@ -988,30 +897,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/renderCart.js"></script>
-    <script src="../js/cantidad.js"></script>
     <script>
         renderCart();
     </script>
+    <script src="../js/payCheckOutLogic.js"></script>
     <script>
         const FtoShow = '.filter';
         const Fpopup = document.querySelector(FtoShow);
         const Ftrigger = document.querySelector('.filter-trigger');
-
-        Ftrigger.addEventListener('click', () => {
-            setTimeout(() => {
-                if(!Fpopup.classList.contains('show')) {
-                    Fpopup.classList.add('show')
-                }
-            }, 250)
-        })
-
-        //auto close by click outside .filter
-        document.addEventListener('click', (e) => {
-            const isClosest = e.target.closest(FtoShow);
-            if(!isClosest && Fpopup.classList.contains('show')) {
-                Fpopup.classList.remove('show')
-            }
-        })
     </script>
 </body>
 </html>
