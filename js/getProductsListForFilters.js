@@ -93,8 +93,9 @@ xhr.setRequestHeader("Content-Type", "application/json");
 
 xhr.onreadystatechange = function () {
 if (xhr.readyState == 4 && xhr.status == 200) {
-// Manejar la respuesta del servidor (si es necesario)
-console.log(xhr.responseText);
+// console.log(xhr.responseText);
+let productsWithFilters = xhr.responseText;
+renderProductsFilter(productsWithFilters);
 }
 };
     xhr.send(JSON.stringify(requestObject));
