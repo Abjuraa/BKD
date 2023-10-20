@@ -1,10 +1,11 @@
-function renderProductsFilter(arrayProducts){
+
+function renderProductsFilter(arrayProducts, parentHTML){
+    parentHTML.innerHTML = "";
     arrayProducts.forEach(element => {
-        console.log(element);
         let child = ` <div class="item">
         <div class="media">
             <div class="thumbnail object-cover">
-                <a href="view/detailView.php?index=${element.id_prod}">
+                <a href="detailView.php?index=${element.id_prod}">
                     <img src="${decode_img(element.img_producto_frente)}" alt="">
                 </a>
             </div>
@@ -22,13 +23,14 @@ function renderProductsFilter(arrayProducts){
                 <div class="stars"></div>
                 <span class="mini-text">${'(' + element.producto_comentario.split(";").length + ') Valoraciones'}</span>
             </div>
-            <h3><a href="#">"view/detailView.php?index=${element.id_prod}">${element.nombre_producto}</a></h3>
+            <h3><a href="detailView.php?index=${element.id_prod}">${element.nombre_producto}</a></h3>
             <div class="price">
                 <span class="current">${USDollar.format(element.precio_producto - ((element.oferta_producto * element.precio_producto)) /100)}</span>
                 <span class="normal mini-text">${ USDollar.format(element.precio_producto)}</span>
             </div>
         </div>
        </div>`;
+       parentHTML.innerHTML += child;
      });
  };
 

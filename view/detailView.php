@@ -113,8 +113,8 @@
                                                     <p>Subtotal</p>
                                                 </div>
                                                 <div class="actions">
-                                                    <a href="checkout.html" class="primary-button">Pagar</a>
-                                                    <a href="cart.html" class="secondary-button">Ver Carrito</a>
+                                                    <a href="checkout.php" class="primary-button">Pagar</a>
+                                                    <a href="cart.php" class="secondary-button">Ver Carrito</a>
                                                 </div>
                                             </div>
                                         </div>

@@ -73,19 +73,24 @@ buttonSearch.addEventListener('click', e => {
         'littlePriceValue' : littlePriceValue,
         'bigPriceValue' : bigPriceValue,
     }
-const xhr = new XMLHttpRequest();
-xhr.open("POST", "../php/requestProductsStore.php", true);
-xhr.setRequestHeader("Content-Type", "application/json");
-
-xhr.onreadystatechange = function () {
-if (xhr.readyState == 4 && xhr.status == 200) {
-
-let productsWithFilters = JSON.parse(xhr.responseText);
-    renderProductsFilter(productsWithFilters);
-}
-};
-    xhr.send(JSON.stringify(requestObject));
+requestToPhp(requestObject);
 })
+function requestToPhp(dataToSend) {
+    const xhr = new XMLHttpRequest();
+        xhr.open("POST", "../php/requestProductsStore.php", true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+
+        let productsWithFilters = JSON.parse(xhr.responseText);
+        const structure = document.querySelector("#productsListFilter"); 
+            renderProductsFilter(productsWithFilters, structure);
+        }
+        };
+        dataToSend? xhr.send(JSON.stringify(dataToSend)) : xhr.send();
+}
+requestToPhp(null);
 
 
 

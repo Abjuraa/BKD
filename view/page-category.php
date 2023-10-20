@@ -704,12 +704,12 @@ while ($row = mysqli_fetch_assoc($resultado2)) {
                                                         <span>Filtro</span>
                                                     </a>
                                                 </div>
-                                                <div class="item-perpage mobile-hide">
+                                                <!-- <div class="item-perpage mobile-hide">
                                                     <div id="infoSizePage" class="label">Mostrar 10 por página</div>
                                                     <div class="desktop-hide">10</div>
-                                                </div>
+                                                </div> -->
                                                 
-                                                <div class="item-options">
+                                                <!-- <div class="item-options">
                                                     <div class="label" id="dropdown-label">
                                                         <span class="mobile-hide">Mostrar 10 por página</span>
                                                         <div class="desktop-hide">10</div>
@@ -720,17 +720,15 @@ while ($row = mysqli_fetch_assoc($resultado2)) {
                                                         <li>Mostrar 20 por página</li>
                                                         <li>Mostrar 30 por página</li>
                                                     </ul>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
                                     <div id="productsListFilter" class="products main flexwrap">
-                                        <!-- products category structure,-->
-
                                     </div>
-                                    <div class="load-more flexcenter">
+                                    <!-- <div class="load-more flexcenter">
                                         <a href="#" class="secondary-button">Más productos</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>

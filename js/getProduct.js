@@ -74,13 +74,17 @@ productosStock.innerHTML = producto_stock;
 imageFull.href = decode_img(img_producto_frente).split("blob:")[1];
 imageFullBack.href = decode_img(img_producto_reverso);
 bigImage.forEach(b => {
-    b.src = decode_img(img_producto_frente);
+    if(img_producto_frente === ""){
+        b.src = "../img/frascoAn.png" ;
+    } else{
+        b.src = decode_img(img_producto_frente);
+    }
 });
 bigImageBack.forEach(b => {
     if(img_producto_reverso === ""){
         b.src = "../img/frascoAn.png" ;
-        console.log(img_producto_reverso);
-        console.log(decode_img(img_producto_reverso));
+    } else{
+        b.src = decode_img(img_producto_reverso);
     }
 });
 

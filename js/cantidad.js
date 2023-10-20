@@ -55,7 +55,8 @@ addToCartBtn.addEventListener("click", (e) => {
       let index = carContent.findIndex(p =>  p.id === id_Click);
       carContent[index].count += userInputNumber;
       carContent[index].total = carContent[index].count * carContent[index].price;
-      carContent[index].total = carContent[index].total - ((oferta_producto * carContent[index].total ) /100); 
+      carContent[index].total = carContent[index].total - ((oferta_producto * carContent[index].total ) /100);
+      carContent[index].totalWithOutDiscount= carContent[index].count * carContent[index].price; 
 
     } else{
       let temTotal = precio_producto * userInputNumber;
@@ -66,6 +67,8 @@ addToCartBtn.addEventListener("click", (e) => {
         count: userInputNumber,
         image: img_producto_frente,
         total: temTotal - ((oferta_producto * temTotal)/100),
+        discount: oferta_producto,
+        totalWithOutDiscount: temTotal,
       })
     }
     localStorage.setItem("carrito", JSON.stringify(carContent));

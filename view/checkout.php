@@ -76,197 +76,50 @@
                                 <ul class="flexitem second-links">
                                     <li><a href="../index.php">Inicio</a></li>
                                     <li><a href="page-category.php">Tienda</a></li>
-                                    <!-- <li class="has-child">
-                                        <a href="#">Women
-                                            <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>
-                                        </a>
-                                        <div class="mega">
-                                            <div class="container">
-                                                <div class="wrapper">
-                                                    <div class="flexcol">
-                                                        <div class="row">
-                                                            <h4>Womens Clothings</h4>
-                                                            <ul>
-                                                                <li><a href="#">Dresses</a></li>
-                                                                <li><a href="#">Top & Tees</a></li>
-                                                                <li><a href="#">Jackets & Coats</a></li>
-                                                                <li><a href="#">Pants & Capris</a></li>
-                                                                <li><a href="#">Sweaters</a></li>
-                                                                <li><a href="#">Costumes</a></li>
-                                                                <li><a href="#">Hoddies & Sweatshirts</a></li>
-                                                                <li><a href="#">Pajamas & Robes</a></li>
-                                                                <li><a href="#">Shorts</a></li>
-                                                                <li><a href="#">Swimers</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flexcol">
-                                                        <div class="row">
-                                                            <h4>Jelwery</h4>
-                                                            <ul>
-                                                                <li><a href="#">Accesories</a></li>
-                                                                <li><a href="#">Bags & purses</a></li>
-                                                                <li><a href="#">Necklaces</a></li>
-                                                                <li><a href="#">Rings</a></li>
-                                                                <li><a href="#">Earrings</a></li>
-                                                                <li><a href="#">Bracelets</a></li>
-                                                                <li><a href="#">Body Jelwery</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flexcol">
-                                                        <div class="row">
-                                                            <h4>Beauty</h4>
-                                                            <ul>
-                                                                <li><a href="#">Bath Accesories</a></li>
-                                                                <li><a href="#">Makeup & Cosmetics</a></li>
-                                                                <li><a href="#">Skin Care</a></li>
-                                                                <li><a href="#">Hair Care</a></li>
-                                                                <li><a href="#">Essential Oils</a></li>
-                                                                <li><a href="#">Fragances</a></li>
-                                                                <li><a href="#">Soaps & Bathrooms</a></li>
-                                                                <li><a href="#">Face Mask & Coverings</a></li>
-                                                                <li><a href="#">Spa Kits & Gifts</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flexcol">
-                                                        <div class="row">
-                                                            <h4>Top Brands</h4>
-                                                            <ul class="women-brands">
-                                                                <li><a href="#">Nike</a></li>
-                                                                <li><a href="#">Louis Vuitton</a></li>
-                                                                <li><a href="#">Hermes</a></li>
-                                                                <li><a href="#">Gucci</a></li>
-                                                                <li><a href="#">Zalando</a></li>
-                                                                <li><a href="#">Tifanny</a></li>
-                                                                <li><a href="#">Zara</a></li>
-                                                                <li><a href="#">H&M</a></li>
-                                                                <li><a href="#">Cartier</a></li>
-                                                                <li><a href="#">Channel</a></li>
-                                                                <li><a href="#">Hurley</a></li>
-                                                            </ul>
-                                                            <a href="#" class="view-all">View All Brands <i class="ri-arrow-right-s-line"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flexcol products">
-                                                        <div class="row">
-                                                            <div class="media">
-                                                                <div class="thumbnail object-cover">
-                                                                    <a href="#">
-                                                                        <img src="../img/products/apparel4.jpg" alt="">
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="text-content">
-                                                                <h4>Most Wanted!</h4>
-                                                                <a href="#" class="primary-button">Order Now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li> -->
-                                    <!-- <li><a href="#">Men</a></li>
-                                    <li>
-                                        <a href="#">Sports
-                                            <div class="fly-item"><span>New!</span></div>
-                                        </a>
-                                    </li>
-                                </ul> -->
                             </nav>
                         </div>
                         <div class="right">
                             <ul class="flexitem second-links">
                                 <li class="mobile-hide"><a href="#">
-                                    <div class="icon-large"><i class="ri-heart-line"></i></div>
-                                    <div class="fly-item"><span class="item-number">0</span></div>
-                                </a></li>
-                                <li  class="iscart"><a href="#">
-                                    <div class="icon-large">
-                                        <i class="ri-shopping-cart-line"></i>
-                                        <div class="fly-item"><span class="item-number">5</span></div>
-                                    </div>
-                                    <div class="icon-text">
-                                        <div class="mini-text">Total</div>
-                                        <div class="cart-total">$1.622</div>
-                                    </div>
+                                        <div class="icon-large"><i class="ri-heart-line"></i></div>
+                                        <!-- <div class="fly-item"><span class="item-number-fav">0</span></div> -->
+                                    </a></li>
+                                <li class="iscart"><a href="#">
+                                        <div class="icon-large">
+                                            <i class="ri-shopping-cart-line"></i>
+                                            <div class="fly-item"><span class="item-number-cart">0</span></div>
+                                        </div>
+                                        <div class="icon-text">
+                                            <div class="mini-text">Total</div>
+                                            <div class="cart-total">$0</div>
+                                        </div>
 
-                                </a>
-                                <div class="mini-cart">
-                                    <div class="content">
-                                        <div class="cart-head">
-                                            5 items in cart
-                                        </div>
-                                        <div class="cart-body">
-                                            <ul class="products mini">
-                                                <li class="item">
-                                                    <div class="thumbnail object-cover">
-                                                        <a href="#"><img src="../img/products/home2.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="item-content">
-                                                        <p><a href="#">Dimmable Light Modern</a></p>
-                                                        <span class="price">
-                                                            <span>$279.99</span>
-                                                            <span class="fly-item"><span>2x</span></span>
-                                                        </span>
-                                                    </div>
-                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-                                                </li>
-                                                <li class="item">
-                                                    <div class="thumbnail object-cover">
-                                                        <a href="#"><img src="../img/products/home3.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="item-content">
-                                                        <p><a href="#">Dimmable Light Modern</a></p>
-                                                        <span class="price">
-                                                            <span>$279.99</span>
-                                                            <span class="fly-item"><span>1x</span></span>
-                                                        </span>
-                                                    </div>
-                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-                                                </li>
-                                                <li class="item">
-                                                    <div class="thumbnail object-cover">
-                                                        <a href="#"><img src="../img/products/home4.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="item-content">
-                                                        <p><a href="#">Dimmable Light Modern</a></p>
-                                                        <span class="price">
-                                                            <span>$279.99</span>
-                                                            <span class="fly-item"><span>1x</span></span>
-                                                        </span>
-                                                    </div>
-                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-                                                </li>
-                                                <li class="item">
-                                                    <div class="thumbnail object-cover">
-                                                        <a href="#"><img src="../img/products/home5.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="item-content">
-                                                        <p><a href="#">Dimmable Light Modern</a></p>
-                                                        <span class="price">
-                                                            <span>$279.99</span>
-                                                            <span class="fly-item"><span>1x</span></span>
-                                                        </span>
-                                                    </div>
-                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="cart-footer">
-                                            <div class="subtotal">
-                                                <p>Subtotal</p>
-                                                <p><strong>$1,622.95</strong></p>
+                                    </a>
+                                    <div class="mini-cart" id="products-id">
+                                        <div class="content">
+                                            <div class="cart-head">
+                                                <span class="num-products">0</span> Productos
                                             </div>
-                                            <div class="actions">
-                                                <a href="checkout.html" class="primary-button">Pagar</a>
-                                                <a href="cart.html" class="secondary-button">Ver Carrito</a>
+                                            <div class="cart-body">
+                                                <ul class="products mini">
+
+
+
+
+
+                                                </ul>
+                                            </div>
+                                            <div class="cart-footer">
+                                                <div class="subtotal">
+                                                    <p>Subtotal</p>
+                                                </div>
+                                                <div class="actions">
+                                                    <a href="checkout.php" class="primary-button">Pagar</a>
+                                                    <a href="cart.php" class="secondary-button">Ver Carrito</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 </li>
                             </ul>
                         </div>
@@ -1133,8 +986,12 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.js"></script> -->
     <script src="../js/index.js"></script>
+    <script src="../js/renderCart.js"></script>
+    <script src="../js/cantidad.js"></script>
+    <script>
+        renderCart();
+    </script>
     <script>
         const FtoShow = '.filter';
         const Fpopup = document.querySelector(FtoShow);
