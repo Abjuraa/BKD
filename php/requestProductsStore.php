@@ -1,22 +1,16 @@
 <?php
 include("conexion.php");
 $datos_recibidos = json_decode(file_get_contents("php://input"), true);
-// print_r($datos_recibidos);
-// SELECT * FROM `productos` WHERE (`secciones_products` = 2 OR `secciones_products`= 4) AND (`precio_producto` > 40000 AND `precio_producto`< 1000000)
 
 $queryPr = "SELECT * FROM `productos`";
 
 if(isset($datos_recibidos)){
     $queryPr = $queryPr . " WHERE ";
     list('selectedSeccions' => $selectedSections, 'sizePage' => $sizePage, 'littlePriceValue' => $littlePriceValue, 'bigPriceValue' => $bigPriceValue) = $datos_recibidos;
-    // var_dump($selectedSections);
-    // var_dump($sizePage);
-    // var_dump($littlePriceValue);
-    // var_dump($bigPriceValue);
+
 
     if(isset($selectedSections)){
-        // print_r($queryPr);
-        // print_r($selectedSections);
+
         $queryPr = $queryPr . " ( ";
         foreach ($selectedSections as $key => $value) {
             if($key == 0){
@@ -26,13 +20,11 @@ if(isset($datos_recibidos)){
             }
         }
         $queryPr = $queryPr . " ) AND ";
-        // print_r($queryPr);
         
     } else {
         
     } if(isset($littlePriceValue) && isset($bigPriceValue)){
         $queryPr = $queryPr . " (`precio_producto` > " . $littlePriceValue . " AND `precio_producto`< " . $bigPriceValue . " )";
-        // print_r($queryPr);
     }
 
 }
@@ -52,10 +44,6 @@ foreach($datosSeccion as &$seccionData) {
     }
 }
 $jsonDatosSeccion = json_encode($datosSeccion);
-// echo '<script>';
-echo '$jsonDatosSeccion';
-// echo 'console.log(dataSeccion)';
-// echo 'renderProductsFilter(productsWithFilters)';
-// echo '</script>';
-
+header('Content-Type: application/json');
+echo $jsonDatosSeccion;
 ?>

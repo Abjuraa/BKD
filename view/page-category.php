@@ -1,3 +1,25 @@
+<?php
+include("../php/conexion.php");
+// include("../php/requestProductsStore.php");
+$queryM = "SELECT `id_secciones`, `nombre_seccion` FROM `secciones_products` WHERE 1";
+
+$resultado = mysqli_query($conex, $queryM);
+$datos = array(); // Inicializamos un array para almacenar los datos
+
+while ($row = mysqli_fetch_assoc($resultado)) {
+    $datos[] = $row;
+}
+
+$queryM = "SELECT * FROM `categoria_products`";
+
+$resultado2 = mysqli_query($conex, $queryM);
+$categorias = array();
+
+while ($row = mysqli_fetch_assoc($resultado2)) {
+    $categorias[] = $row;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -613,31 +635,6 @@
         <!-- header -->
 
         <main>
-
-        <?php
-
-        include("../php/conexion.php");
-        include("../php/requestProductsStore.php");
-
-        $queryM = "SELECT `id_secciones`, `nombre_seccion` FROM `secciones_products` WHERE 1";
-
-        $resultado = mysqli_query($conex, $queryM);
-        $datos = array(); // Inicializamos un array para almacenar los datos
-
-        while ($row = mysqli_fetch_assoc($resultado)) {
-            $datos[] = $row;
-        }
-
-        $queryM = "SELECT * FROM `categoria_products`";
-
-        $resultado2 = mysqli_query($conex, $queryM);
-        $categorias = array();
-
-        while ($row = mysqli_fetch_assoc($resultado2)) {
-            $categorias[] = $row;
-        }
-        ?>
-
             <div class="single-category">
                 <div class="container">
                     <div class="wrapper">
@@ -727,276 +724,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="products main flexwrap">
+                                    <div id="productsListFilter" class="products main flexwrap">
                                         <!-- products category structure,-->
 
-                                        
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../img/products/Fotoultra Active Unify Fusion Isdin Frasco X 50mL SPF50+ Fluid Color.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>25%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(1,955)</span>
-                                        </div>
-                                        <h3><a href="#">Fotoultra Active Unify Fusion Isdin Frasco X 50mL SPF50+ Fluid Color</a></h3>
-                                        <div class="price">
-                                            <span class="current">$56.50</span>
-                                            <span class="normal mini-text">676,50</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../img/products/Cerave Moisturising Crema Gel Hidratante Pote X 454 G Piel Seca A Muy Seca.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>32%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(994)</span>
-                                        </div>
-                                        <h3><a href="#">Cerave Moisturising Crema Gel Hidratante Pote X 454 G Piel Seca A Muy Seca</a></h3>
-                                        <div class="price">
-                                            <span class="current">$37.50</span>
-                                            <span class="normal mini-text">40.50</span>
-                                        </div>
-                                        <!-- additional structure -->
-                                        <div class="footer">
-                                            <ul class="mini-text">
-                                                <li>polyester, cotton</li>
-                                                <li>pull on clousure</li>
-                                                <li>fashion personality</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../img/products/Pañal Huggies Active Sec Xtra Flex Xg4 Paquete X 25.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>32%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(2,548)</span>
-                                        </div>
-                                        <h3><a href="#">Pañal Huggies Active Sec Xtra Flex Xg4 Paquete X 25</a></h3>
-                                        <div class="price">
-                                            <span class="current">$129.99</span>
-                                            <span class="normal mini-text">189.98</span>
-                                        </div>
-                                        <div class="footer">
-                                            <ul class="mini-text">
-                                                <li>65% polyster, 35% cotton</li>
-                                                <li>imported</li>
-                                                <li>machines wash</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../img/products/Noxpirin Plus Adultos Dia-Noche Cápsulas (500+30+5+10)Mg Caja X 6 atras.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>32%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(2,548)</span>
-                                        </div>
-                                        <h3><a href="#">Noxpirin Plus Adultos Dia-Noche Cápsulas (500+30+5+10)Mg Caja X 6</a></h3>
-                                        <div class="price">
-                                            <span class="current">$129.99</span>
-                                            <span class="normal mini-text">189.98</span>
-                                        </div>
-                                        <div class="mini-text">
-                                            <p>2975 sold</p>
-                                            <p>Free Shipping</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../img/products/Condones Triple Pleasure Caja X 3.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>32%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(2,548)</span>
-                                        </div>
-                                        <h3><a href="#">Condones Triple Pleasure Caja X 3</a></h3>
-                                        <div class="price">
-                                            <span class="current">$129.99</span>
-                                            <span class="normal mini-text">189.98</span>
-                                        </div>
-                                        <div class="mini-text">
-                                            <p>2975 sold</p>
-                                            <p>Free Shipping</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../img/products/Antitranspirante No Sweat Clásico Frasco X 30mL.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>32%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(2,548)</span>
-                                        </div>
-                                        <h3><a href="#">Antitranspirante No Sweat Clásico Frasco X 30mL</a></h3>
-                                        <div class="price">
-                                            <span class="current">$129.99</span>
-                                            <span class="normal mini-text">189.98</span>
-                                        </div>
-                                        <div class="mini-text">
-                                            <p>2975 sold</p>
-                                            <p>Free Shipping</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../img/products/Ensure Advance Polvo Tarro X 850Gr Vainilla.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>32%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(2,548)</span>
-                                        </div>
-                                        <h3><a href="#">Ensure Advance Polvo Tarro X 850Gr Vainilla</a></h3>
-                                        <div class="price">
-                                            <span class="current">$129.99</span>
-                                            <span class="normal mini-text">189.98</span>
-                                        </div>
-                                        <div class="mini-text">
-                                            <p>2975 sold</p>
-                                            <p>Free Shipping</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../img/products/Postday 1 1.5Mg Caja X 1 Tableta.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="hoverable">
-                                            <ul>
-                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                <li><a href="#"><i class="ri-shuffle-line"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="discount circle flexcenter"><span>32%</span></div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="rating">
-                                            <div class="stars"></div>
-                                            <span class="mini-text">(2,548)</span>
-                                        </div>
-                                        <h3><a href="#">Postday 1 1.5Mg Caja X 1 Tableta</a></h3>
-                                        <div class="price">
-                                            <span class="current">$129.99</span>
-                                            <span class="normal mini-text">189.98</span>
-                                        </div>
-                                        <div class="mini-text">
-                                            <p>2975 sold</p>
-                                            <p>Free Shipping</p>
-                                        </div>
-                                    </div>
-                                </div>
                                     </div>
                                     <div class="load-more flexcenter">
                                         <a href="#" class="secondary-button">Más productos</a>

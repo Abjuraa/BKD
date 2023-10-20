@@ -19,18 +19,6 @@ secciones.forEach(e => {
 seccionesHtml.innerHTML += childSection;
 });
 
-// categoria.forEach(e => {
-//     let childCategoria = `<li id=${e.id_categoria}>
-//     <input type="checkbox" name="category-options" id="${(e.nombre_categoria).split(" ")}" value="${e.id_categoria}">
-//     <label for=${(e.nombre_categoria).split(" ")}>
-//         <span class="checked"></span>
-//         <span>${capitalizar(e.nombre_categoria)}</span>
-//     </label>
-    
-// </li>`
-// categoriaHtml.innerHTML += childCategoria;
-// });
-
 function getSelectedFilters(elementsHtml) {
     const selected = [];
 
@@ -50,7 +38,6 @@ elementsHtml.forEach((item) => {
 return selected;
 }
 let selectedSeccions = getSelectedFilters(seccionsByPage);
-// let categorySeccions = getSelectedFilters(categoryByPage);
 let sizePage = 10;
 
 const listItems = document.querySelectorAll("#dropdown-list li");
@@ -82,7 +69,6 @@ buttonSearch.addEventListener('click', e => {
     let bigPriceValue = bigPrice.value;
     let requestObject = {
         'selectedSeccions' : selectedSeccions,
-        // 'categorySeccions' : categorySeccions,
         'sizePage' : sizePage,
         'littlePriceValue' : littlePriceValue,
         'bigPriceValue' : bigPriceValue,
@@ -93,9 +79,9 @@ xhr.setRequestHeader("Content-Type", "application/json");
 
 xhr.onreadystatechange = function () {
 if (xhr.readyState == 4 && xhr.status == 200) {
-// console.log(xhr.responseText);
-let productsWithFilters = xhr.responseText;
-renderProductsFilter(productsWithFilters);
+
+let productsWithFilters = JSON.parse(xhr.responseText);
+    renderProductsFilter(productsWithFilters);
 }
 };
     xhr.send(JSON.stringify(requestObject));
