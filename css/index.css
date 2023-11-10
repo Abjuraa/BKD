@@ -2242,6 +2242,73 @@ form:where(.registro, .login){
 	height: 100%;
 	text-align: center;
 }
+.inicio_sesion h1{
+	font-weight: bold;
+	margin: 0;
+}
+
+/* h2 {
+	text-align: center;
+} */
+
+.inicio_sesion p{
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+.inicio_sesion span{
+	font-size: 12px;
+}
+.login span{
+	font-size: 12px;
+}
+
+a:where(.inicio_sesion, .login) {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+button:where(.inicio_sesion, .ghost) {
+	border-radius: 20px;
+	border: 1px solid var(--white-color);
+	background-color: var(--primary-color);
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+form:where(.inicio_sesion, .login){
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
 
 input:where(.campo){
 	background-color: #eee;

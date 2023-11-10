@@ -1,3 +1,10 @@
+<?php
+session_start();
+include("../php/registro.php");
+include("../php/login.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,16 +95,16 @@
 
                             $resultado = mysqli_query($conex,$tipDocument);
                             while($valores = mysqli_fetch_array($resultado)){
-                               echo '<option value ="' .$valores['id_doc']. '">' .$valores['descripcion']. '</option>';
+                            echo '<option value ="' .$valores['id_doc']. '">' .$valores['descripcion']. '</option>';
                             }
-                        ?>
+                            ?>
                         </select>
                         <input class="campo" type="text" name="num_doc" placeholder="Numero de documento" />
                         <button class="registro" name="registro">Crear Cuenta</button>
                     </form>
                 </div>
                 <div class="form-container sign-in-container">
-                    <form action="" class="login">
+                    <form class="login" method="post" action="">
                         <h1>Ingresar</h1>
                         <div class="social-container">
                             <a href="#" class="social"><i class="ri-google-fill"></i></a>
@@ -105,10 +112,10 @@
                             <a href="#" class="social"><i class="ri-apple-fill"></i></a>
                         </div>
                         <span>Usa tus cuentas</span>
-                        <input class="campo" type="email" placeholder="Email" />
-                        <input class="campo" type="password" placeholder="Contraseña" />
+                        <input class="campo" type="text" placeholder="Email" name="nom" />
+                        <input class="campo" type="password" placeholder="Contraseña" name="contrasena" />
                         <a class="registro" href="#">Olvidaste tu contraseña?</a>
-                        <button class="registro">Iniciar Sesion</button>
+                        <button class="inicio_sesion" name="inicio_sesion">Iniciar Sesion</button>
                     </form>
                 </div>
                 <div class="overlay-container">
@@ -154,7 +161,6 @@
         </footer>
         <!-- footer -->
 
-       
         <!-- menu bottom -->
 
         <div class="search-bottom desktop-hide">
@@ -172,13 +178,8 @@
         </div>
         <!-- search bottom -->
     </div>
-                        
-    <?php
-        include("../php/registro.php");
-        include("../php/login.php");
-    ?>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/login.js"></script>
 </body>
-</html>
+</html> 
